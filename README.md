@@ -8,6 +8,10 @@ This keeps every generated file below GitHub's 100 MB file limit without
 removing game assets. Save files are stored in IndexedDB through Emscripten's
 IDBFS.
 
+The browser renderer uses WebGL 1 with Emscripten's legacy OpenGL emulation.
+Because browsers restrict autoplay, click or press a key after the game loads
+to enable audio.
+
 ## For those who don’t know where to start
 started
 

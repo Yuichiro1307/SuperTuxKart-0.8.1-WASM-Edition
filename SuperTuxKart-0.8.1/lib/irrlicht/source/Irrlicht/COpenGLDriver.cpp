@@ -2612,6 +2612,9 @@ void COpenGLDriver::setRenderStates3DMode()
 //! Get native wrap mode value
 GLint COpenGLDriver::getTextureWrapMode(const u8 clamp)
 {
+#ifdef __EMSCRIPTEN__
+	return clamp == ETC_REPEAT ? GL_REPEAT : GL_CLAMP_TO_EDGE;
+#else
 	GLint mode=GL_REPEAT;
 	switch (clamp)
 	{
@@ -2708,6 +2711,7 @@ GLint COpenGLDriver::getTextureWrapMode(const u8 clamp)
 			break;
 	}
 	return mode;
+#endif
 }
 
 
@@ -4859,4 +4863,3 @@ IVideoDriver* createOpenGLDriver(const SIrrlichtCreationParameters& params,
 
 } // end namespace
 } // end namespace
-

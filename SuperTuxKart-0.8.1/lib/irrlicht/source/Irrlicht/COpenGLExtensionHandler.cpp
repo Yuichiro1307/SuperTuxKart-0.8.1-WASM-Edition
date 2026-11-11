@@ -330,19 +330,14 @@ void COpenGLExtensionHandler::dumpFramebufferFormats() const
 
 void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 {
-	const char* version_string = reinterpret_cast<const char*>(glGetString(GL_VERSION));
 #ifdef __EMSCRIPTEN__
-	if (version_string && strncmp(version_string, "WebGL ", 6) == 0)
-	{
-		// WebGL is exposed through Emscripten's OpenGL ES compatibility layer.
-		Version = 102;
-	}
-	else
+	// Irrlicht expects desktop GL version strings, while browsers expose GLES.
+	Version = 102;
+#else
+	const char* version_string = reinterpret_cast<const char*>(glGetString(GL_VERSION));
+	const f32 ogl_ver = core::fast_atof(reinterpret_cast<const c8*>(version_string));
+	Version = static_cast<u16>(core::floor32(ogl_ver)*100+core::round32(core::fract(ogl_ver)*10.0f));
 #endif
-	{
-		const f32 ogl_ver = core::fast_atof(reinterpret_cast<const c8*>(version_string));
-		Version = static_cast<u16>(core::floor32(ogl_ver)*100+core::round32(core::fract(ogl_ver)*10.0f));
-	}
 	if ( Version >= 102)
 		os::Printer::log("OpenGL driver version is 1.2 or better.", ELL_INFORMATION);
 	else
@@ -662,8 +657,15 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 #endif
 	glGetFloatv(GL_ALIASED_LINE_WIDTH_RANGE, DimAliasedLine);
 	glGetFloatv(GL_ALIASED_POINT_SIZE_RANGE, DimAliasedPoint);
+#ifdef __EMSCRIPTEN__
+	DimSmoothedLine[0] = DimAliasedLine[0];
+	DimSmoothedLine[1] = DimAliasedLine[1];
+	DimSmoothedPoint[0] = DimAliasedPoint[0];
+	DimSmoothedPoint[1] = DimAliasedPoint[1];
+#else
 	glGetFloatv(GL_SMOOTH_LINE_WIDTH_RANGE, DimSmoothedLine);
 	glGetFloatv(GL_SMOOTH_POINT_SIZE_RANGE, DimSmoothedPoint);
+#endif
 #if defined(GL_ARB_shading_language_100) || defined (GL_VERSION_2_0)
 	if (FeatureAvailable[IRR_ARB_shading_language_100] || Version>=200)
 	{

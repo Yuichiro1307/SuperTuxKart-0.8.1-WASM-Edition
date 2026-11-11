@@ -8,20 +8,29 @@
     html, body { width: 100%; height: 100vh; height: 100dvh; margin: 0; overflow: hidden; background: #111; color: #eee; font: 14px sans-serif; }
     #status { position: fixed; z-index: 1; top: 0; left: 0; padding: 8px 12px; background: rgba(0, 0, 0, .65); }
     #status:empty { display: none; }
+    #audio-hint { display: none; position: fixed; z-index: 2; top: 12px; left: 50%; transform: translateX(-50%); padding: 10px 14px; border-radius: 4px; background: rgba(0, 0, 0, .75); }
     #canvas { position: fixed; inset: 0; display: block; width: 100vw; height: 100vh; height: 100dvh; outline: none; }
   </style>
 </head>
 <body>
   <div id="status">Loading game and assets…</div>
+  <div id="audio-hint">クリックまたはキー入力でゲームを開始し、音声を有効にしてください</div>
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <script>
     var statusElement = document.getElementById("status");
+    var audioHint = document.getElementById("audio-hint");
     var Module = {
       canvas: document.getElementById("canvas"),
       setStatus: function(message) { statusElement.textContent = message; },
       print: function(text) { console.log(text); },
-      printErr: function(text) { console.error(text); }
+      printErr: function(text) { console.error(text); },
+      onRuntimeInitialized: function() { audioHint.style.display = "block"; }
     };
+    ["pointerdown", "keydown", "touchstart"].forEach(function(eventName) {
+      document.addEventListener(eventName, function() {
+        audioHint.style.display = "none";
+      }, { once: true });
+    });
   </script>
   <script async type="text/javascript" src="supertuxkart.js"></script>
 </body>

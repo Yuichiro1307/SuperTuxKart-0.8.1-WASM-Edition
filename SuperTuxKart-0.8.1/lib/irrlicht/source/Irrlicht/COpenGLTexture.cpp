@@ -13,11 +13,28 @@
 #include "CColorConverter.h"
 
 #include "irrString.h"
+#include <vector>
 
 namespace irr
 {
 namespace video
 {
+
+#ifdef __EMSCRIPTEN__
+static void convertToWebGLRgba(u8* pixels, u32 width, u32 height, u32 pitch)
+{
+	for (u32 y = 0; y < height; ++y)
+	{
+		u8* row = pixels + y * pitch;
+		for (u32 x = 0; x < width; ++x)
+		{
+			u8 blue = row[x * 4];
+			row[x * 4] = row[x * 4 + 2];
+			row[x * 4 + 2] = blue;
+		}
+	}
+}
+#endif
 
 //! constructor for usual textures
 COpenGLTexture::COpenGLTexture(IImage* origImage, const io::path& name, void* mipmapData, COpenGLDriver* driver)
@@ -83,6 +100,9 @@ COpenGLTexture::~COpenGLTexture()
 //! Choose best matching color format, based on texture creation flags
 ECOLOR_FORMAT COpenGLTexture::getBestColorFormat(ECOLOR_FORMAT format)
 {
+#ifdef __EMSCRIPTEN__
+	return ECF_A8R8G8B8;
+#else
 	ECOLOR_FORMAT destFormat = ECF_A8R8G8B8;
 	switch (format)
 	{
@@ -121,6 +141,7 @@ ECOLOR_FORMAT COpenGLTexture::getBestColorFormat(ECOLOR_FORMAT format)
 		}
 	}
 	return destFormat;
+#endif
 }
 
 
@@ -154,9 +175,14 @@ GLint COpenGLTexture::getOpenGLFormatAndParametersFromColorFormat(ECOLOR_FORMAT 
 			internalformat =  GL_RGB;
 			break;
 		case ECF_A8R8G8B8:
+#ifdef __EMSCRIPTEN__
+			colorformat=GL_RGBA;
+			type=GL_UNSIGNED_BYTE;
+#else
 			colorformat=GL_BGRA_EXT;
 			if (Driver->Version > 101)
 				type=GL_UNSIGNED_INT_8_8_8_8_REV;
+#endif
 			internalformat =  GL_RGBA;
 			break;
 		// _rg formats.
@@ -395,6 +421,13 @@ void COpenGLTexture::uploadTexture(bool newTexture, void* mipmapData, u32 level)
 
 	// now get image data and upload to GPU
 	void* source = image->lock();
+#ifdef __EMSCRIPTEN__
+	const core::dimension2d<u32>& size = image->getDimension();
+	std::vector<u8> rgba(size.Width * size.Height * 4);
+	memcpy(&rgba[0], source, rgba.size());
+	convertToWebGLRgba(&rgba[0], size.Width, size.Height, size.Width * 4);
+	source = &rgba[0];
+#endif
 	if (newTexture)
 		glTexImage2D(GL_TEXTURE_2D, level, InternalFormat, image->getDimension().Width,
 			image->getDimension().Height, 0, PixelFormat, PixelType, source);
@@ -634,6 +667,16 @@ void COpenGLTexture::regenerateMipMapLevels(void* mipmapData)
 		if (height>1)
 			height>>=1;
 		++i;
+#ifdef __EMSCRIPTEN__
+		std::vector<u8> rgba(width * height * 4);
+		if (mipmapData)
+			memcpy(&rgba[0], target, rgba.size());
+		else
+			Image->copyToScaling(&rgba[0], width, height, ECF_A8R8G8B8);
+		convertToWebGLRgba(&rgba[0], width, height, width * 4);
+		glTexImage2D(GL_TEXTURE_2D, i, InternalFormat, width, height,
+				0, PixelFormat, PixelType, &rgba[0]);
+#else
 		if (!target)
 			target = new u8[width*height*Image->getBytesPerPixel()];
 		// create scaled version if no mipdata available
@@ -641,6 +684,7 @@ void COpenGLTexture::regenerateMipMapLevels(void* mipmapData)
 			Image->copyToScaling(target, width, height, Image->getColorFormat());
 		glTexImage2D(GL_TEXTURE_2D, i, InternalFormat, width, height,
 				0, PixelFormat, PixelType, target);
+#endif
 		// get next prepared mipmap data if available
 		if (mipmapData)
 		{

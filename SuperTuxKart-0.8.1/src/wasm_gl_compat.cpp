@@ -14,6 +14,10 @@ void glLightf(GLenum, GLenum, GLfloat)
 {
 }
 
+void glHint(GLenum, GLenum)
+{
+}
+
 void glMaterialf(GLenum face, GLenum pname, GLfloat value)
 {
     glMaterialfv(face, pname, &value);

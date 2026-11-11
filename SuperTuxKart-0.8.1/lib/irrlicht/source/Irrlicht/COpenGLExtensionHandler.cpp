@@ -587,8 +587,12 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 		MaxSupportedTextures=core::max_(MaxSupportedTextures,static_cast<u8>(num));
 	}
 #endif
+#ifdef __EMSCRIPTEN__
+	MaxLights = 8;
+#else
 	glGetIntegerv(GL_MAX_LIGHTS, &num);
 	MaxLights=static_cast<u8>(num);
+#endif
 #ifdef GL_EXT_texture_filter_anisotropic
 	if (FeatureAvailable[IRR_EXT_texture_filter_anisotropic])
 	{
@@ -597,11 +601,13 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 	}
 #endif
 #ifdef GL_VERSION_1_2
+#ifndef __EMSCRIPTEN__
 	if (Version>101)
 	{
 		glGetIntegerv(GL_MAX_ELEMENTS_INDICES, &num);
 		MaxIndices=num;
 	}
+#endif
 #endif
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &num);
 	MaxTextureSize=static_cast<u32>(num);
@@ -619,10 +625,12 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 	if (FeatureAvailable[IRR_EXT_texture_lod_bias])
 		glGetFloatv(GL_MAX_TEXTURE_LOD_BIAS_EXT, &MaxTextureLODBias);
 #endif
+#ifndef __EMSCRIPTEN__
 	glGetIntegerv(GL_MAX_CLIP_PLANES, &num);
 	MaxUserClipPlanes=static_cast<u8>(num);
 	glGetIntegerv(GL_AUX_BUFFERS, &num);
 	MaxAuxBuffers=static_cast<u8>(num);
+#endif
 #ifdef GL_ARB_draw_buffers
 	if (FeatureAvailable[IRR_ARB_draw_buffers])
 	{

@@ -2800,7 +2800,14 @@ void COpenGLDriver::setBasicRenderStates(const SMaterial& material, const SMater
 			color[1] = material.EmissiveColor.getGreen() * inv;
 			color[2] = material.EmissiveColor.getBlue() * inv;
 			color[3] = material.EmissiveColor.getAlpha() * inv;
+#ifdef __EMSCRIPTEN__
+			color[0] = core::min_(1.0f, color[0] + material.AmbientColor.getRed() * inv);
+			color[1] = core::min_(1.0f, color[1] + material.AmbientColor.getGreen() * inv);
+			color[2] = core::min_(1.0f, color[2] + material.AmbientColor.getBlue() * inv);
+			glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, color);
+#else
 			glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, color);
+#endif
 		}
 	}
 

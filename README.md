@@ -49,3 +49,7 @@ Open <http://localhost:8000/supertuxkart.html>. The browser loads all bundled
 game assets before starting; no game-server or add-on connection is used.
 Browser gamepads are handled through the SDL input device. Audio may require a
 click or key press first, depending on the browser's autoplay policy.
+
+The browser build starts with a 256 MiB WebAssembly memory and grows it as
+needed. Rendering is capped at 60 FPS (35 FPS in throttled menus) to avoid
+unnecessary browser work.

@@ -10,6 +10,7 @@
 #include "irrString.h"
 #include "SMaterial.h" // for MATERIAL_MAX_TEXTURES
 #include "fast_atof.h"
+#include <cstring>
 
 namespace irr
 {
@@ -329,8 +330,19 @@ void COpenGLExtensionHandler::dumpFramebufferFormats() const
 
 void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 {
-	const f32 ogl_ver = core::fast_atof(reinterpret_cast<const c8*>(glGetString(GL_VERSION)));
-	Version = static_cast<u16>(core::floor32(ogl_ver)*100+core::round32(core::fract(ogl_ver)*10.0f));
+	const char* version_string = reinterpret_cast<const char*>(glGetString(GL_VERSION));
+#ifdef __EMSCRIPTEN__
+	if (version_string && strncmp(version_string, "WebGL ", 6) == 0)
+	{
+		// WebGL is exposed through Emscripten's OpenGL ES compatibility layer.
+		Version = 102;
+	}
+	else
+#endif
+	{
+		const f32 ogl_ver = core::fast_atof(reinterpret_cast<const c8*>(version_string));
+		Version = static_cast<u16>(core::floor32(ogl_ver)*100+core::round32(core::fract(ogl_ver)*10.0f));
+	}
 	if ( Version >= 102)
 		os::Printer::log("OpenGL driver version is 1.2 or better.", ELL_INFORMATION);
 	else

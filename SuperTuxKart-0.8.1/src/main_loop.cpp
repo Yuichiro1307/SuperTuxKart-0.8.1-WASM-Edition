@@ -179,6 +179,19 @@ static void runMainLoopFrame(void* context)
         emscripten_cancel_main_loop();
         return;
     }
+
+    int max_fps = StateManager::get()->throttleFPS()
+        ? 35 : UserConfigParams::m_max_fps;
+    if (max_fps <= 0 || max_fps > 60)
+        max_fps = 60;
+
+    static double last_frame_time = 0.0;
+    const double current_time = emscripten_get_now();
+    if (last_frame_time > 0.0 &&
+        current_time - last_frame_time < 1000.0 / max_fps)
+        return;
+    last_frame_time = current_time;
+
     loop->runFrame();
 }
 

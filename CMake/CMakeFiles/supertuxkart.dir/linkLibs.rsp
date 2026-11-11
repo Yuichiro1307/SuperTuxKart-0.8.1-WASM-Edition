@@ -1,0 +1,1 @@
+ lib/bullet/libbulletdynamics.a lib/bullet/libbulletcollision.a lib/bullet/libbulletmath.a lib/enet/libenet.a lib/irrlicht/libstkirrlicht.a -lopenal -lGL 

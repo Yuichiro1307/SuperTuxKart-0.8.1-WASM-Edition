@@ -1,0 +1,33 @@
+lib/enet/CMakeFiles/enet.dir/packet.c.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/packet.c \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/strings.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/enet.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/unix.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/time.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/select.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/endian.h \
+  /home/codespace/.cache/emscripten/sysroot/include/netinet/in.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/inttypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/inttypes.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/socket.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/socket.h \
+  /home/codespace/.cache/emscripten/sysroot/include/unistd.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/posix.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/types.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/protocol.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/list.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include/enet/callbacks.h

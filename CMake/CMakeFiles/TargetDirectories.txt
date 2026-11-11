@@ -1,0 +1,15 @@
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles/supertuxkart.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles/dist.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles/edit_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles/rebuild_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/bullet/CMakeFiles/bulletmath.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/bullet/CMakeFiles/bulletcollision.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/bullet/CMakeFiles/bulletdynamics.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/bullet/CMakeFiles/edit_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/bullet/CMakeFiles/rebuild_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/enet/CMakeFiles/enet.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/enet/CMakeFiles/edit_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/enet/CMakeFiles/rebuild_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/irrlicht/CMakeFiles/stkirrlicht.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/irrlicht/CMakeFiles/edit_cache.dir
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/lib/irrlicht/CMakeFiles/rebuild_cache.dir

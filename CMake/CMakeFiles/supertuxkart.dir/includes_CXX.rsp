@@ -1,0 +1,1 @@
+-I"/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src" -I"/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/enet/include" -I"/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include" -I"/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src"

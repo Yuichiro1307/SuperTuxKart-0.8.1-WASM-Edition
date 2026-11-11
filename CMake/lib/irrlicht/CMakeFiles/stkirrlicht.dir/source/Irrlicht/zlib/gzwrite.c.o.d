@@ -1,0 +1,34 @@
+lib/irrlicht/CMakeFiles/stkirrlicht.dir/source/Irrlicht/zlib/gzwrite.c.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/gzwrite.c \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/gzguts.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/zlib.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/zconf.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/endian.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/select.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/strings.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
+  /home/codespace/.cache/emscripten/sysroot/include/fcntl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/fcntl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/unistd.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/posix.h \
+  /home/codespace/.cache/emscripten/sysroot/include/errno.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/errno.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdarg.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h

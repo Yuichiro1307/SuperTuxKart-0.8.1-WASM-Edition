@@ -1,0 +1,36 @@
+lib/irrlicht/CMakeFiles/stkirrlicht.dir/source/Irrlicht/libpng/pngwrite.c.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pngwrite.c \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pngpriv.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/png.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pnglibconf.h \
+  /home/codespace/.cache/emscripten/sysroot/include/setjmp.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/setjmp.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/time.h \
+  /home/codespace/.cache/emscripten/sysroot/include/time.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pngconf.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pnginfo.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pngstruct.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/zlib.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/zlib/zconf.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/types.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/math.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/libpng/pngdebug.h

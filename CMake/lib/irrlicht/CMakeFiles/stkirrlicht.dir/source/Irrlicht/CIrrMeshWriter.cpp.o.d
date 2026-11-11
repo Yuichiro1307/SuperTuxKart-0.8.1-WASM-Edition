@@ -1,0 +1,19 @@
+lib/irrlicht/CMakeFiles/stkirrlicht.dir/source/Irrlicht/CIrrMeshWriter.cpp.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/CIrrMeshWriter.cpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IrrCompileConfig.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config_site \
+  /home/codespace/.cache/emscripten/sysroot/include/pthread.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__nullptr \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdint.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h

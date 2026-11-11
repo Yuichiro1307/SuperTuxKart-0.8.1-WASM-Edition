@@ -1,0 +1,28 @@
+lib/bullet/CMakeFiles/bulletmath.dir/src/LinearMath/btAlignedAllocator.cpp.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btAlignedAllocator.cpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btAlignedAllocator.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btScalar.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config_site \
+  /home/codespace/.cache/emscripten/sysroot/include/pthread.h \
+  /home/codespace/.cache/emscripten/sysroot/include/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/type_traits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstddef \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/version \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__nullptr \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/limits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__undef_macros \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/float.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/assert.h

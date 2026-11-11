@@ -1,0 +1,23 @@
+lib/irrlicht/CMakeFiles/stkirrlicht.dir/source/Irrlicht/jpeglib/jcmainct.c.o: \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jcmainct.c \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jinclude.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jconfig.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/strings.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jpeglib.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jmorecfg.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jpegint.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/jpeglib/jerror.h

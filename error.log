@@ -1,0 +1,38 @@
+supertuxkart.html:23 WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+printErr @ supertuxkart.html:23
+supertuxkart.html:23 WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -s GL_UNSAFE_OPTS=0
+printErr @ supertuxkart.html:23
+favicon.ico:1  Failed to load resource: the server responded with a status of 404 ()
+2supertuxkart.html:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+supertuxkart.html:22 Irrlicht Engine version 1.8.0
+supertuxkart.html:22 SDL Version 1.3.0
+supertuxkart.html:22 [info   ] FileManager: Data files will be fetched from: ''
+supertuxkart.html:22 [info   ] FileManager: User directory is '/home/web_user/.supertuxkart/'.
+supertuxkart.html:22 [info   ] FileManager: Addons files will be stored in '/home/web_user/.local/share/supertuxkart/addons/'.
+supertuxkart.html:22 [info   ] FileManager: Screenshots will be stored in '/home/web_user/.cache/supertuxkart/screenshots/'.
+supertuxkart.html:22 [debug  ] translation: Env var LANGUAGE = 'ja.UTF-8'.
+supertuxkart.html:22 [debug  ] translation: Language 'Japanese'.
+supertuxkart.html:22 All modes available.
+supertuxkart.html:22 
+supertuxkart.html:22 All modes available.
+supertuxkart.html:22 
+supertuxkart.html:22 [warn   ] irr_driver: The window size specified in user config is larger than your screen!
+supertuxkart.html:22 SDL_Quit called (and ignored)
+supertuxkart.html:23 WARNING: using emscripten GL immediate mode emulation. This is very limited in what it supports
+printErr @ supertuxkart.html:23
+supertuxkart.html:22 [IrrDriver Temp Logger] Level 2: OpenGL driver version is not 1.2 or better.
+supertuxkart.js:20080 WebGL: INVALID_ENUM: getParameter: invalid parameter name
+emscriptenWebGLGet @ supertuxkart.js:20080
+supertuxkart.js:20080 WebGL: INVALID_ENUM: getParameter: invalid parameter name
+emscriptenWebGLGet @ supertuxkart.js:20080
+supertuxkart.js:20080 WebGL: INVALID_ENUM: getParameter: invalid parameter name
+emscriptenWebGLGet @ supertuxkart.js:20080
+supertuxkart.js:20080 WebGL: INVALID_ENUM: getParameter: invalid parameter name
+emscriptenWebGLGet @ supertuxkart.js:20080
+supertuxkart.js:20317 WebGL: INVALID_ENUM: hint: invalid target
+_glHint @ supertuxkart.js:20317
+supertuxkart.js:20317 WebGL: INVALID_ENUM: hint: invalid target
+_glHint @ supertuxkart.js:20317
+supertuxkart.js:20317 WebGL: INVALID_ENUM: hint: invalid target
+_glHint @ supertuxkart.js:20317
+supertuxkart.js:10872 Uncaught glMaterialfv: TODO: 5632

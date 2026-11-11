@@ -17,6 +17,31 @@
   <div id="audio-hint">クリックまたはキー入力でゲームを開始し、音声を有効にしてください</div>
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <script>
+    (function() {
+      var prototype = window.WebGLRenderingContext &&
+        window.WebGLRenderingContext.prototype;
+      if (!prototype)
+        return;
+
+      var compileShader = prototype.compileShader;
+      prototype.compileShader = function(shader) {
+        compileShader.call(this, shader);
+        if (!this.getShaderParameter(shader, this.COMPILE_STATUS)) {
+          console.error("WebGL shader compilation failed:",
+            this.getShaderInfoLog(shader), this.getShaderSource(shader));
+        }
+      };
+
+      var linkProgram = prototype.linkProgram;
+      prototype.linkProgram = function(program) {
+        linkProgram.call(this, program);
+        if (!this.getProgramParameter(program, this.LINK_STATUS)) {
+          console.error("WebGL shader program linking failed:",
+            this.getProgramInfoLog(program));
+        }
+      };
+    })();
+
     var statusElement = document.getElementById("status");
     var audioHint = document.getElementById("audio-hint");
     var Module = {

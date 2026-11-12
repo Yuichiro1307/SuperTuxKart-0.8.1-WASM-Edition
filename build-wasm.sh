@@ -51,6 +51,19 @@ for old, new in regex_replacements:
     if js.count(old) != 1:
         raise SystemExit(f"Expected one Emscripten GL texture scanner: {old}")
     js = js.replace(old, new)
+old = '''    default:
+     err("WARNING: Unhandled `pname` in call to `glTexEnvf`.");
+    }
+   },
+   hook_texEnvi: function'''
+new = '''    default:
+     GLImmediate.TexEnvJIT.hook_texEnvi(target, pname, param);
+    }
+   },
+   hook_texEnvi: function'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one Emscripten glTexEnvf fallback")
+js = js.replace(old, new)
 js_path.write_text(js, encoding="utf-8")
 
 html = html_path.read_text(encoding="utf-8")

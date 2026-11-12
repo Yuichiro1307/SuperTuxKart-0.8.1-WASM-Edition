@@ -655,14 +655,18 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 		MaxMultipleRenderTargets = static_cast<u8>(num);
 	}
 #endif
-	glGetFloatv(GL_ALIASED_LINE_WIDTH_RANGE, DimAliasedLine);
-	glGetFloatv(GL_ALIASED_POINT_SIZE_RANGE, DimAliasedPoint);
 #ifdef __EMSCRIPTEN__
+	DimAliasedLine[0] = 1.f;
+	DimAliasedLine[1] = 1.f;
+	DimAliasedPoint[0] = 1.f;
+	DimAliasedPoint[1] = 1.f;
 	DimSmoothedLine[0] = DimAliasedLine[0];
 	DimSmoothedLine[1] = DimAliasedLine[1];
 	DimSmoothedPoint[0] = DimAliasedPoint[0];
 	DimSmoothedPoint[1] = DimAliasedPoint[1];
 #else
+	glGetFloatv(GL_ALIASED_LINE_WIDTH_RANGE, DimAliasedLine);
+	glGetFloatv(GL_ALIASED_POINT_SIZE_RANGE, DimAliasedPoint);
 	glGetFloatv(GL_SMOOTH_LINE_WIDTH_RANGE, DimSmoothedLine);
 	glGetFloatv(GL_SMOOTH_POINT_SIZE_RANGE, DimSmoothedPoint);
 #endif

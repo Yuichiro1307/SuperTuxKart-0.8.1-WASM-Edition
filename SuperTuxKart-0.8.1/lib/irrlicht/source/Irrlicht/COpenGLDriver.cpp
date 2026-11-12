@@ -599,6 +599,9 @@ COpenGLDriver::COpenGLDriver(const SIrrlichtCreationParameters& params,
 	CurrentTarget(ERT_FRAME_BUFFER), Params(params),
 	SDLDevice(device), DeviceType(EIDT_SDL)
 {
+#ifdef __EMSCRIPTEN__
+	ColorFormat = ECF_A8R8G8B8;
+#endif
 	#ifdef _DEBUG
 	setDebugName("COpenGLDriver");
 	#endif
@@ -2883,8 +2886,9 @@ void COpenGLDriver::setBasicRenderStates(const SMaterial& material, const SMater
 
 #ifdef GL_EXT_texture_filter_anisotropic
 		if (FeatureAvailable[IRR_EXT_texture_filter_anisotropic])
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT,
-			material.TextureLayer[i].AnisotropicFilter>1 ? core::min_(MaxAnisotropy, material.TextureLayer[i].AnisotropicFilter) : 1);
+			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT,
+			static_cast<GLfloat>(material.TextureLayer[i].AnisotropicFilter>1 ?
+				core::min_(MaxAnisotropy, material.TextureLayer[i].AnisotropicFilter) : 1));
 #endif
 	}
 
@@ -2895,10 +2899,12 @@ void COpenGLDriver::setBasicRenderStates(const SMaterial& material, const SMater
 	// shademode
 	if (resetAllRenderStates || (lastmaterial.GouraudShading != material.GouraudShading))
 	{
+#ifndef __EMSCRIPTEN__
 		if (material.GouraudShading)
 			glShadeModel(GL_SMOOTH);
 		else
 			glShadeModel(GL_FLAT);
+#endif
 	}
 
 	// lighting

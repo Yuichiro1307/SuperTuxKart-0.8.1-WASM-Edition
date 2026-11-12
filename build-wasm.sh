@@ -110,6 +110,133 @@ new = '''     if (this.normalMatrixLocation) {
 if js.count(old) != 1:
     raise SystemExit("Expected one normal matrix upload condition")
 js = js.replace(old, new)
+old = '''    if (GLImmediate.enabledClientAttributes[GLImmediate.COLOR]) {
+     var colorAttr = clientAttributes[GLImmediate.COLOR];'''
+new = '''    if (this.colorLocation >= 0 && GLImmediate.enabledClientAttributes[GLImmediate.COLOR]) {
+     var colorAttr = clientAttributes[GLImmediate.COLOR];'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLImmediate client-color attribute setup")
+js = js.replace(old, new)
+old = ''' flush: function flush(numProvidedIndexes, startIndex, ptr) {
+  startIndex = startIndex || 0;
+  ptr = ptr || 0;'''
+new = ''' flush: function flush(numProvidedIndexes, startIndex, ptr, indexType) {
+  startIndex = startIndex || 0;
+  ptr = ptr || 0;
+  indexType = indexType || GLctx.UNSIGNED_SHORT;'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLImmediate flush function")
+js = js.replace(old, new)
+old = '''   if (!GLctx.currentArrayBufferBinding && GLImmediate.firstVertex > GLImmediate.lastVertex) {
+    for (var i = 0; i < numProvidedIndexes; i++) {
+     var currIndex = HEAPU16[ptr + i * 2 >> 1];
+     GLImmediate.firstVertex = Math.min(GLImmediate.firstVertex, currIndex);
+     GLImmediate.lastVertex = Math.max(GLImmediate.lastVertex, currIndex + 1);
+    }
+   }
+   if (!GLctx.currentElementArrayBufferBinding) {
+    var indexBuffer = GL.getTempIndexBuffer(numProvidedIndexes << 1);
+    GLctx.bindBuffer(GLctx.ELEMENT_ARRAY_BUFFER, indexBuffer);
+    GLctx.bufferSubData(GLctx.ELEMENT_ARRAY_BUFFER, 0, HEAPU16.subarray(ptr >> 1, ptr + (numProvidedIndexes << 1) >> 1));
+    ptr = 0;
+    emulatedElementArrayBuffer = true;
+   }'''
+new = '''   var indexView;
+   var indexBytes;
+   if (indexType == GLctx.UNSIGNED_BYTE) {
+    indexView = HEAPU8;
+    indexBytes = 1;
+   } else if (indexType == GLctx.UNSIGNED_INT) {
+    indexView = HEAPU32;
+    indexBytes = 4;
+   } else {
+    indexView = HEAPU16;
+    indexBytes = 2;
+   }
+   if (!GLctx.currentArrayBufferBinding && GLImmediate.firstVertex > GLImmediate.lastVertex) {
+    for (var i = 0; i < numProvidedIndexes; i++) {
+     var currIndex = indexView[ptr / indexBytes + i];
+     GLImmediate.firstVertex = Math.min(GLImmediate.firstVertex, currIndex);
+     GLImmediate.lastVertex = Math.max(GLImmediate.lastVertex, currIndex + 1);
+    }
+   }
+   if (!GLctx.currentElementArrayBufferBinding) {
+    var indexBuffer = GL.getTempIndexBuffer(numProvidedIndexes * indexBytes);
+    GLctx.bindBuffer(GLctx.ELEMENT_ARRAY_BUFFER, indexBuffer);
+    GLctx.bufferSubData(GLctx.ELEMENT_ARRAY_BUFFER, 0, indexView.subarray(ptr / indexBytes, ptr / indexBytes + numProvidedIndexes));
+    ptr = 0;
+    emulatedElementArrayBuffer = true;
+   }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLImmediate client index-buffer path")
+js = js.replace(old, new)
+old = '''   GLctx.drawElements(GLImmediate.mode, numIndexes, GLctx.UNSIGNED_SHORT, ptr);'''
+new = '''   GLctx.drawElements(GLImmediate.mode, numIndexes, indexType, ptr);'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLImmediate indexed draw call")
+js = js.replace(old, new)
+old = '''function _emscripten_glDrawElements(mode, count, type, indices, start, end) {
+ if (GLImmediate.totalEnabledClientAttributes == 0 && mode <= 6 && GLctx.currentElementArrayBufferBinding) {
+  GLctx.drawElements(mode, count, type, indices);
+  return;
+ }
+ GLImmediate.prepareClientAttributes(count, false);
+ GLImmediate.mode = mode;
+ if (!GLctx.currentArrayBufferBinding) {
+  GLImmediate.firstVertex = end ? start : HEAP8.length;
+  GLImmediate.lastVertex = end ? end + 1 : 0;
+  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, end ? GLImmediate.vertexPointer + (end + 1) * GLImmediate.stride >> 2 : undefined);
+ }
+ GLImmediate.flush(count, 0, indices);
+ GLImmediate.mode = -1;
+}'''
+new = '''function _emscripten_glDrawElements(mode, count, type, indices, start, end) {
+ if (GLImmediate.totalEnabledClientAttributes == 0 && mode <= 6 && GLctx.currentElementArrayBufferBinding) {
+  GLctx.drawElements(mode, count, type, indices);
+  return;
+ }
+ var vertexCount = count;
+ if (!GLctx.currentArrayBufferBinding) {
+  if (end !== undefined && end !== null) {
+   GLImmediate.firstVertex = start;
+   GLImmediate.lastVertex = end + 1;
+  } else {
+   var indexView;
+   var indexBytes;
+   if (type == GLctx.UNSIGNED_BYTE) {
+    indexView = HEAPU8;
+    indexBytes = 1;
+   } else if (type == GLctx.UNSIGNED_INT) {
+    indexView = HEAPU32;
+    indexBytes = 4;
+   } else {
+    indexView = HEAPU16;
+    indexBytes = 2;
+   }
+   var first = HEAP8.length;
+   var last = 0;
+   for (var i = 0; i < count; i++) {
+    var index = indexView[indices / indexBytes + i];
+    first = Math.min(first, index);
+    last = Math.max(last, index + 1);
+   }
+   GLImmediate.firstVertex = first;
+   GLImmediate.lastVertex = last;
+  }
+  vertexCount = GLImmediate.lastVertex;
+ }
+ if (!count) return;
+ GLImmediate.prepareClientAttributes(vertexCount, false);
+ GLImmediate.mode = mode;
+ if (!GLctx.currentArrayBufferBinding) {
+  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, GLImmediate.vertexPointer + GLImmediate.lastVertex * GLImmediate.stride >> 2);
+ }
+ GLImmediate.flush(count, 0, indices, type);
+ GLImmediate.mode = -1;
+}'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one Emscripten glDrawElements wrapper")
+js = js.replace(old, new)
 old = '''   return fcn.apply(navigator);
   } else {
    return [];

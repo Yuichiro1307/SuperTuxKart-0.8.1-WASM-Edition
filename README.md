@@ -1,3 +1,4 @@
+## This project is currently under development and may contain bugs or issues. If you have any solutions, please feel free to share them—for example, by submitting a pull request.
 # SuperTuxKart 0.8.1 WebAssembly Edition
 
 The game is built with Emscripten. The browser build disables CURL and WiiUse,

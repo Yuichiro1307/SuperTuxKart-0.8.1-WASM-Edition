@@ -64,6 +64,36 @@ new = '''    default:
 if js.count(old) != 1:
     raise SystemExit("Expected one Emscripten glTexEnvf fallback")
 js = js.replace(old, new)
+old = '''function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
+}'''
+new = '''function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ var key = internalFormat + "/" + format + "/" + type;
+ if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
+ if (!Module["stkTexImageFormatLog"][key]) {
+  Module["stkTexImageFormatLog"][key] = true;
+  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\\\n" + (new Error()).stack);
+ }
+ GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
+}'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one Emscripten glTexImage2D wrapper")
+js = js.replace(old, new)
+old = '''function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
+}'''
+new = '''function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ var key = internalFormat + "/" + format + "/" + type;
+ if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
+ if (!Module["stkTexImageFormatLog"][key]) {
+  Module["stkTexImageFormatLog"][key] = true;
+  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\\\n" + (new Error()).stack);
+ }
+ GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
+}'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GL texImage2D wrapper")
+js = js.replace(old, new)
 js_path.write_text(js, encoding="utf-8")
 
 html = html_path.read_text(encoding="utf-8")

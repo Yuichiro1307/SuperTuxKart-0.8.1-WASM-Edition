@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "52edbaa2-0b81-45b4-9576-42f71c150c3a"
+  "package_uuid": "713b837e-b399-4fd0-9a59-b762f1c8aa1c"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "7fde8041-8e8c-4f29-999e-543e67f85e73"
+  "package_uuid": "9cc8090a-9d81-44f9-a736-f481ee54b206"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "866068ab-275f-41f7-a2dc-c9c24907922c"
+  "package_uuid": "dc284f92-e7d3-403d-be90-47d9fd604511"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "8818b634-07b0-42d1-b622-f05584642630"
+  "package_uuid": "5c15df7a-0d8f-43e5-81e0-31e1cede1fb4"
  });
 })();
 
@@ -25832,6 +25832,12 @@ function _emscripten_glTexImage1D() {
 }
 
 function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ var key = internalFormat + "/" + format + "/" + type;
+ if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
+ if (!Module["stkTexImageFormatLog"][key]) {
+  Module["stkTexImageFormatLog"][key] = true;
+  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\n" + (new Error()).stack);
+ }
  GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
 }
 
@@ -26881,6 +26887,12 @@ function _glTexGeni() {
 }
 
 function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
+ var key = internalFormat + "/" + format + "/" + type;
+ if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
+ if (!Module["stkTexImageFormatLog"][key]) {
+  Module["stkTexImageFormatLog"][key] = true;
+  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\n" + (new Error()).stack);
+ }
  GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
 }
 

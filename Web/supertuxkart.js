@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "713b837e-b399-4fd0-9a59-b762f1c8aa1c"
+  "package_uuid": "0fb36e73-ff26-4078-9878-d35aafed94c7"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "9cc8090a-9d81-44f9-a736-f481ee54b206"
+  "package_uuid": "78bc34b4-9188-471a-a32e-9c7a7cdb8058"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "dc284f92-e7d3-403d-be90-47d9fd604511"
+  "package_uuid": "dbda4670-3246-4be9-9e02-2ea009eefd87"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "5c15df7a-0d8f-43e5-81e0-31e1cede1fb4"
+  "package_uuid": "91fe9396-23dd-41c9-bb6c-2b050d2aaea5"
  });
 })();
 
@@ -25832,12 +25832,6 @@ function _emscripten_glTexImage1D() {
 }
 
 function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- var key = internalFormat + "/" + format + "/" + type;
- if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
- if (!Module["stkTexImageFormatLog"][key]) {
-  Module["stkTexImageFormatLog"][key] = true;
-  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\n" + (new Error()).stack);
- }
  GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
 }
 
@@ -26887,12 +26881,6 @@ function _glTexGeni() {
 }
 
 function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- var key = internalFormat + "/" + format + "/" + type;
- if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
- if (!Module["stkTexImageFormatLog"][key]) {
-  Module["stkTexImageFormatLog"][key] = true;
-  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\n" + (new Error()).stack);
- }
  GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
 }
 
@@ -27417,7 +27405,7 @@ var asmLibraryArg = {
  "fi": _SDL_Quit,
  "ei": _SDL_SetAlpha,
  "di": _SDL_SetColorKey,
- "oa": _SDL_SetVideoMode,
+ "na": _SDL_SetVideoMode,
  "ci": _SDL_ShowCursor,
  "Ub": _SDL_UpperBlit,
  "bi": _SDL_WM_IconifyWindow,
@@ -27468,7 +27456,7 @@ var asmLibraryArg = {
  "Dh": _alIsBuffer,
  "Ch": _alListener3f,
  "Bh": _alListenerfv,
- "na": _alSource3f,
+ "ma": _alSource3f,
  "Ah": _alSourcePause,
  "Ia": _alSourcePlay,
  "Ib": _alSourceQueueBuffers,
@@ -27757,7 +27745,7 @@ var asmLibraryArg = {
  "bb": _glColorMask,
  "U": _glColorPointer,
  "Jc": _glCopyTexSubImage2D,
- "ma": _glCullFace,
+ "la": _glCullFace,
  "ha": _glDeleteTextures,
  "fa": _glDepthFunc,
  "ga": _glDepthMask,
@@ -27807,7 +27795,7 @@ var asmLibraryArg = {
  "_a": _glTexEnvf,
  "s": _glTexEnvi,
  "ra": _glTexGeni,
- "la": _glTexImage2D,
+ "qa": _glTexImage2D,
  "Ea": _glTexParameterf,
  "O": _glTexParameteri,
  "yc": _glTexSubImage2D,
@@ -27870,10 +27858,10 @@ var asmLibraryArg = {
  "F": invoke_vif,
  "ib": invoke_viff,
  "hb": invoke_vifffif,
- "qa": invoke_vifiiffiii,
+ "pa": invoke_vifiiffiii,
  "gb": invoke_vifiii,
  "c": invoke_vii,
- "pa": invoke_viif,
+ "oa": invoke_viif,
  "ic": invoke_viiff,
  "fb": invoke_viiffi,
  "hc": invoke_viifi,

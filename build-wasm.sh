@@ -25,6 +25,11 @@ emcmake cmake \
   -DUSE_WIIUSE=OFF \
   -DUSE_FRIBIDI=OFF
 
+# CMake artifacts are checked in, so refresh Irrlicht's WebGL-specific objects.
+touch \
+  "$ROOT/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/COpenGLDriver.cpp" \
+  "$ROOT/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/COpenGLExtensionHandler.cpp" \
+  "$ROOT/SuperTuxKart-0.8.1/lib/irrlicht/source/Irrlicht/COpenGLTexture.cpp"
 cmake --build "$ROOT/CMake" --parallel "${JOBS:-1}"
 
 BUILD_ID="${STK_BUILD_ID:-$(git -C "$ROOT" rev-parse --short HEAD)-$(date -u +%Y%m%d%H%M%S)}"
@@ -63,36 +68,6 @@ new = '''    default:
    hook_texEnvi: function'''
 if js.count(old) != 1:
     raise SystemExit("Expected one Emscripten glTexEnvf fallback")
-js = js.replace(old, new)
-old = '''function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
-}'''
-new = '''function _emscripten_glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- var key = internalFormat + "/" + format + "/" + type;
- if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
- if (!Module["stkTexImageFormatLog"][key]) {
-  Module["stkTexImageFormatLog"][key] = true;
-  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\\\n" + (new Error()).stack);
- }
- GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
-}'''
-if js.count(old) != 1:
-    raise SystemExit("Expected one Emscripten glTexImage2D wrapper")
-js = js.replace(old, new)
-old = '''function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
-}'''
-new = '''function _glTexImage2D(target, level, internalFormat, width, height, border, format, type, pixels) {
- var key = internalFormat + "/" + format + "/" + type;
- if (!Module["stkTexImageFormatLog"]) Module["stkTexImageFormatLog"] = {};
- if (!Module["stkTexImageFormatLog"][key]) {
-  Module["stkTexImageFormatLog"][key] = true;
-  err("STK texImage2D args: internalFormat=" + internalFormat + ", format=" + format + ", type=" + type + ", size=" + width + "x" + height + "\\\\n" + (new Error()).stack);
- }
- GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels ? emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat) : null);
-}'''
-if js.count(old) != 1:
-    raise SystemExit("Expected one GL texImage2D wrapper")
 js = js.replace(old, new)
 js_path.write_text(js, encoding="utf-8")
 

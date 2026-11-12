@@ -28,12 +28,31 @@ emcmake cmake \
 cmake --build "$ROOT/CMake" --parallel "${JOBS:-1}"
 
 BUILD_ID="${STK_BUILD_ID:-$(git -C "$ROOT" rev-parse --short HEAD)-$(date -u +%Y%m%d%H%M%S)}"
-python3 - "$ROOT/Web/supertuxkart.html" "$BUILD_ID" <<'PY'
+python3 - "$ROOT/Web/supertuxkart.js" "$ROOT/Web/supertuxkart.html" "$BUILD_ID" <<'PY'
 from pathlib import Path
 import sys
 
-html_path = Path(sys.argv[1])
-build_id = sys.argv[2]
+js_path = Path(sys.argv[1])
+html_path = Path(sys.argv[2])
+build_id = sys.argv[3]
+
+js = js_path.read_text(encoding="utf-8")
+regex_replacements = (
+    (
+        r"var texLoadRegex = /(texture.*?\(.*?\))/g;",
+        r"var texLoadRegex = /(texture.*?\((?:[^()]|\([^()]*\))*\))/g;",
+    ),
+    (
+        r"texLoadRegex = /(texture.*\(.*\))/g;",
+        r"texLoadRegex = /(texture.*?\((?:[^()]|\([^()]*\))*\))/g;",
+    ),
+)
+for old, new in regex_replacements:
+    if js.count(old) != 1:
+        raise SystemExit(f"Expected one Emscripten GL texture scanner: {old}")
+    js = js.replace(old, new)
+js_path.write_text(js, encoding="utf-8")
+
 html = html_path.read_text(encoding="utf-8")
 script_tag = '<script async type="text/javascript" src="supertuxkart.js"></script>'
 if "__STK_BUILD_ID__" not in html or script_tag not in html:

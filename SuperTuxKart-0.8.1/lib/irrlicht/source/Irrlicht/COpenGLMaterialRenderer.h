@@ -84,13 +84,13 @@ public:
 			glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
 			glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_TEXTURE);
 			glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_PREVIOUS_ARB);
-			glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, (f32) modulate );
+			glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, modulate);
 #else
 			glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_COMBINE_EXT);
 			glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_EXT, GL_MODULATE);
 			glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_EXT, GL_TEXTURE);
 			glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_EXT, GL_PREVIOUS_EXT);
-			glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, (f32) modulate );
+			glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, modulate);
 #endif
 
 			glBlendFunc(Driver->getGLBlend(srcFact), Driver->getGLBlend(dstFact));
@@ -141,11 +141,11 @@ public:
 		glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 #ifdef GL_ARB_texture_env_combine
 		glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_ALPHA_ARB, GL_MODULATE);
-		glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1.f );
+		glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
 		glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_PREVIOUS_ARB);
 #else
 		glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_ALPHA_EXT, GL_MODULATE);
-		glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1.f );
+		glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1);
 		glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_EXT, GL_PREVIOUS_EXT);
 #endif
 
@@ -481,24 +481,24 @@ public:
 					case EMT_LIGHTMAP_M4:
 					case EMT_LIGHTMAP_LIGHTING_M4:
 #ifdef GL_ARB_texture_env_combine
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 4.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 4);
 #else
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 4.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 4);
 #endif
 						break;
 					case EMT_LIGHTMAP_M2:
 					case EMT_LIGHTMAP_LIGHTING_M2:
 #ifdef GL_ARB_texture_env_combine
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 2.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 2);
 #else
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 2.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 2);
 #endif
 						break;
 					default:
 #ifdef GL_ARB_texture_env_combine
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
 #else
-						glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1.0f);
+						glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1);
 #endif
 				}
 				Driver->extGlActiveTexture(GL_TEXTURE0_ARB);
@@ -512,9 +512,9 @@ public:
 		{
 			Driver->extGlActiveTexture(GL_TEXTURE1_ARB);
 #ifdef GL_ARB_texture_env_combine
-			glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1.f );
+			glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
 #else
-			glTexEnvf(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1.f );
+			glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_EXT, 1);
 #endif
 			glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 			Driver->extGlActiveTexture(GL_TEXTURE0_ARB);

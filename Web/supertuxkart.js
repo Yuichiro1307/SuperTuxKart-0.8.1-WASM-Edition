@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "da10b6f9-7057-44dc-a091-7d6f41519067"
+  "package_uuid": "052ec371-7d8f-43e9-9bec-195c6f65f91c"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "b5b03ee2-0916-493f-93d4-0443234b5b16"
+  "package_uuid": "c29ca330-842d-4fb5-b3af-7ed3dad8abcf"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "0243f2e8-4f64-4e43-8119-1af8a4b6c9a1"
+  "package_uuid": "8abd0d66-5a49-433a-bc7e-8fa842026ccc"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "86fbdb19-697c-45f9-aca0-a576a51d232e"
+  "package_uuid": "511bb382-0d4a-40cf-ae7d-44f17eacff51"
  });
 })();
 
@@ -21785,7 +21785,7 @@ var GLImmediate = {
    }
    var lines = this.env.genPassLines(passOutputVar, passInputVar, texUnitID).join("\n");
    var texLoadLines = "";
-   var texLoadRegex = /(texture.*?\(.*?\))/g;
+   var texLoadRegex = /(texture.*?\((?:[^()]|\([^()]*\))*\))/g;
    var loadCounter = 0;
    var load;
    while (load = texLoadRegex.exec(lines)) {
@@ -21797,7 +21797,7 @@ var GLImmediate = {
      var texLoadLine = "vec4 " + texLoadVar + " = " + texLoadExpr + ";\n";
      texLoadLines += texLoadLine + "\n";
      lines = lines.split(texLoadExpr).join(texLoadVar);
-     texLoadRegex = /(texture.*\(.*\))/g;
+     texLoadRegex = /(texture.*?\((?:[^()]|\([^()]*\))*\))/g;
     }
    }
    return [ texLoadLines + lines ];

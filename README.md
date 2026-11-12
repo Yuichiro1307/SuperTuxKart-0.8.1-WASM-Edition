@@ -11,6 +11,8 @@ IDBFS.
 The browser renderer uses WebGL 1 with Emscripten's legacy OpenGL emulation.
 Because browsers restrict autoplay, click or press a key after the game loads
 to enable audio.
+The build also corrects Emscripten's legacy shader scanner for nested texture
+matrix expressions used by Irrlicht.
 
 ## For those who don’t know where to start
 started

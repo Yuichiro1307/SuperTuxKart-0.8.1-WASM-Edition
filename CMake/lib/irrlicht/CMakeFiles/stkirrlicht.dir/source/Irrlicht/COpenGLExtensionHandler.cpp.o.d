@@ -97,4 +97,5 @@ lib/irrlicht/CMakeFiles/stkirrlicht.dir/source/Irrlicht/COpenGLExtensionHandler.
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/EMaterialTypes.h \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/EMaterialFlags.h \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/SMaterialLayer.h \
-  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/fast_atof.h
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/fast_atof.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstring

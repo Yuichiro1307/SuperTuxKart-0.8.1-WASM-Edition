@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "59b03348-ae05-41f1-aef6-69d166e694b5"
+  "package_uuid": "fd9f299d-28af-4b55-8826-01918d8be33f"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "20577324-b10f-4b08-813d-6aafcdf6babf"
+  "package_uuid": "5bb11d12-9c47-44eb-b88c-22c1c7a6a76c"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "a7150420-0d06-450b-9782-8857a2ff7f83"
+  "package_uuid": "b3f64fe8-5e57-46ac-b252-43aa7c99df5b"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "443dec7b-c25f-4dd2-b06f-85c56299929b"
+  "package_uuid": "9a9b4000-415e-4969-bd7a-ee4433543b31"
  });
 })();
 
@@ -27455,7 +27455,7 @@ var asmLibraryArg = {
  "Gb": _alSourceStop,
  "Fb": _alSourceUnqueueBuffers,
  "S": _alSourcef,
- "wa": _alSourcei,
+ "va": _alSourcei,
  "yh": _alcCloseDevice,
  "xh": _alcCreateContext,
  "wh": _alcDestroyContext,
@@ -27728,7 +27728,7 @@ var asmLibraryArg = {
  "$": _glBegin,
  "bb": _glBindTexture,
  "ca": _glBlendFunc,
- "va": _glClear,
+ "ua": _glClear,
  "Ra": _glClearColor,
  "Kc": _glClearDepth,
  "Cb": _glClipPlane,
@@ -27758,14 +27758,14 @@ var asmLibraryArg = {
  "Y": _glGetError,
  "Fc": _glGetFloatv,
  "da": _glGetIntegerv,
- "ua": _glGetString,
+ "ta": _glGetString,
  "Ec": _glIsEnabled,
  "Dc": _glLightModelfv,
- "ta": _glLightfv,
+ "Fa": _glLightfv,
  "Cc": _glLineWidth,
  "Ma": _glLoadIdentity,
  "sa": _glLoadMatrixf,
- "Fa": _glMaterialfv,
+ "Ea": _glMaterialfv,
  "ba": _glMatrixMode,
  "Bc": _glMultMatrixf,
  "ra": _glNormalPointer,
@@ -27781,13 +27781,13 @@ var asmLibraryArg = {
  "zc": _glShadeModel,
  "tb": _glStencilFunc,
  "yc": _glStencilMask,
- "Ea": _glStencilOp,
+ "Da": _glStencilOp,
  "P": _glTexCoord2f,
  "I": _glTexCoordPointer,
  "Za": _glTexEnvf,
  "s": _glTexEnvi,
  "qa": _glTexImage2D,
- "Da": _glTexParameterf,
+ "Ca": _glTexParameterf,
  "O": _glTexParameteri,
  "xc": _glTexSubImage2D,
  "wc": _glTranslatef,
@@ -27795,14 +27795,14 @@ var asmLibraryArg = {
  "vc": _glVertex2i,
  "ka": _glVertex3f,
  "W": _glVertexPointer,
- "Ca": _glViewport,
+ "Ba": _glViewport,
  "uc": invoke_dii,
  "sb": invoke_diii,
  "E": invoke_fi,
  "rb": invoke_fif,
  "tc": invoke_fiff,
  "qb": invoke_fii,
- "Ba": invoke_fiii,
+ "Aa": invoke_fiii,
  "sc": invoke_fiiifii,
  "rc": invoke_fiiiiiff,
  "Ya": invoke_fiiiiiiiiii,
@@ -27810,8 +27810,8 @@ var asmLibraryArg = {
  "q": invoke_i,
  "d": invoke_ii,
  "pb": invoke_iid,
- "Aa": invoke_iif,
- "za": invoke_iiff,
+ "za": invoke_iif,
+ "ya": invoke_iiff,
  "ob": invoke_iiffi,
  "nb": invoke_iifi,
  "mb": invoke_iifiii,
@@ -27830,7 +27830,7 @@ var asmLibraryArg = {
  "lc": invoke_iiiiid,
  "kc": invoke_iiiiiff,
  "jc": invoke_iiiiifffi,
- "ya": invoke_iiiiifi,
+ "xa": invoke_iiiiifi,
  "k": invoke_iiiiii,
  "Ka": invoke_iiiiiiff,
  "y": invoke_iiiiiii,
@@ -27878,7 +27878,7 @@ var asmLibraryArg = {
  "o": _setTempRet0,
  "Yb": _strftime,
  "Xb": _strftime_l,
- "xa": _time
+ "wa": _time
 };
 
 var asm = createWasm();

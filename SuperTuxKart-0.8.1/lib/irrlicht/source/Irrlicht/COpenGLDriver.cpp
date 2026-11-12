@@ -3432,11 +3432,13 @@ void COpenGLDriver::assignHardwareLight(u32 lightIndex)
 	switch (light.Type)
 	{
 	case video::ELT_SPOT:
+#ifndef __EMSCRIPTEN__
 		data[0] = light.Direction.X;
 		data[1] = light.Direction.Y;
 		data[2] = light.Direction.Z;
 		data[3] = 0.0f;
 		glLightfv(lidx, GL_SPOT_DIRECTION, data);
+#endif
 
 		// set position
 		data[0] = light.Position.X;

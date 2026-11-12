@@ -14,7 +14,7 @@
 </head>
 <body>
   <div id="status">Loading game and assets…</div>
-  <div id="audio-hint">クリックまたはキー入力でゲームを開始し、音声を有効にしてください</div>
+  <div id="audio-hint">Press a key or touch the screen to enable audio</div>
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <script>
     (function() {
@@ -46,6 +46,9 @@
     var audioHint = document.getElementById("audio-hint");
     var Module = {
       canvas: document.getElementById("canvas"),
+      locateFile: function(path, prefix) {
+        return prefix + path + "?v=__STK_BUILD_ID__";
+      },
       setStatus: function(message) { statusElement.textContent = message; },
       print: function(text) { console.log(text); },
       printErr: function(text) { console.error(text); },

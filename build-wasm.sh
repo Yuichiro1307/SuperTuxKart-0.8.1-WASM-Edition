@@ -26,3 +26,22 @@ emcmake cmake \
   -DUSE_FRIBIDI=OFF
 
 cmake --build "$ROOT/CMake" --parallel "${JOBS:-1}"
+
+BUILD_ID="${STK_BUILD_ID:-$(git -C "$ROOT" rev-parse --short HEAD)-$(date -u +%Y%m%d%H%M%S)}"
+python3 - "$ROOT/Web/supertuxkart.html" "$BUILD_ID" <<'PY'
+from pathlib import Path
+import sys
+
+html_path = Path(sys.argv[1])
+build_id = sys.argv[2]
+html = html_path.read_text(encoding="utf-8")
+script_tag = '<script async type="text/javascript" src="supertuxkart.js"></script>'
+if "__STK_BUILD_ID__" not in html or script_tag not in html:
+    raise SystemExit("Generated HTML is missing expected build cache-busting markers")
+
+html = html.replace("__STK_BUILD_ID__", build_id)
+html = html.replace(
+    script_tag,
+    f'<script async type="text/javascript" src="supertuxkart.js?v={build_id}"></script>')
+html_path.write_text(html, encoding="utf-8")
+PY

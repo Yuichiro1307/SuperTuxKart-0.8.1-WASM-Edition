@@ -14,7 +14,7 @@
 </head>
 <body>
   <div id="status">Loading game and assets…</div>
-  <div id="audio-hint">クリックまたはキー入力でゲームを開始し、音声を有効にしてください</div>
+  <div id="audio-hint">Press a key or touch the screen to enable audio</div>
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <script>
     (function() {
@@ -46,6 +46,9 @@
     var audioHint = document.getElementById("audio-hint");
     var Module = {
       canvas: document.getElementById("canvas"),
+      locateFile: function(path, prefix) {
+        return prefix + path + "?v=7c0b022-20261111140531";
+      },
       setStatus: function(message) { statusElement.textContent = message; },
       print: function(text) { console.log(text); },
       printErr: function(text) { console.error(text); },
@@ -57,7 +60,7 @@
       }, { once: true });
     });
   </script>
-  <script async type="text/javascript" src="supertuxkart.js"></script>
+  <script async type="text/javascript" src="supertuxkart.js?v=7c0b022-20261111140531"></script>
 </body>
 </html>
 

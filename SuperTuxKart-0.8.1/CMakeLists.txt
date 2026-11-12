@@ -272,6 +272,8 @@ target_link_libraries(supertuxkart
     ${OPENGL_LIBRARIES})
 
 if(EMSCRIPTEN)
+    set_property(TARGET supertuxkart APPEND PROPERTY LINK_DEPENDS
+        "${PROJECT_SOURCE_DIR}/../Web/shell.html")
     set_target_properties(supertuxkart PROPERTIES
         SUFFIX ".html"
         LINK_FLAGS

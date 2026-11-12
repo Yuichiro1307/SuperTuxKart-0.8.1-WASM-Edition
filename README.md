@@ -57,3 +57,6 @@ click or key press first, depending on the browser's autoplay policy.
 The browser build starts with a 256 MiB WebAssembly memory and grows it as
 needed. Rendering is capped at 60 FPS (35 FPS in throttled menus) to avoid
 unnecessary browser work.
+
+Each build adds a unique query string to the JavaScript, WebAssembly, and asset
+bundle URLs so browsers do not reuse cached files from an earlier build.

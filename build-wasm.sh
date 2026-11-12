@@ -111,42 +111,34 @@ replace_once(
   keyView.next(GL.currProgram);''',
     "texture-generation renderer cache")
 replace_once(
-    '''    var vsTexCoordInits = "";
-    this.usedTexUnitList = GLImmediate.TexEnvJIT.getUsedTexUnitList();
-    for (var i = 0; i < this.usedTexUnitList.length; i++) {
-     var texUnit = this.usedTexUnitList[i];
-     texUnitAttribList += "attribute vec4 " + aTexCoordPrefix + texUnit + ";\\n";
-     texUnitVaryingList += "varying vec4 " + vTexCoordPrefix + texUnit + ";\\n";
-     texUnitUniformList += "uniform sampler2D " + uTexUnitPrefix + texUnit + ";\\n";
-     vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = " + aTexCoordPrefix + texUnit + ";\\n";''',
-    '''    var vsTexCoordInits = "";
-    var sphereMapUnits = [];
-    var hasSphereMap = false;
-    for (var i = 0; i < GLImmediate.MAX_TEXTURES; i++) {
-     sphereMapUnits[i] = !useCurrProgram && GLImmediate.textureGenS[i] && GLImmediate.textureGenT[i] &&
-      GLImmediate.textureGenModeS[i] == 9218 && GLImmediate.textureGenModeT[i] == 9218;
-     hasSphereMap = hasSphereMap || sphereMapUnits[i];
-    }
-    if (hasSphereMap && !GLImmediate.enabledClientAttributes[GLImmediate.NORMAL]) {
-     sphereMapUnits = [];
-     hasSphereMap = false;
-    }
-    this.usedTexUnitList = GLImmediate.TexEnvJIT.getUsedTexUnitList();
-    for (var i = 0; i < this.usedTexUnitList.length; i++) {
-     var texUnit = this.usedTexUnitList[i];
-     texUnitAttribList += "attribute vec4 " + aTexCoordPrefix + texUnit + ";\\n";
-     texUnitVaryingList += "varying vec4 " + vTexCoordPrefix + texUnit + ";\\n";
-     texUnitUniformList += "uniform sampler2D " + uTexUnitPrefix + texUnit + ";\\n";
-     if (sphereMapUnits[texUnit]) {
-      var suffix = texUnit;
-      vsTexCoordInits += "  vec3 sphereNormal" + suffix + " = normalize(u_normalMatrix * a_normal);\\n";
-      vsTexCoordInits += "  vec3 sphereEye" + suffix + " = normalize(ecPosition.xyz);\\n";
-      vsTexCoordInits += "  vec3 sphereReflection" + suffix + " = reflect(sphereEye" + suffix + ", sphereNormal" + suffix + ");\\n";
-      vsTexCoordInits += "  float sphereDenom" + suffix + " = max(2.0 * length(vec3(sphereReflection" + suffix + ".x, sphereReflection" + suffix + ".y, sphereReflection" + suffix + ".z + 1.0)), 0.000001);\\n";
-      vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = vec4(sphereReflection" + suffix + ".xy / sphereDenom" + suffix + " + vec2(0.5), 0.0, 1.0);\\n";
-     } else {
-      vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = " + aTexCoordPrefix + texUnit + ";\\n";
-     }''',
+    '''     var vsTexCoordInits = "";
+     this.usedTexUnitList = GLImmediate.TexEnvJIT.getUsedTexUnitList();''',
+    '''     var vsTexCoordInits = "";
+     var sphereMapUnits = [];
+     var hasSphereMap = false;
+     for (var i = 0; i < GLImmediate.MAX_TEXTURES; i++) {
+      sphereMapUnits[i] = !useCurrProgram && GLImmediate.textureGenS[i] && GLImmediate.textureGenT[i] &&
+       GLImmediate.textureGenModeS[i] == 9218 && GLImmediate.textureGenModeT[i] == 9218;
+      hasSphereMap = hasSphereMap || sphereMapUnits[i];
+     }
+     if (hasSphereMap && !GLImmediate.enabledClientAttributes[GLImmediate.NORMAL]) {
+      sphereMapUnits = [];
+      hasSphereMap = false;
+     }
+     this.usedTexUnitList = GLImmediate.TexEnvJIT.getUsedTexUnitList();''',
+    "sphere-map shader state")
+replace_once(
+    '''      vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = " + aTexCoordPrefix + texUnit + ";\\n";''',
+    '''      if (sphereMapUnits[texUnit]) {
+       var suffix = texUnit;
+       vsTexCoordInits += "  vec3 sphereNormal" + suffix + " = normalize(u_normalMatrix * a_normal);\\n";
+       vsTexCoordInits += "  vec3 sphereEye" + suffix + " = normalize(ecPosition.xyz);\\n";
+       vsTexCoordInits += "  vec3 sphereReflection" + suffix + " = reflect(sphereEye" + suffix + ", sphereNormal" + suffix + ");\\n";
+       vsTexCoordInits += "  float sphereDenom" + suffix + " = max(2.0 * length(vec3(sphereReflection" + suffix + ".x, sphereReflection" + suffix + ".y, sphereReflection" + suffix + ".z + 1.0)), 0.000001);\\n";
+       vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = vec4(sphereReflection" + suffix + ".xy / sphereDenom" + suffix + " + vec2(0.5), 0.0, 1.0);\\n";
+      } else {
+       vsTexCoordInits += "  " + vTexCoordPrefix + texUnit + " = " + aTexCoordPrefix + texUnit + ";\\n";
+      }''',
     "sphere-map shader coordinates")
 replace_once(
     '''     var vsLightingDefs = "";
@@ -208,9 +200,13 @@ texgen_body = '''function _emscripten_glTexGeni(coord, pname, param) {
  GLImmediate.currentRenderer = null;
 }'''
 replace_once(
-    "function _emscripten_glTexGeni() {\\n}",
+    "function _emscripten_glTexGeni() {\n}",
     texgen_body,
     "glTexGeni wrapper")
+replace_once(
+    "function _glTexGeni() {\n}",
+    texgen_body.replace("_emscripten_glTexGeni", "_glTexGeni"),
+    "desktop-alias glTexGeni wrapper")
 gl_texgen_fv = '''function _emscripten_glTexGenfv() {
 }'''
 if js.count(gl_texgen_fv) != 1:

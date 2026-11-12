@@ -10,6 +10,8 @@ IDBFS.
 
 The browser renderer requires WebGL 2 and uses Emscripten's legacy OpenGL
 emulation. This lets Irrlicht use NPOT textures and the game's shader path.
+Irrlicht sphere-map materials generate reflection coordinates in the emulated
+vertex shader instead of relying on unsupported fixed-function texture gen.
 Because browsers restrict autoplay, click or press a key after the game loads
 to enable audio.
 The build also corrects Emscripten's legacy shader scanner for nested texture

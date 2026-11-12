@@ -78,10 +78,37 @@ new = '''    if (source.includes("gl_FrontColor") || source.includes("gl_BackCol
 if js.count(old) != 1:
     raise SystemExit("Expected one legacy vertex-color shader translation block")
 js = js.replace(old, new)
+old = '''    if (source.includes("gl_Normal")) {
+     source = "attribute vec3 a_normal; \\n" + source.replace(/gl_Normal/g, "a_normal");
+    }'''
+new = '''    if (source.includes("gl_NormalMatrix")) {
+     source = "uniform mat3 u_normalMatrix; \\n" + source.replace(/gl_NormalMatrix/g, "u_normalMatrix");
+    }
+    if (source.includes("gl_Normal")) {
+     source = "attribute vec3 a_normal; \\n" + source.replace(/gl_Normal/g, "a_normal");
+    }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one legacy normal shader translation block")
+js = js.replace(old, new)
 old = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ").xyz;";'''
 new = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ".w == 0.0 ? u_lightPosition" + lightId + ".xyz : u_lightPosition" + lightId + ".xyz - ecPosition.xyz);";'''
 if js.count(old) != 1:
     raise SystemExit("Expected one Emscripten fixed-function light direction expression")
+js = js.replace(old, new)
+old = '''     if (GLEmulation.lightEnabled) {
+      var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
+      GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
+      GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
+      GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
+     }'''
+new = '''     if (this.normalMatrixLocation) {
+      var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
+      GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
+      GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
+      GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
+     }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one normal matrix upload condition")
 js = js.replace(old, new)
 old = '''   return fcn.apply(navigator);
   } else {

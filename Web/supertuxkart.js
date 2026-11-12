@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "3d218312-10c6-43c0-8708-76d3ff47448e"
+  "package_uuid": "f9fe6557-617b-4fec-bfc1-b4e4c9a7e180"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "ee31bd07-4bb8-4276-b0b3-384fce835b25"
+  "package_uuid": "097f2708-3abf-484c-8174-4aab9b534cce"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "05f75a84-b625-4999-a382-7d08438ddda9"
+  "package_uuid": "23128e8d-581f-439d-bc44-cbe99de3390b"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "1116d596-5c01-43ef-8513-fba717e9a035"
+  "package_uuid": "1b6e0353-637e-4dcf-9d1d-9d87ded83190"
  });
 })();
 
@@ -16376,7 +16376,12 @@ var SDL = {
  getGamepads: function() {
   var fcn = navigator.getGamepads || navigator.webkitGamepads || navigator.mozGamepads || navigator.gamepads || navigator.webkitGetGamepads;
   if (fcn !== undefined) {
-   return fcn.apply(navigator);
+   var gamepads = fcn.apply(navigator) || [];
+   var connectedGamepads = [];
+   for (var i = 0; i < gamepads.length; i++) {
+    if (gamepads[i] && gamepads[i].connected !== false) connectedGamepads.push(gamepads[i]);
+   }
+   return connectedGamepads;
   } else {
    return [];
   }
@@ -21273,8 +21278,8 @@ var GLEmulation = {
       source = "uniform mat4 u_textureMatrix" + i + "; \n" + source;
      }
     }
-    if (source.includes("gl_FrontColor")) {
-     source = "varying vec4 v_color; \n" + source.replace(/gl_FrontColor/g, "v_color");
+    if (source.includes("gl_FrontColor") || source.includes("gl_BackColor")) {
+     source = "varying vec4 v_color; \n" + source.replace(/gl_FrontColor|gl_BackColor/g, "v_color");
     }
     if (source.includes("gl_Color")) {
      source = "attribute vec4 a_color; \n" + source.replace(/gl_Color/g, "a_color");

@@ -54,7 +54,7 @@ python3 -m http.server 8000 --directory Web
 
 Open <http://localhost:8000/supertuxkart.html>. The browser loads all bundled
 game assets before starting; no game-server or add-on connection is used.
-Browser gamepads are handled through the SDL input device. Audio may require a
+Connected browser gamepads are passed to SDL at startup. Audio may require a
 click or key press first, depending on the browser's autoplay policy.
 
 The browser build starts with a 256 MiB WebAssembly memory and grows it as
@@ -63,3 +63,12 @@ unnecessary browser work.
 
 Each build adds a unique query string to the JavaScript, WebAssembly, and asset
 bundle URLs so browsers do not reuse cached files from an earlier build.
+
+## Standalone offline page
+
+Run `./offline-make.sh` after a successful build to generate
+`Web/Offline.html`. It embeds the WebAssembly module, all game assets, and the
+favicon into one large HTML file; no separate game files or network requests
+are needed. The output is intentionally ignored by Git because it is hundreds
+of megabytes. Depending on browser policy, IndexedDB saves may still require
+serving the file from a local HTTP server rather than opening it as `file://`.

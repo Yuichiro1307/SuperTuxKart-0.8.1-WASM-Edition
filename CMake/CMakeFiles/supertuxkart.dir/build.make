@@ -4127,7 +4127,7 @@ supertuxkart_EXTERNAL_OBJECTS =
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: lib/bullet/libbulletmath.a
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: lib/enet/libenet.a
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: lib/irrlicht/libstkirrlicht.a
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/../Web/shell.html
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/../templates/supertuxkart-shell.html
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/linkLibs.rsp
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/objects1.rsp
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/link.txt

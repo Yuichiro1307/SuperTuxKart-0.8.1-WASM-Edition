@@ -69,10 +69,39 @@ new = '''    default:
 if js.count(old) != 1:
     raise SystemExit("Expected one Emscripten glTexEnvf fallback")
 js = js.replace(old, new)
+old = '''    if (source.includes("gl_FrontColor")) {
+     source = "varying vec4 v_color; \\n" + source.replace(/gl_FrontColor/g, "v_color");
+    }'''
+new = '''    if (source.includes("gl_FrontColor") || source.includes("gl_BackColor")) {
+     source = "varying vec4 v_color; \\n" + source.replace(/gl_FrontColor|gl_BackColor/g, "v_color");
+    }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one legacy vertex-color shader translation block")
+js = js.replace(old, new)
 old = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ").xyz;";'''
 new = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ".w == 0.0 ? u_lightPosition" + lightId + ".xyz : u_lightPosition" + lightId + ".xyz - ecPosition.xyz);";'''
 if js.count(old) != 1:
     raise SystemExit("Expected one Emscripten fixed-function light direction expression")
+js = js.replace(old, new)
+old = '''   return fcn.apply(navigator);
+  } else {
+   return [];
+  }
+ },
+ getGamepad: function(deviceIndex)'''
+new = '''   var gamepads = fcn.apply(navigator) || [];
+   var connectedGamepads = [];
+   for (var i = 0; i < gamepads.length; i++) {
+    if (gamepads[i] && gamepads[i].connected !== false) connectedGamepads.push(gamepads[i]);
+   }
+   return connectedGamepads;
+  } else {
+   return [];
+  }
+ },
+ getGamepad: function(deviceIndex)'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one SDL Gamepad API enumeration block")
 js = js.replace(old, new)
 gl_draw_buffer_wrappers = (
     "function _glDrawBuffer() {\n throw \"glDrawBuffer: TODO\";\n}",
@@ -96,8 +125,8 @@ js_path.write_text(js, encoding="utf-8")
 
 html = html_path.read_text(encoding="utf-8")
 script_tag = '<script async type="text/javascript" src="supertuxkart.js"></script>'
-if "__STK_BUILD_ID__" not in html or script_tag not in html:
-    raise SystemExit("Generated HTML is missing expected build cache-busting markers")
+if "__STK_BUILD_ID__" not in html or script_tag not in html or '<link rel="icon" href="favicon.ico">' not in html:
+    raise SystemExit("Generated HTML is missing expected build markers or favicon")
 
 html = html.replace("__STK_BUILD_ID__", build_id)
 html = html.replace(

@@ -137,10 +137,10 @@ lib/irrlicht/clean: lib/irrlicht/CMakeFiles/stkirrlicht.dir/clean
 
 # All Build rule for target.
 CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletcollision.dir/all
+CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletmath.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletdynamics.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/enet/CMakeFiles/enet.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/irrlicht/CMakeFiles/stkirrlicht.dir/all
-CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletmath.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target supertuxkart"

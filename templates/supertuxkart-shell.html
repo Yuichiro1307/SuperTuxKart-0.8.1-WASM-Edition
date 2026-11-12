@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>SuperTuxKart 0.8.1</title>
+  <link rel="icon" href="favicon.ico">
   <style>
     html, body { width: 100%; height: 100vh; height: 100dvh; margin: 0; overflow: hidden; background: #111; color: #eee; font: 14px sans-serif; }
     #status { position: fixed; z-index: 1; top: 0; left: 0; padding: 8px 12px; background: rgba(0, 0, 0, .65); }
@@ -44,8 +45,22 @@
 
     var statusElement = document.getElementById("status");
     var audioHint = document.getElementById("audio-hint");
+    var canvas = document.getElementById("canvas");
+    var focusCanvasForGamepad = function() {
+      var getGamepads = navigator.getGamepads || navigator.webkitGetGamepads;
+      if (getGamepads && Array.prototype.some.call(
+          getGamepads.call(navigator), function(gamepad) {
+            return gamepad && gamepad.connected !== false;
+          })) {
+        canvas.focus();
+      }
+    };
+    window.addEventListener("gamepadconnected", function(event) {
+      if (event.gamepad && event.gamepad.connected !== false)
+        canvas.focus();
+    });
     var Module = {
-      canvas: document.getElementById("canvas"),
+      canvas: canvas,
       locateFile: function(path, prefix) {
         return prefix + path + "?v=__STK_BUILD_ID__";
       },
@@ -54,6 +69,8 @@
       printErr: function(text) { console.error(text); },
       onRuntimeInitialized: function() { audioHint.style.display = "block"; }
     };
+    Module.preRun = Module.preRun || [];
+    Module.preRun.push(focusCanvasForGamepad);
     ["pointerdown", "keydown", "touchstart"].forEach(function(eventName) {
       document.addEventListener(eventName, function() {
         audioHint.style.display = "none";

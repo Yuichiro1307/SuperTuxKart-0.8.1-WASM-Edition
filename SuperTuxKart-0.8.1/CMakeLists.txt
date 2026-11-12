@@ -273,11 +273,11 @@ target_link_libraries(supertuxkart
 
 if(EMSCRIPTEN)
     set_property(TARGET supertuxkart APPEND PROPERTY LINK_DEPENDS
-        "${PROJECT_SOURCE_DIR}/../Web/shell.html")
+        "${PROJECT_SOURCE_DIR}/../templates/supertuxkart-shell.html")
     set_target_properties(supertuxkart PROPERTIES
         SUFFIX ".html"
         LINK_FLAGS
-        "--pre-js ${PROJECT_SOURCE_DIR}/../Web/persistence.js --pre-js ${PROJECT_SOURCE_DIR}/../Web/supertuxkart-assets.js --shell-file ${PROJECT_SOURCE_DIR}/../Web/shell.html -sUSE_SDL=1 -sUSE_OGG=1 -sUSE_VORBIS=1 -sDISABLE_EXCEPTION_CATCHING=0 -sLEGACY_GL_EMULATION=1 -sGL_UNSAFE_OPTS=0 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sALLOW_MEMORY_GROWTH=1 -sINITIAL_MEMORY=268435456 -sFORCE_FILESYSTEM=1 -lidbfs.js -sEXPORTED_RUNTIME_METHODS=FS,IDBFS -sEXIT_RUNTIME=0 -g2")
+        "--pre-js ${PROJECT_SOURCE_DIR}/../Web/persistence.js --pre-js ${PROJECT_SOURCE_DIR}/../Web/supertuxkart-assets.js --shell-file ${PROJECT_SOURCE_DIR}/../templates/supertuxkart-shell.html -sUSE_SDL=1 -sUSE_OGG=1 -sUSE_VORBIS=1 -sDISABLE_EXCEPTION_CATCHING=0 -sLEGACY_GL_EMULATION=1 -sGL_UNSAFE_OPTS=0 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sALLOW_MEMORY_GROWTH=1 -sINITIAL_MEMORY=268435456 -sFORCE_FILESYSTEM=1 -lidbfs.js -sEXPORTED_RUNTIME_METHODS=FS,IDBFS -sEXIT_RUNTIME=0 -g2")
 endif()
 
 if(APPLE)

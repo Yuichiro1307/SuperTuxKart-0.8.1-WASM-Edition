@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "f9fe6557-617b-4fec-bfc1-b4e4c9a7e180"
+  "package_uuid": "0c4f1458-70f0-4a17-820c-ea1ed3115046"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "097f2708-3abf-484c-8174-4aab9b534cce"
+  "package_uuid": "bcf97146-9355-4d24-abbd-6465247949f2"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "23128e8d-581f-439d-bc44-cbe99de3390b"
+  "package_uuid": "8089c6af-e303-4fe1-9e36-dbf80a8234c4"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649267
   } ],
   "remote_package_size": 35649267,
-  "package_uuid": "1b6e0353-637e-4dcf-9d1d-9d87ded83190"
+  "package_uuid": "00be0b38-ce90-40d6-939a-4d34402d08fd"
  });
 })();
 
@@ -21284,6 +21284,9 @@ var GLEmulation = {
     if (source.includes("gl_Color")) {
      source = "attribute vec4 a_color; \n" + source.replace(/gl_Color/g, "a_color");
     }
+    if (source.includes("gl_NormalMatrix")) {
+     source = "uniform mat3 u_normalMatrix; \n" + source.replace(/gl_NormalMatrix/g, "u_normalMatrix");
+    }
     if (source.includes("gl_Normal")) {
      source = "attribute vec3 a_normal; \n" + source.replace(/gl_Normal/g, "a_normal");
     }
@@ -22754,7 +22757,7 @@ var GLImmediate = {
     if (this.modelViewLocation && this.modelViewMatrixVersion != GLImmediate.matrixVersion[0]) {
      this.modelViewMatrixVersion = GLImmediate.matrixVersion[0];
      GLctx.uniformMatrix4fv(this.modelViewLocation, false, GLImmediate.matrix[0]);
-     if (GLEmulation.lightEnabled) {
+     if (this.normalMatrixLocation) {
       var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
       GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
       GLImmediate.matrixLib.mat4.transpose(tmpMVinv);

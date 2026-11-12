@@ -377,6 +377,11 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 		delete [] str;
 	}
 
+#ifdef __EMSCRIPTEN__
+	// The legacy GL emulation cannot reliably track the VBO-backed client arrays.
+	FeatureAvailable[IRR_ARB_vertex_buffer_object] = false;
+#endif
+
 	MultiTextureExtension = FeatureAvailable[IRR_ARB_multitexture];
 	TextureCompressionExtension = FeatureAvailable[IRR_ARB_texture_compression];
 	StencilBuffer=stencilBuffer;

@@ -77,6 +77,15 @@ for old in gl_draw_buffer_wrappers:
     if js.count(old) != 1:
         raise SystemExit("Expected one Emscripten glDrawBuffer TODO wrapper")
     js = js.replace(old, old.split("\n")[0] + "\n}")
+texgen_wrappers = (
+    "function _glTexGeni() {\n throw \"glTexGeni: TODO\";\n}",
+    "function _emscripten_glTexGeni() {\n throw \"glTexGeni: TODO\";\n}",
+    "function _emscripten_glTexGenfv() {\n throw \"glTexGenfv: TODO\";\n}",
+)
+for old in texgen_wrappers:
+    if js.count(old) > 1:
+        raise SystemExit("Found duplicate Emscripten texture-generation wrappers")
+    js = js.replace(old, old.split("\n")[0] + "\n}")
 js_path.write_text(js, encoding="utf-8")
 
 html = html_path.read_text(encoding="utf-8")

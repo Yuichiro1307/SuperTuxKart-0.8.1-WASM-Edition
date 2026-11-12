@@ -782,11 +782,16 @@ bool COpenGLExtensionHandler::queryFeature(E_VIDEO_DRIVER_FEATURE feature) const
 	case EVDF_TEXTURE_NSQUARE:
 		return true; // non-square is always supported
 	case EVDF_TEXTURE_NPOT:
+#ifdef __EMSCRIPTEN__
+		// The browser build requires WebGL 2, which supports NPOT textures.
+		return true;
+#else
 		// Some ATI cards seem to have only SW support in OpenGL 2.0
 		// drivers if the extension is not exposed, so we skip this
 		// extra test for now!
 		// return (FeatureAvailable[IRR_ARB_texture_non_power_of_two]||Version>=200);
 		return (FeatureAvailable[IRR_ARB_texture_non_power_of_two]);
+#endif
 	case EVDF_FRAMEBUFFER_OBJECT:
 		return FeatureAvailable[IRR_EXT_framebuffer_object] || FeatureAvailable[IRR_ARB_framebuffer_object];
 	case EVDF_VERTEX_BUFFER_OBJECT:

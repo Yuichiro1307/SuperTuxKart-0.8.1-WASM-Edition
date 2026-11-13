@@ -380,6 +380,9 @@ void COpenGLExtensionHandler::initExtensions(bool stencilBuffer)
 #ifdef __EMSCRIPTEN__
 	// The legacy GL emulation cannot reliably track the VBO-backed client arrays.
 	FeatureAvailable[IRR_ARB_vertex_buffer_object] = false;
+	// GL_BGRA is not a valid color-array size in the emulated glColorPointer path.
+	FeatureAvailable[IRR_ARB_vertex_array_bgra] = false;
+	FeatureAvailable[IRR_EXT_vertex_array_bgra] = false;
 #endif
 
 	MultiTextureExtension = FeatureAvailable[IRR_ARB_multitexture];

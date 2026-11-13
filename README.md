@@ -1,4 +1,5 @@
 The original directory for SuperTuxKart is [here](https://supertuxkart.net).
+Please refer to [this](https://github.com/Yuichiro1307/Addon-Server) for information on how to use add-ons in SuperTuxKart.
 # SuperTuxKart 0.8.1 WebAssembly Edition
 
 The game is built with Emscripten. The browser build disables CURL and WiiUse,

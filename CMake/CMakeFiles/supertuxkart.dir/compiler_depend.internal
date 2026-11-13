@@ -1159,6 +1159,7 @@ CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/addons_manager.hpp
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.hpp
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.hpp
+ /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/news_manager.hpp
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/request.hpp
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/stk_config.hpp
  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/user_config.hpp

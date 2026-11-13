@@ -21,25 +21,32 @@ class EmscriptenNetworkHttp : public INetworkHttp
 private:
     struct ListingContext;
     struct DownloadContext;
+    struct NewsContext;
 
     std::vector<ListingContext*> m_listing_contexts;
     std::vector<DownloadContext*> m_download_contexts;
+    NewsContext *m_news_context;
     std::string m_addons_xml;
     int m_listing_pending;
     int m_listing_succeeded;
     bool m_started;
 
     void startListing();
+    void startNewsFetch();
     void finishListing(ListingContext *context, emscripten_fetch_t *fetch,
                        bool success);
     void finishDownload(DownloadContext *context, emscripten_fetch_t *fetch,
                         bool success);
+    void finishNews(NewsContext *context, emscripten_fetch_t *fetch,
+                    bool success);
 
     static void listingSuccess(emscripten_fetch_t *fetch);
     static void listingError(emscripten_fetch_t *fetch);
     static void downloadSuccess(emscripten_fetch_t *fetch);
     static void downloadError(emscripten_fetch_t *fetch);
     static void downloadProgress(emscripten_fetch_t *fetch);
+    static void newsSuccess(emscripten_fetch_t *fetch);
+    static void newsError(emscripten_fetch_t *fetch);
 
 public:
     EmscriptenNetworkHttp();

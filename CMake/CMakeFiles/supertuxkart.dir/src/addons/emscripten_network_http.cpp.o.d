@@ -353,6 +353,7 @@ CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstdarg \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/streambuf \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bsd_locale_fallbacks.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/news_manager.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/stk_config.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/user_config.hpp \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/fstream \

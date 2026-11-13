@@ -1,9 +1,15 @@
 #include <GL/gl.h>
+#include <emscripten.h>
 
 extern "C" {
 
-void glColorMaterial(GLenum, GLenum)
+EM_JS(void, setColorMaterialMode, (GLenum mode), {
+    Module.stkColorMaterialMode = mode;
+});
+
+void glColorMaterial(GLenum, GLenum mode)
 {
+    setColorMaterialMode(mode);
 }
 
 void glLightModeli(GLenum, GLint)

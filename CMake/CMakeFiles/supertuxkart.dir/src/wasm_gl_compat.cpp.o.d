@@ -10,4 +10,12 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
   /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
   /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
-  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_js.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h

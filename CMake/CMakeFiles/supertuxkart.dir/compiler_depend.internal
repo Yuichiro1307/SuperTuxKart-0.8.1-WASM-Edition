@@ -106977,6 +106977,14 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o
  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config
  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config_site
  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdint.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_js.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h
+ /home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h
  /home/codespace/.cache/emscripten/sysroot/include/pthread.h
  /home/codespace/.cache/emscripten/sysroot/include/stdint.h
  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h

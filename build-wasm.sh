@@ -278,6 +278,94 @@ new = '''    if (this.colorLocation >= 0 && GLImmediate.enabledClientAttributes[
 if js.count(old) != 1:
     raise SystemExit("Expected one GLImmediate client-color attribute setup")
 js = js.replace(old, new)
+old = ''' clipPlaneEnabled: [ false, false, false, false, false, false ],
+ clipPlaneEquation: [],
+ lightingEnabled: false,'''
+new = ''' clipPlaneEnabled: [ false, false, false, false, false, false ],
+ clipPlaneEquation: [],
+ lightingEnabled: false,
+ colorMaterialEnabled: false,
+ colorMaterialMode: 5634,'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLEmulation lighting-state declaration")
+js = js.replace(old, new)
+old = '''  enabledAttributesKey = enabledAttributesKey << 1 | GLEmulation.lightingEnabled;
+  for (var lightId = 0; lightId < GLEmulation.MAX_LIGHTS; lightId++) {'''
+new = '''  enabledAttributesKey = enabledAttributesKey << 1 | GLEmulation.lightingEnabled;
+  var colorMaterialModeKey = GLEmulation.colorMaterialMode == 4608 ? 1 :
+   GLEmulation.colorMaterialMode == 4609 ? 2 :
+   GLEmulation.colorMaterialMode == 4610 ? 3 :
+   GLEmulation.colorMaterialMode == 5632 ? 4 : 5;
+  enabledAttributesKey = enabledAttributesKey << 1 | GLEmulation.colorMaterialEnabled;
+  enabledAttributesKey = enabledAttributesKey << 3 | colorMaterialModeKey;
+  for (var lightId = 0; lightId < GLEmulation.MAX_LIGHTS; lightId++) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GLImmediate renderer cache-key insertion point")
+js = js.replace(old, new)
+old = '''  _glEnable = _emscripten_glEnable = (cap => {
+   if (GLImmediate.lastRenderer) GLImmediate.lastRenderer.cleanup();
+   if (cap == 2912) {'''
+new = '''  _glEnable = _emscripten_glEnable = (cap => {
+    if (GLImmediate.lastRenderer) GLImmediate.lastRenderer.cleanup();
+    if (cap == 2903) {
+     GLEmulation.colorMaterialEnabled = true;
+     GLEmulation.colorMaterialMode = Module.stkColorMaterialMode || 5634;
+     GLImmediate.currentRenderer = null;
+     return;
+    } else if (cap == 2912) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GL_COLOR_MATERIAL enable hook")
+js = js.replace(old, new)
+old = '''  _glDisable = _emscripten_glDisable = (cap => {
+   if (GLImmediate.lastRenderer) GLImmediate.lastRenderer.cleanup();
+   if (cap == 2912) {'''
+new = '''  _glDisable = _emscripten_glDisable = (cap => {
+    if (GLImmediate.lastRenderer) GLImmediate.lastRenderer.cleanup();
+    if (cap == 2903) {
+     GLEmulation.colorMaterialEnabled = false;
+     GLImmediate.currentRenderer = null;
+     return;
+    } else if (cap == 2912) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GL_COLOR_MATERIAL disable hook")
+js = js.replace(old, new)
+old = '''  _glIsEnabled = _emscripten_glIsEnabled = (cap => {
+   if (cap == 2912) {'''
+new = '''  _glIsEnabled = _emscripten_glIsEnabled = (cap => {
+    if (cap == 2903) {
+     return GLEmulation.colorMaterialEnabled ? 1 : 0;
+    } else if (cap == 2912) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one GL_COLOR_MATERIAL state query hook")
+js = js.replace(old, new)
+old = '''      vsLightingPass += "  v_color.w = u_materialDiffuse.w;";
+      vsLightingPass += "  v_color.xyz = u_materialEmission.xyz;";
+      vsLightingPass += "  v_color.xyz += u_lightModelAmbient.xyz * u_materialAmbient.xyz;";'''
+new = '''      var colorMaterialAmbient = GLEmulation.colorMaterialEnabled && (GLEmulation.colorMaterialMode == 4608 || GLEmulation.colorMaterialMode == 5634);
+      var colorMaterialDiffuse = GLEmulation.colorMaterialEnabled && (GLEmulation.colorMaterialMode == 4609 || GLEmulation.colorMaterialMode == 5634);
+      var colorMaterialSpecular = GLEmulation.colorMaterialEnabled && GLEmulation.colorMaterialMode == 4610;
+      var colorMaterialEmission = GLEmulation.colorMaterialEnabled && GLEmulation.colorMaterialMode == 5632;
+      vsLightingPass += "  v_color.w = " + (colorMaterialDiffuse ? "a_color.w;" : "u_materialDiffuse.w;");
+      vsLightingPass += "  v_color.xyz = " + (colorMaterialEmission ? "a_color.xyz;" : "u_materialEmission.xyz;");
+      vsLightingPass += "  v_color.xyz += u_lightModelAmbient.xyz * " + (colorMaterialAmbient ? "a_color.xyz;" : "u_materialAmbient.xyz;");'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one fixed-function material color initialization")
+js = js.replace(old, new)
+old = '''        vsLightingPass += "    vec3 ambient = u_lightAmbient" + lightId + ".xyz * u_materialAmbient.xyz;";
+        vsLightingPass += "    float diffuseI = max(dot(ecNormal, lightDirection), 0.0);";
+        vsLightingPass += "    float specularI = max(dot(ecNormal, halfVector), 0.0);";
+        vsLightingPass += "    vec3 diffuse = diffuseI * u_lightDiffuse" + lightId + ".xyz * u_materialDiffuse.xyz;";
+        vsLightingPass += "    specularI = (diffuseI > 0.0 && specularI > 0.0) ? exp(u_materialShininess * log(specularI)) : 0.0;";
+        vsLightingPass += "    vec3 specular = specularI * u_lightSpecular" + lightId + ".xyz * u_materialSpecular.xyz;";'''
+new = '''        vsLightingPass += "    vec3 ambient = u_lightAmbient" + lightId + ".xyz * " + (colorMaterialAmbient ? "a_color.xyz;" : "u_materialAmbient.xyz;");
+        vsLightingPass += "    float diffuseI = max(dot(ecNormal, lightDirection), 0.0);";
+        vsLightingPass += "    float specularI = max(dot(ecNormal, halfVector), 0.0);";
+        vsLightingPass += "    vec3 diffuse = diffuseI * u_lightDiffuse" + lightId + ".xyz * " + (colorMaterialDiffuse ? "a_color.xyz;" : "u_materialDiffuse.xyz;");
+        vsLightingPass += "    specularI = (diffuseI > 0.0 && specularI > 0.0) ? exp(u_materialShininess * log(specularI)) : 0.0;";
+        vsLightingPass += "    vec3 specular = specularI * u_lightSpecular" + lightId + ".xyz * " + (colorMaterialSpecular ? "a_color.xyz;" : "u_materialSpecular.xyz;");'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one fixed-function per-light material color block")
+js = js.replace(old, new)
 old = ''' flush: function flush(numProvidedIndexes, startIndex, ptr) {
   startIndex = startIndex || 0;
   ptr = ptr || 0;'''

@@ -2744,7 +2744,6 @@ void COpenGLDriver::setBasicRenderStates(const SMaterial& material, const SMater
 	if (resetAllRenderStates ||
 		lastmaterial.ColorMaterial != material.ColorMaterial)
 	{
-#ifndef __EMSCRIPTEN__
 		switch (material.ColorMaterial)
 		{
 		case ECM_NONE:
@@ -2768,7 +2767,6 @@ void COpenGLDriver::setBasicRenderStates(const SMaterial& material, const SMater
 		}
 		if (material.ColorMaterial != ECM_NONE)
 			glEnable(GL_COLOR_MATERIAL);
-#endif
 	}
 
 	if (resetAllRenderStates ||

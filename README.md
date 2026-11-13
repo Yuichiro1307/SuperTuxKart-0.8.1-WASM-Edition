@@ -1,83 +1,52 @@
-The original directory for SuperTuxKart is [here](https://supertuxkart.net).
-Please refer to [this](https://github.com/Yuichiro1307/Addon-Server) for information on how to use add-ons in SuperTuxKart-WASM.
-# SuperTuxKart 0.8.1 WebAssembly Edition
+The official SuperTuxKart website can be found [here](https://supertuxkart.net).
+For information on how to use add-ons in SuperTuxKart-WASM, please refer to [this page](https://github.com/Yuichiro1307/Addon-Server).
+# SuperTuxKart 0.8.1 WebAssembly Version
 
-The game is built with Emscripten. The browser build disables CURL and WiiUse,
-uses the bundled SDL-backed Irrlicht device, and keeps the game, audio, and
-gamepad support enabled. The complete `data/` tree is split into asset bundles
-smaller than 90 MB each, then all bundles are loaded before the game starts.
-This keeps every generated file below GitHub's 100 MB file limit without
-removing game assets. Save files are stored in IndexedDB through Emscripten's
-IDBFS.
+This game is built using Emscripten. In this browser-based build, CURL and WiiUse are disabled. The game utilizes an Irrlicht device with an SDL backend, while core game functionality—including audio and gamepad support—remains fully enabled. The entire `data/` directory has been split into asset bundles totaling less than 90 MB; all of these bundles are loaded before the game begins. This approach ensures that all generated files remain within GitHub’s 100 MB file size limit without requiring the removal of any game assets. Save data is stored in IndexedDB via Emscripten’s IDBFS.
 
-The browser renderer requires WebGL 2 and uses Emscripten's legacy OpenGL
-emulation. This lets Irrlicht use NPOT textures and the game's shader path.
-Because browsers restrict autoplay, click or press a key after the game loads
-to enable audio.
-The build also corrects Emscripten's legacy shader scanner for nested texture
-matrix expressions used by Irrlicht.
+The browser-based renderer requires WebGL 2 and employs Emscripten’s legacy OpenGL emulation. This allows Irrlicht to utilize NPOT (non-power-of-two) textures and the game’s custom shader paths. Due to browser autoplay restrictions, audio is enabled only after the game has loaded and the user performs an action, such as clicking the mouse or pressing a key.
+Additionally, this build includes a modification to Emscripten’s legacy shader scanner to properly handle the nested texture matrices used by Irrlicht.
 
-## For those who don’t know where to start
-started
+## Getting Started
 
 ```sh
 sh fastboot.sh
 ```
-## Build
 
-Install the required tools if they are not already installed:
+## Building
+
+If the necessary tools are not already installed, please install them using the following commands:
 
 ```sh
 sudo apt-get update
 sudo apt-get install emscripten cmake
 ```
 
-From this repository's root, run:
-
-```sh
+Run the following commands from the root directory of the repository: ```sh
 ./build-wasm.sh
 ```
 
-The build uses one worker and a 5 GB process data-memory limit by default. Override
-these with `JOBS` and `BUILD_MEMORY_KB` if needed.
+By default, the build uses one worker, and the process data memory limit is set to 5 GB. You can adjust these values ​​by specifying `JOBS` and `BUILD_MEMORY_KB` as needed.
 
-CMake's configuration and build files are written to `CMake/`. The generated
-`supertuxkart.html`, JavaScript, WebAssembly, and all
-`supertuxkart-assets-NN.data` bundles are written to `Web/`.
+CMake configuration and build files are generated in the `CMake/` directory. The resulting `supertuxkart.html`, JavaScript, WebAssembly, and all `supertuxkart-assets-NN.data` bundles are output to the `Web/` directory.
 
-## Run locally
+## Running Locally
 
-Serve `Web/` over HTTP (browsers do not enable WebAssembly and IndexedDB when
-opening the generated page as a `file://` URL):
+Serve the `Web/` directory via HTTP (browsers do not enable WebAssembly or IndexedDB when pages are opened using `file://` URLs).
 
 ```sh
 python3 -m http.server 8000 --directory Web
 ```
 
-Open <http://localhost:8000/supertuxkart.html>. The browser loads all bundled
-game assets before starting; normal gameplay does not require an internet
-connection.
-Connected browser gamepads are passed to SDL at startup. Audio may require a
-click or key press first, depending on the browser's autoplay policy.
+Open <http://localhost:8000/supertuxkart.html>. The browser will load all game assets before startup. An internet connection is not required for regular gameplay.
+Gamepads connected to the browser are passed to SDL upon startup. Depending on the browser's autoplay policy, you may need to click or press a key before audio can be heard.
 
-When internet access is enabled in the game settings, the add-ons screen lists
-`.zip` files found in the `Kart/`, `cource/`, and `Arena/` directories of the
-Addon-Server repository. Selecting an add-on fetches its ZIP and saves it in
-the browser's persistent user filesystem. The current directories contain no
-ZIP files, so the online list will remain empty until packages are added.
+If internet access is enabled in the game settings, the add-ons screen will display a list of `.zip` files found in the `Kart/`, `course/`, and `Arena/` directories on the add-on server repository. Selecting an add-on will download the corresponding ZIP file and save it to the browser's persistent user file system.
 
-The browser build starts with a 256 MiB WebAssembly memory and grows it as
-needed. Rendering is capped at 60 FPS (35 FPS in throttled menus) to avoid
-unnecessary browser work.
+The browser-based build starts with 256 MiB of WebAssembly memory, which expands as needed. To avoid unnecessary load on the browser, rendering is capped at 60 FPS (or 35 FPS in menus and similar screens).
 
-Each build adds a unique query string to the JavaScript, WebAssembly, and asset
-bundle URLs so browsers do not reuse cached files from an earlier build.
+In each build, a unique query string is appended to the URLs for the JavaScript, WebAssembly, and asset bundles. This prevents the browser from reusing cached files from previous builds.
 
-## Standalone offline page
+## Standalone Offline Page
 
-Run `./offline-make.sh` after a successful build to generate
-`Web/Offline.html`. It embeds the WebAssembly module, all game assets, and the
-favicon into one large HTML file; no separate game files or network requests
-are needed. The output is intentionally ignored by Git because it is hundreds
-of megabytes. Depending on browser policy, IndexedDB saves may still require
-serving the file from a local HTTP server rather than opening it as `file://`.
+Running `./offline-make.sh` after a build generates `Web/Offline.html`. This file contains the WebAssembly module, all game assets, and the favicon—all embedded within a single, large HTML file—eliminating the need for separate game files or additional network requests. As this output file can reach several hundred megabytes in size, it is excluded from Git version control (configured to be ignored). Depending on browser policies, you may need to serve the file via a local HTTP server—rather than opening it directly using the `file://` protocol—to enable storage in IndexedDB.

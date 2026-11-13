@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "4ef4c6b2-ff45-4994-af1a-028cefad0894"
+  "package_uuid": "b889725e-b127-48a1-84ef-c4a149233b32"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "6b9a4a14-2e74-4ca9-9750-6b0238307887"
+  "package_uuid": "7a1825ea-ab43-455a-a6c0-4505d9463e0c"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "4e119b94-87e8-4d58-9a60-5bb65b21ae8c"
+  "package_uuid": "126f6ab6-91db-4b77-aeba-581042de7593"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649241
   } ],
   "remote_package_size": 35649241,
-  "package_uuid": "b372092a-fae6-46e4-8db7-4b272be20e1a"
+  "package_uuid": "8b3d089c-3c9a-499d-9a3d-e970befc4e43"
  });
 })();
 
@@ -12030,11 +12030,11 @@ var tempDouble;
 var tempI64;
 
 var ASM_CONSTS = {
- 406380: function() {
+ 406316: function() {
   var status = document.getElementById("status");
   if (status) status.textContent = "SuperTuxKart failed to start due to an unknown error.";
  },
- 406522: function($0) {
+ 406458: function($0) {
   var status = document.getElementById("status");
   if (status) status.textContent = "SuperTuxKart failed to start: " + UTF8ToString($0);
  }

@@ -423,128 +423,6 @@ void appendAddonXml(const AddonCategory &category, const ZipEntry &entry,
     *xml += "\"/>\n";
 }
 
-std::string trimXmlText(const std::string &value)
-{
-    const size_t first = value.find_first_not_of(" \t\r\n");
-    if (first == std::string::npos)
-        return "";
-    const size_t last = value.find_last_not_of(" \t\r\n");
-    return value.substr(first, last - first + 1);
-}
-
-bool decodeXmlText(const std::string &value, std::string *decoded)
-{
-    decoded->clear();
-    for (size_t i = 0; i < value.size(); i++)
-    {
-        if (value[i] != '&')
-        {
-            decoded->push_back(value[i]);
-            continue;
-        }
-
-        const size_t end = value.find(';', i + 1);
-        if (end == std::string::npos)
-            return false;
-        const std::string entity = value.substr(i + 1, end - i - 1);
-        if (entity == "amp")
-            decoded->push_back('&');
-        else if (entity == "lt")
-            decoded->push_back('<');
-        else if (entity == "gt")
-            decoded->push_back('>');
-        else if (entity == "quot")
-            decoded->push_back('"');
-        else if (entity == "apos")
-            decoded->push_back('\'');
-        else if (entity.size() > 1 && entity[0] == '#')
-        {
-            char *number_end = NULL;
-            const int base = entity.size() > 2 &&
-                             (entity[1] == 'x' || entity[1] == 'X') ? 16 : 10;
-            const char *number = entity.c_str() + (base == 16 ? 2 : 1);
-            unsigned long codepoint = strtoul(number, &number_end, base);
-            if (number_end == number || *number_end != '\0' ||
-                codepoint == 0 || codepoint > 0x10ffff ||
-                (codepoint >= 0xd800 && codepoint <= 0xdfff))
-                return false;
-            appendUtf8(decoded, (unsigned int)codepoint);
-        }
-        else
-            return false;
-        i = end;
-    }
-    return true;
-}
-
-bool extractXmlElement(const std::string &xml, const std::string &tag,
-                       size_t start, size_t limit, std::string *text)
-{
-    const std::string opening = "<" + tag;
-    size_t begin = xml.find(opening, start);
-    if (begin == std::string::npos || begin >= limit ||
-        (begin + opening.size() < xml.size() &&
-         xml[begin + opening.size()] != '>' &&
-         xml[begin + opening.size()] != ' ' &&
-         xml[begin + opening.size()] != '\t' &&
-         xml[begin + opening.size()] != '\r' &&
-         xml[begin + opening.size()] != '\n'))
-        return false;
-    begin = xml.find('>', begin + opening.size());
-    if (begin == std::string::npos || begin >= limit)
-        return false;
-    const std::string closing = "</" + tag + ">";
-    const size_t end = xml.find(closing, begin + 1);
-    if (end == std::string::npos || end > limit)
-        return false;
-    return decodeXmlText(xml.substr(begin + 1, end - begin - 1), text);
-}
-
-bool convertNewsXml(const std::string &source, std::string *converted)
-{
-    *converted = "<news frequency=\"86400\">\n";
-    size_t position = 0;
-    unsigned int messages = 0;
-    while ((position = source.find("<message", position)) != std::string::npos)
-    {
-        if (position + 8 < source.size() &&
-            source[position + 8] != '>' && source[position + 8] != ' ' &&
-            source[position + 8] != '\t' && source[position + 8] != '\r' &&
-            source[position + 8] != '\n')
-        {
-            position += 8;
-            continue;
-        }
-        const size_t body = source.find('>', position + 8);
-        if (body == std::string::npos)
-            return false;
-        const size_t end = source.find("</message>", body);
-        if (end == std::string::npos)
-            return false;
-
-        std::string title, text, content;
-        if (!extractXmlElement(source, "title", body + 1, end, &title) ||
-            !extractXmlElement(source, "text", body + 1, end, &text))
-            return false;
-        title = trimXmlText(title);
-        text = trimXmlText(text);
-        if (!title.empty())
-            content = title + (text.empty() ? "" : ": ");
-        content += text;
-        if (content.empty())
-            return false;
-
-        *converted += "  <message content=\"";
-        *converted += xmlEscape(content);
-        *converted += "\"/>\n";
-        messages++;
-        position = end + 10;
-    }
-    if (messages == 0)
-        return false;
-    *converted += "</news>\n";
-    return true;
-}
 }
 
 struct EmscriptenNetworkHttp::ListingContext
@@ -902,45 +780,61 @@ void EmscriptenNetworkHttp::finishNews(NewsContext *context,
     if (m_news_context == context)
         m_news_context = NULL;
 
-    std::string converted;
+    bool valid_news = false;
+    const std::string destination = file_manager->getAddonsFile("news.xml");
+    const std::string part = destination + ".part";
     if (success && m_started && fetch &&
         fetch->status >= 200 && fetch->status < 300 &&
         fetch->data && fetch->numBytes > 0 &&
         fetch->numBytes <= (uint64_t)SIZE_MAX)
     {
-        std::string source(fetch->data, (size_t)fetch->numBytes);
-        success = convertNewsXml(source, &converted);
+        FILE *output = fopen(part.c_str(), "wb");
+        bool saved = output &&
+            fwrite(fetch->data, 1, (size_t)fetch->numBytes, output) ==
+                (size_t)fetch->numBytes;
+        if (output && fclose(output) != 0)
+            saved = false;
+        if (saved)
+        {
+            XMLNode *xml = file_manager->createXMLTree(part);
+            if (xml && xml->getName() == "news")
+            {
+                for (unsigned int i = 0; i < xml->getNumNodes(); i++)
+                {
+                    const XMLNode *node = xml->getNode(i);
+                    irr::core::stringw content;
+                    if (node->getName() == "message" &&
+                        node->get("content", &content) && !content.empty())
+                    {
+                        valid_news = true;
+                        break;
+                    }
+                }
+            }
+            delete xml;
+        }
+        success = saved && valid_news;
     }
     else
         success = false;
 
     if (success)
     {
-        const std::string destination = file_manager->getAddonsFile("news.xml");
-        const std::string part = destination + ".part";
-        FILE *output = fopen(part.c_str(), "wb");
-        bool saved = output &&
-            fwrite(converted.data(), 1, converted.size(), output) ==
-                converted.size();
-        if (output && fclose(output) != 0)
-            saved = false;
-        if (saved)
-        {
-            file_manager->removeFile(destination);
-            saved = rename(part.c_str(), destination.c_str()) == 0;
-        }
+        const bool saved = rename(part.c_str(), destination.c_str()) == 0;
         if (saved)
             news_manager->init();
         else
         {
-            file_manager->removeFile(part);
             fprintf(stderr, "[news] Could not update cached news file '%s'.\n",
                     destination.c_str());
         }
     }
     else
+    {
+        file_manager->removeFile(part);
         fprintf(stderr, "[news] Failed to fetch or parse news.xml (HTTP %u).\n",
                 fetch ? fetch->status : 0);
+    }
 
     delete context;
     if (fetch)

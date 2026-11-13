@@ -1331,10 +1331,6 @@ int main(int argc, char *argv[] )
         initUserConfig(argv); // argv passed so config file can be
                               // found more reliably
 
-#ifdef NO_CURL
-        UserConfigParams::m_internet_status = INetworkHttp::IPERM_NOT_ALLOWED;
-#endif
-
         handleCmdLinePreliminary(argc, argv);
 
         initRest();

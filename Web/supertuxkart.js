@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "47369b85-b173-4fbd-b8b6-3a690d458899"
+  "package_uuid": "e83f86ba-cc1a-4c37-83f7-237d465efcdb"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "5a817703-2e35-4280-9048-a462807274d8"
+  "package_uuid": "9eb886bd-7da7-43ff-bf46-d24c0bf142de"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "689bef42-fce4-44ad-a957-da706f892c0f"
+  "package_uuid": "369afcf7-2785-46dd-811e-eb880962ac80"
  });
 })();
 
@@ -11457,7 +11457,7 @@ Module.expectedDataFileDownloads++;
    "end": 35649241
   } ],
   "remote_package_size": 35649241,
-  "package_uuid": "87deea56-dcd4-46c5-9d9b-4d3ded359f02"
+  "package_uuid": "08371a37-31e5-47d8-a826-b84f0e42bfe2"
  });
 })();
 
@@ -27679,14 +27679,43 @@ function _glDrawElements(mode, count, type, indices, start, end) {
   GLctx.drawElements(mode, count, type, indices);
   return;
  }
- GLImmediate.prepareClientAttributes(count, false);
+ if (!count) return;
+ var vertexCount = count;
+ if (!GLctx.currentArrayBufferBinding) {
+  if (end !== undefined && end !== null) {
+   GLImmediate.firstVertex = start;
+   GLImmediate.lastVertex = end + 1;
+  } else {
+   var indexView;
+   var indexBytes;
+   if (type == GLctx.UNSIGNED_BYTE) {
+    indexView = HEAPU8;
+    indexBytes = 1;
+   } else if (type == GLctx.UNSIGNED_INT) {
+    indexView = HEAPU32;
+    indexBytes = 4;
+   } else {
+    indexView = HEAPU16;
+    indexBytes = 2;
+   }
+   var first = HEAP8.length;
+   var last = 0;
+   for (var i = 0; i < count; i++) {
+    var index = indexView[indices / indexBytes + i];
+    first = Math.min(first, index);
+    last = Math.max(last, index + 1);
+   }
+   GLImmediate.firstVertex = first;
+   GLImmediate.lastVertex = last;
+  }
+  vertexCount = GLImmediate.lastVertex;
+ }
+ GLImmediate.prepareClientAttributes(vertexCount, false);
  GLImmediate.mode = mode;
  if (!GLctx.currentArrayBufferBinding) {
-  GLImmediate.firstVertex = end ? start : HEAP8.length;
-  GLImmediate.lastVertex = end ? end + 1 : 0;
-  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, end ? GLImmediate.vertexPointer + (end + 1) * GLImmediate.stride >> 2 : undefined);
+  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, GLImmediate.vertexPointer + GLImmediate.lastVertex * GLImmediate.stride >> 2);
  }
- GLImmediate.flush(count, 0, indices);
+ GLImmediate.flush(count, 0, indices, type);
  GLImmediate.mode = -1;
 }
 

@@ -336,6 +336,68 @@ new = '''   GLctx.drawElements(GLImmediate.mode, numIndexes, indexType, ptr);'''
 if js.count(old) != 1:
     raise SystemExit("Expected one GLImmediate indexed draw call")
 js = js.replace(old, new)
+old = '''function _glDrawElements(mode, count, type, indices, start, end) {
+ if (GLImmediate.totalEnabledClientAttributes == 0 && mode <= 6 && GLctx.currentElementArrayBufferBinding) {
+  GLctx.drawElements(mode, count, type, indices);
+  return;
+ }
+ GLImmediate.prepareClientAttributes(count, false);
+ GLImmediate.mode = mode;
+ if (!GLctx.currentArrayBufferBinding) {
+  GLImmediate.firstVertex = end ? start : HEAP8.length;
+  GLImmediate.lastVertex = end ? end + 1 : 0;
+  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, end ? GLImmediate.vertexPointer + (end + 1) * GLImmediate.stride >> 2 : undefined);
+ }
+ GLImmediate.flush(count, 0, indices);
+ GLImmediate.mode = -1;
+}'''
+new = '''function _glDrawElements(mode, count, type, indices, start, end) {
+ if (GLImmediate.totalEnabledClientAttributes == 0 && mode <= 6 && GLctx.currentElementArrayBufferBinding) {
+  GLctx.drawElements(mode, count, type, indices);
+  return;
+ }
+ if (!count) return;
+ var vertexCount = count;
+ if (!GLctx.currentArrayBufferBinding) {
+  if (end !== undefined && end !== null) {
+   GLImmediate.firstVertex = start;
+   GLImmediate.lastVertex = end + 1;
+  } else {
+   var indexView;
+   var indexBytes;
+   if (type == GLctx.UNSIGNED_BYTE) {
+    indexView = HEAPU8;
+    indexBytes = 1;
+   } else if (type == GLctx.UNSIGNED_INT) {
+    indexView = HEAPU32;
+    indexBytes = 4;
+   } else {
+    indexView = HEAPU16;
+    indexBytes = 2;
+   }
+   var first = HEAP8.length;
+   var last = 0;
+   for (var i = 0; i < count; i++) {
+    var index = indexView[indices / indexBytes + i];
+    first = Math.min(first, index);
+    last = Math.max(last, index + 1);
+   }
+   GLImmediate.firstVertex = first;
+   GLImmediate.lastVertex = last;
+  }
+  vertexCount = GLImmediate.lastVertex;
+ }
+ GLImmediate.prepareClientAttributes(vertexCount, false);
+ GLImmediate.mode = mode;
+ if (!GLctx.currentArrayBufferBinding) {
+  GLImmediate.vertexData = HEAPF32.subarray(GLImmediate.vertexPointer >> 2, GLImmediate.vertexPointer + GLImmediate.lastVertex * GLImmediate.stride >> 2);
+ }
+ GLImmediate.flush(count, 0, indices, type);
+ GLImmediate.mode = -1;
+}'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one legacy Emscripten glDrawElements wrapper")
+js = js.replace(old, new)
 old = '''function _emscripten_glDrawElements(mode, count, type, indices, start, end) {
  if (GLImmediate.totalEnabledClientAttributes == 0 && mode <= 6 && GLctx.currentElementArrayBufferBinding) {
   GLctx.drawElements(mode, count, type, indices);

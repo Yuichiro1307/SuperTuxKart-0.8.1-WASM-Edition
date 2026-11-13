@@ -3624,11 +3624,26 @@ CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.s"
 	/usr/bin/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/vec3.cpp -o CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.s
 
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: CMakeFiles/supertuxkart.dir/includes_CXX.rsp
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o"
+	/usr/bin/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o -MF CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o -c /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp
+
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.i"
+	/usr/bin/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp > CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.i
+
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.s"
+	/usr/bin/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp -o CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.s
+
 CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: CMakeFiles/supertuxkart.dir/includes_CXX.rsp
 CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/wasm_gl_compat.cpp
 CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o"
 	/usr/bin/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o -MF CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o -c /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/wasm_gl_compat.cpp
 
 CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.i: cmake_force
@@ -3878,6 +3893,7 @@ supertuxkart_OBJECTS = \
 "CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o" \
+"CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o"
 
 # External object files for target supertuxkart
@@ -4120,6 +4136,7 @@ supertuxkart_EXTERNAL_OBJECTS =
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/build.make
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: lib/bullet/libbulletdynamics.a
@@ -4131,7 +4148,7 @@ supertuxkart_EXTERNAL_OBJECTS =
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/linkLibs.rsp
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/objects1.rsp
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html: CMakeFiles/supertuxkart.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Linking CXX executable /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/SuperTuxKart-0.8.1-WASM-Edition/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Linking CXX executable /workspaces/SuperTuxKart-0.8.1-WASM-Edition/Web/supertuxkart.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/supertuxkart.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -280,4 +280,20 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/synchronised.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.hpp \
-  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/network_http.hpp
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/network_http.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.hpp \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/fetch.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_js.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/eventloop.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/console.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5_webgl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/vector \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bit_reference \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__split_buffer

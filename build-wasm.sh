@@ -56,6 +56,44 @@ for old, new in regex_replacements:
     if js.count(old) != 1:
         raise SystemExit(f"Expected one Emscripten GL texture scanner: {old}")
     js = js.replace(old, new)
+old = r'''    old = source;
+    source = source.replace(/gl_ProjectionMatrix/g, "u_projection");
+    if (old != source) need_pm = 1;
+    old = source;
+    source = source.replace(/gl_ModelViewMatrixTranspose\[2\]/g, "vec4(u_modelView[0][2], u_modelView[1][2], u_modelView[2][2], u_modelView[3][2])");
+    if (old != source) need_mm = 1;
+    old = source;
+    source = source.replace(/gl_ModelViewMatrix/g, "u_modelView");
+    if (old != source) need_mm = 1;
+    old = source;
+    source = source.replace(/gl_Vertex/g, "a_position");
+    if (old != source) need_pv = 1;
+    old = source;
+    source = source.replace(/gl_ModelViewProjectionMatrix/g, "(u_projection * u_modelView)");
+    if (old != source) need_pm = need_mm = 1;'''
+new = r'''    old = source;
+    source = source.replace(/\bgl_ModelViewProjectionMatrix\b/g, "(u_projection * u_modelView)");
+    if (old != source) need_pm = need_mm = 1;
+    old = source;
+    source = source.replace(/\bgl_ProjectionMatrix\b/g, "u_projection");
+    if (old != source) need_pm = 1;
+    old = source;
+    source = source.replace(/\bgl_ModelViewMatrixTranspose\[2\]/g, "vec4(u_modelView[0][2], u_modelView[1][2], u_modelView[2][2], u_modelView[3][2])");
+    if (old != source) need_mm = 1;
+    old = source;
+    source = source.replace(/\bgl_ModelViewMatrix\b/g, "u_modelView");
+    if (old != source) need_mm = 1;
+    old = source;
+    source = source.replace(/\bgl_Vertex\b/g, "a_position");
+    if (old != source) need_pv = 1;'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one Emscripten vertex/matrix built-in translation block")
+js = js.replace(old, new)
+old = r'''     source = source.replace(new RegExp("gl_TexCoord\\[" + i + "\\]", "g"), "v_texCoord" + i).replace(new RegExp("gl_MultiTexCoord" + i, "g"), "a_texCoord" + i);'''
+new = r'''     source = source.replace(new RegExp("\\bgl_TexCoord\\[" + i + "\\]", "g"), "v_texCoord" + i).replace(new RegExp("\\bgl_MultiTexCoord" + i + "\\b", "g"), "a_texCoord" + i);'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one Emscripten texture-coordinate built-in translation")
+js = js.replace(old, new)
 old = '''    default:
      err("WARNING: Unhandled `pname` in call to `glTexEnvf`.");
     }
@@ -73,7 +111,7 @@ old = '''    if (source.includes("gl_FrontColor")) {
      source = "varying vec4 v_color; \\n" + source.replace(/gl_FrontColor/g, "v_color");
     }'''
 new = '''    if (source.includes("gl_FrontColor") || source.includes("gl_BackColor")) {
-     source = "varying vec4 v_color; \\n" + source.replace(/gl_FrontColor|gl_BackColor/g, "v_color");
+     source = "varying vec4 v_color; \\n" + source.replace(/\\bgl_FrontColor\\b|\\bgl_BackColor\\b/g, "v_color");
     }'''
 if js.count(old) != 1:
     raise SystemExit("Expected one legacy vertex-color shader translation block")
@@ -82,13 +120,114 @@ old = '''    if (source.includes("gl_Normal")) {
      source = "attribute vec3 a_normal; \\n" + source.replace(/gl_Normal/g, "a_normal");
     }'''
 new = '''    if (source.includes("gl_NormalMatrix")) {
-     source = "uniform mat3 u_normalMatrix; \\n" + source.replace(/gl_NormalMatrix/g, "u_normalMatrix");
+     source = "uniform mat3 u_normalMatrix; \\n" + source.replace(/\\bgl_NormalMatrix\\b/g, "u_normalMatrix");
     }
     if (source.includes("gl_Normal")) {
-     source = "attribute vec3 a_normal; \\n" + source.replace(/gl_Normal/g, "a_normal");
+     source = "attribute vec3 a_normal; \\n" + source.replace(/\\bgl_Normal\\b/g, "a_normal");
     }'''
 if js.count(old) != 1:
     raise SystemExit("Expected one legacy normal shader translation block")
+js = js.replace(old, new)
+old = r'''    if (source.includes("gl_NormalMatrix")) {
+     source = "uniform mat3 u_normalMatrix; \n" + source.replace(/\bgl_NormalMatrix\b/g, "u_normalMatrix");
+    }
+    if (source.includes("gl_Normal")) {
+     source = "attribute vec3 a_normal; \n" + source.replace(/\bgl_Normal\b/g, "a_normal");
+    }
+    if (source.includes("gl_FogFragCoord")) {'''
+new = r'''    if (source.includes("gl_NormalMatrix")) {
+     source = "uniform mat3 u_normalMatrix; \n" + source.replace(/\bgl_NormalMatrix\b/g, "u_normalMatrix");
+    }
+    if (source.includes("gl_Normal")) {
+     source = "attribute vec3 a_normal; \n" + source.replace(/\bgl_Normal\b/g, "a_normal");
+    }
+    source = source.replace(/\bgl_LightSource\s*\[\s*([^\]]+)\s*\]\s*\.\s*(ambient|diffuse|specular|position)\b/g, function(match, lightId, field) {
+     var fieldName = field.charAt(0).toUpperCase() + field.slice(1);
+     return "u_light" + fieldName + "[" + lightId.trim() + "]";
+    });
+    source = source.replace(/\bgl_LightSource\s*\[\s*[^\]]+\s*\]\s*\.\s*constantAttenuation\b/g, "1.0");
+    source = source.replace(/\bgl_LightSource\s*\[\s*[^\]]+\s*\]\s*\.\s*(linear|quadratic)Attenuation\b/g, "0.0");
+    for (var lightField of ["Ambient", "Diffuse", "Specular", "Position"]) {
+     var lightUniform = "u_light" + lightField;
+     if (source.includes(lightUniform + "[") && !new RegExp("uniform\\s+vec4\\s+" + lightUniform + "\\s*\\[").test(source)) {
+      source = "uniform vec4 " + lightUniform + "[8]; \n" + source;
+     }
+    }
+    if (source.includes("gl_FogFragCoord")) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one normal-to-fog translation section")
+js = js.replace(old, new)
+old = '''    if (source.includes("gl_Color")) {
+     source = "attribute vec4 a_color; \\n" + source.replace(/gl_Color/g, "a_color");
+    }'''
+new = '''    if (source.includes("gl_Color")) {
+     source = "attribute vec4 a_color; \\n" + source.replace(/\\bgl_Color\\b/g, "a_color");
+    }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one vertex gl_Color translation")
+js = js.replace(old, new)
+old = '''    if (source.includes("gl_Color")) {
+     source = "varying vec4 v_color; \\n" + source.replace(/gl_Color/g, "v_color");
+    }'''
+new = '''    if (source.includes("gl_Color")) {
+     source = "varying vec4 v_color; \\n" + source.replace(/\\bgl_Color\\b/g, "v_color");
+    }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one fragment gl_Color translation")
+js = js.replace(old, new)
+old = '''  _glCompileShader = _emscripten_glCompileShader = (shader => {
+   GLctx.compileShader(GL.shaders[shader]);
+  });'''
+new = '''  _glCompileShader = _emscripten_glCompileShader = (shader => {
+   GLctx.compileShader(GL.shaders[shader]);
+   if (!GLctx.getShaderParameter(GL.shaders[shader], GLctx.COMPILE_STATUS)) {
+    err("GLSL shader compilation failed:\\\\n" + GLctx.getShaderInfoLog(GL.shaders[shader]) + "\\\\n" + GLctx.getShaderSource(GL.shaders[shader]));
+   }
+  });'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one shader compilation wrapper")
+js = js.replace(old, new)
+old = '''    for (var lightId = 0; lightId < GLEmulation.MAX_LIGHTS; lightId++) {
+     this.lightAmbientLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightAmbient" + lightId);
+     this.lightDiffuseLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightDiffuse" + lightId);
+     this.lightSpecularLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightSpecular" + lightId);
+     this.lightPositionLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightPosition" + lightId);
+    }'''
+new = '''    for (var lightId = 0; lightId < GLEmulation.MAX_LIGHTS; lightId++) {
+     this.lightAmbientLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightAmbient" + lightId);
+     this.lightDiffuseLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightDiffuse" + lightId);
+     this.lightSpecularLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightSpecular" + lightId);
+     this.lightPositionLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightPosition" + lightId);
+    }
+    this.lightAmbientArrayLocation = GLctx.getUniformLocation(this.program, "u_lightAmbient[0]");
+    this.lightDiffuseArrayLocation = GLctx.getUniformLocation(this.program, "u_lightDiffuse[0]");
+    this.lightSpecularArrayLocation = GLctx.getUniformLocation(this.program, "u_lightSpecular[0]");
+    this.lightPositionArrayLocation = GLctx.getUniformLocation(this.program, "u_lightPosition[0]");
+    this.lightAmbientArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightDiffuseArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightSpecularArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightPositionArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.hasLighting = this.hasLighting || !!this.lightAmbientArrayLocation || !!this.lightDiffuseArrayLocation ||
+      !!this.lightSpecularArrayLocation || !!this.lightPositionArrayLocation;'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one fixed-function light uniform lookup loop")
+js = js.replace(old, new)
+old = '''      if (this.lightPositionLocation[lightId]) GLctx.uniform4fv(this.lightPositionLocation[lightId], GLEmulation.lightPosition[lightId]);
+     }
+    }'''
+new = '''      if (this.lightPositionLocation[lightId]) GLctx.uniform4fv(this.lightPositionLocation[lightId], GLEmulation.lightPosition[lightId]);
+      this.lightAmbientArray.set(GLEmulation.lightAmbient[lightId], lightId * 4);
+      this.lightDiffuseArray.set(GLEmulation.lightDiffuse[lightId], lightId * 4);
+      this.lightSpecularArray.set(GLEmulation.lightSpecular[lightId], lightId * 4);
+      this.lightPositionArray.set(GLEmulation.lightPosition[lightId], lightId * 4);
+     }
+     if (this.lightAmbientArrayLocation) GLctx.uniform4fv(this.lightAmbientArrayLocation, this.lightAmbientArray);
+     if (this.lightDiffuseArrayLocation) GLctx.uniform4fv(this.lightDiffuseArrayLocation, this.lightDiffuseArray);
+     if (this.lightSpecularArrayLocation) GLctx.uniform4fv(this.lightSpecularArrayLocation, this.lightSpecularArray);
+     if (this.lightPositionArrayLocation) GLctx.uniform4fv(this.lightPositionArrayLocation, this.lightPositionArray);
+    }'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one fixed-function light uniform upload loop")
 js = js.replace(old, new)
 old = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ").xyz;";'''
 new = '''        vsLightingPass += "    vec3 lightDirection = normalize(u_lightPosition" + lightId + ".w == 0.0 ? u_lightPosition" + lightId + ".xyz : u_lightPosition" + lightId + ".xyz - ecPosition.xyz);";'''
@@ -109,6 +248,28 @@ new = '''     if (this.normalMatrixLocation) {
      }'''
 if js.count(old) != 1:
     raise SystemExit("Expected one normal matrix upload condition")
+js = js.replace(old, new)
+old = '''     GLctx.uniformMatrix4fv(this.modelViewLocation, false, GLImmediate.matrix[0]);
+     if (this.normalMatrixLocation) {
+      var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
+      GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
+      GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
+      GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
+     }
+    }
+    if (this.projectionLocation && this.projectionMatrixVersion != GLImmediate.matrixVersion[1]) {'''
+new = '''     GLctx.uniformMatrix4fv(this.modelViewLocation, false, GLImmediate.matrix[0]);
+    }
+    if (this.normalMatrixLocation && this.normalMatrixVersion != GLImmediate.matrixVersion[0]) {
+     this.normalMatrixVersion = GLImmediate.matrixVersion[0];
+     var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
+     GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
+     GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
+     GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
+    }
+    if (this.projectionLocation && this.projectionMatrixVersion != GLImmediate.matrixVersion[1]) {'''
+if js.count(old) != 1:
+    raise SystemExit("Expected one model-view/normal-matrix upload section")
 js = js.replace(old, new)
 old = '''    if (GLImmediate.enabledClientAttributes[GLImmediate.COLOR]) {
      var colorAttr = clientAttributes[GLImmediate.COLOR];'''

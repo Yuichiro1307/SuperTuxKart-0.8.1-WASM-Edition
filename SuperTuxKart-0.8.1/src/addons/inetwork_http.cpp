@@ -18,6 +18,9 @@
 #include "addons/dummy_network_http.hpp"
 #include "addons/inetwork_http.hpp"
 #include "addons/network_http.hpp"
+#ifdef __EMSCRIPTEN__
+#include "addons/emscripten_network_http.hpp"
+#endif
 
 #include <assert.h>
 
@@ -29,7 +32,11 @@ void INetworkHttp::create()
 {
     assert(m_network_http == NULL);
 #ifdef NO_CURL
+#ifdef __EMSCRIPTEN__
+    m_network_http = new EmscriptenNetworkHttp();
+#else
     m_network_http = new DummyNetworkHttp();
+#endif
 #else
     m_network_http = new NetworkHttp();
 #endif

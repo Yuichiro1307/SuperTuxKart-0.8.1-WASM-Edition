@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/supertuxkart.dir/src/addons/addon.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.o"
   "CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.o.d"
+  "CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o"
+  "CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o"
   "CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/addons/news_manager.cpp.o"

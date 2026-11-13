@@ -255,6 +255,30 @@ src/addons/addons_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.s
 .PHONY : src/addons/addons_manager.cpp.s
 
+src/addons/emscripten_network_http.o: src/addons/emscripten_network_http.cpp.o
+.PHONY : src/addons/emscripten_network_http.o
+
+# target to build an object file
+src/addons/emscripten_network_http.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o
+.PHONY : src/addons/emscripten_network_http.cpp.o
+
+src/addons/emscripten_network_http.i: src/addons/emscripten_network_http.cpp.i
+.PHONY : src/addons/emscripten_network_http.i
+
+# target to preprocess a source file
+src/addons/emscripten_network_http.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.i
+.PHONY : src/addons/emscripten_network_http.cpp.i
+
+src/addons/emscripten_network_http.s: src/addons/emscripten_network_http.cpp.s
+.PHONY : src/addons/emscripten_network_http.s
+
+# target to generate assembly for a file
+src/addons/emscripten_network_http.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.s
+.PHONY : src/addons/emscripten_network_http.cpp.s
+
 src/addons/inetwork_http.o: src/addons/inetwork_http.cpp.o
 .PHONY : src/addons/inetwork_http.o
 
@@ -5940,6 +5964,9 @@ help:
 	@echo "... src/addons/addons_manager.o"
 	@echo "... src/addons/addons_manager.i"
 	@echo "... src/addons/addons_manager.s"
+	@echo "... src/addons/emscripten_network_http.o"
+	@echo "... src/addons/emscripten_network_http.i"
+	@echo "... src/addons/emscripten_network_http.s"
 	@echo "... src/addons/inetwork_http.o"
 	@echo "... src/addons/inetwork_http.i"
 	@echo "... src/addons/inetwork_http.s"

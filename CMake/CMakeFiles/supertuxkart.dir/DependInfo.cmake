@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/addon.cpp" "CMakeFiles/supertuxkart.dir/src/addons/addon.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/addon.cpp.o.d"
   "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/addons_manager.cpp" "CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.o.d"
+  "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp" "CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o.d"
   "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.cpp" "CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o.d"
   "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/news_manager.cpp" "CMakeFiles/supertuxkart.dir/src/addons/news_manager.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/news_manager.cpp.o.d"
   "/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/request.cpp" "CMakeFiles/supertuxkart.dir/src/addons/request.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/addons/request.cpp.o.d"

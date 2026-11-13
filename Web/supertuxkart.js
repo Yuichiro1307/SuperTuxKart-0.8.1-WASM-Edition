@@ -314,7 +314,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999970
   } ],
   "remote_package_size": 89999970,
-  "package_uuid": "024fe8fd-c773-4fbb-a78b-faeefe0e2ab1"
+  "package_uuid": "47369b85-b173-4fbd-b8b6-3a690d458899"
  });
 })();
 
@@ -884,7 +884,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999992
   } ],
   "remote_package_size": 89999992,
-  "package_uuid": "186ed513-e64b-4083-bc82-cc44f7a71bed"
+  "package_uuid": "5a817703-2e35-4280-9048-a462807274d8"
  });
 })();
 
@@ -3393,7 +3393,7 @@ Module.expectedDataFileDownloads++;
    "end": 89999980
   } ],
   "remote_package_size": 89999980,
-  "package_uuid": "b0b37a42-fb9b-4d1b-81f2-634fb207b0ea"
+  "package_uuid": "689bef42-fce4-44ad-a957-da706f892c0f"
  });
 })();
 
@@ -10578,886 +10578,886 @@ Module.expectedDataFileDownloads++;
   }, {
    "filename": "/data/challenges/xr591.challenge",
    "start": 35584541,
-   "end": 35585018
+   "end": 35585016
   }, {
    "filename": "/data/tracks/endcutscene/materials.xml",
-   "start": 35585018,
-   "end": 35585490
+   "start": 35585016,
+   "end": 35585488
   }, {
    "filename": "/data/gui/press_a_key_dialog.stkgui",
-   "start": 35585490,
-   "end": 35585959
+   "start": 35585488,
+   "end": 35585957
   }, {
    "filename": "/data/tracks/mansion/License.txt",
-   "start": 35585959,
-   "end": 35586427
+   "start": 35585957,
+   "end": 35586425
   }, {
    "filename": "/data/challenges/lighthouse.challenge",
-   "start": 35586427,
-   "end": 35586885
+   "start": 35586425,
+   "end": 35586881
   }, {
    "filename": "/data/challenges/snowpeak.challenge",
-   "start": 35586885,
-   "end": 35587342
+   "start": 35586881,
+   "end": 35587337
   }, {
    "filename": "/data/challenges/gp1.challenge",
-   "start": 35587342,
-   "end": 35587798
+   "start": 35587337,
+   "end": 35587792
   }, {
    "filename": "/data/challenges/gp2.challenge",
-   "start": 35587798,
-   "end": 35588254
+   "start": 35587792,
+   "end": 35588247
   }, {
    "filename": "/data/challenges/gp3.challenge",
-   "start": 35588254,
-   "end": 35588710
-  }, {
-   "filename": "/data/challenges/startrack.challenge",
-   "start": 35588710,
-   "end": 35589165
+   "start": 35588247,
+   "end": 35588701
   }, {
    "filename": "/data/challenges/hacienda.challenge",
-   "start": 35589165,
-   "end": 35589619
+   "start": 35588701,
+   "end": 35589154
   }, {
    "filename": "/data/challenges/scotland.challenge",
-   "start": 35589619,
-   "end": 35590072
+   "start": 35589154,
+   "end": 35589607
+  }, {
+   "filename": "/data/challenges/startrack.challenge",
+   "start": 35589607,
+   "end": 35590060
   }, {
    "filename": "/data/challenges/jungle.challenge",
-   "start": 35590072,
-   "end": 35590524
-  }, {
-   "filename": "/data/challenges/gp4.challenge",
-   "start": 35590524,
-   "end": 35590975
-  }, {
-   "filename": "/data/challenges/islandtrack.challenge",
-   "start": 35590975,
-   "end": 35591426
+   "start": 35590060,
+   "end": 35590511
   }, {
    "filename": "/data/challenges/subsea.challenge",
-   "start": 35591426,
-   "end": 35591877
+   "start": 35590511,
+   "end": 35590962
   }, {
-   "filename": "/data/challenges/tuxtollway.challenge",
-   "start": 35591877,
-   "end": 35592327
+   "filename": "/data/challenges/islandtrack.challenge",
+   "start": 35590962,
+   "end": 35591412
   }, {
    "filename": "/data/tracks/overworld/track.xml",
-   "start": 35592327,
-   "end": 35592777
+   "start": 35591412,
+   "end": 35591862
   }, {
    "filename": "/data/challenges/farm.challenge",
-   "start": 35592777,
-   "end": 35593226
+   "start": 35591862,
+   "end": 35592311
   }, {
-   "filename": "/data/challenges/minigolf.challenge",
-   "start": 35593226,
-   "end": 35593674
+   "filename": "/data/challenges/gp4.challenge",
+   "start": 35592311,
+   "end": 35592760
+  }, {
+   "filename": "/data/challenges/tuxtollway.challenge",
+   "start": 35592760,
+   "end": 35593209
   }, {
    "filename": "/data/challenges/zengarden.challenge",
-   "start": 35593674,
-   "end": 35594122
+   "start": 35593209,
+   "end": 35593656
   }, {
-   "filename": "/data/challenges/snowmountain.challenge",
-   "start": 35594122,
-   "end": 35594567
+   "filename": "/data/challenges/minigolf.challenge",
+   "start": 35593656,
+   "end": 35594102
   }, {
    "filename": "/data/tracks/snowmountain/materials.xml",
-   "start": 35594567,
-   "end": 35595012
+   "start": 35594102,
+   "end": 35594547
+  }, {
+   "filename": "/data/challenges/snowmountain.challenge",
+   "start": 35594547,
+   "end": 35594991
   }, {
    "filename": "/data/challenges/city.challenge",
-   "start": 35595012,
-   "end": 35595455
-  }, {
-   "filename": "/data/challenges/mansion.challenge",
-   "start": 35595455,
-   "end": 35595895
-  }, {
-   "filename": "/data/challenges/mines.challenge",
-   "start": 35595895,
-   "end": 35596335
+   "start": 35594991,
+   "end": 35595433
   }, {
    "filename": "/data/tracks/xr591/graph.xml",
-   "start": 35596335,
-   "end": 35596775
+   "start": 35595433,
+   "end": 35595873
   }, {
    "filename": "/data/tracks/sandtrack/graph.xml",
-   "start": 35596775,
-   "end": 35597214
+   "start": 35595873,
+   "end": 35596312
+  }, {
+   "filename": "/data/challenges/mansion.challenge",
+   "start": 35596312,
+   "end": 35596750
+  }, {
+   "filename": "/data/challenges/mines.challenge",
+   "start": 35596750,
+   "end": 35597188
   }, {
    "filename": "/data/tracks/jungle/graph.xml",
-   "start": 35597214,
-   "end": 35597647
+   "start": 35597188,
+   "end": 35597621
   }, {
    "filename": "/data/tracks/olivermath/graph.xml",
-   "start": 35597647,
-   "end": 35598078
+   "start": 35597621,
+   "end": 35598052
   }, {
    "filename": "/data/tracks/fortmagma/graph.xml",
-   "start": 35598078,
-   "end": 35598505
+   "start": 35598052,
+   "end": 35598479
   }, {
    "filename": "/data/tracks/hacienda/mars_nose.jpg",
-   "start": 35598505,
-   "end": 35598932
+   "start": 35598479,
+   "end": 35598906
   }, {
    "filename": "/data/tracks/jungle/track.xml",
-   "start": 35598932,
-   "end": 35599359
+   "start": 35598906,
+   "end": 35599333
   }, {
    "filename": "/data/tracks/xr591/mars_nose.jpg",
-   "start": 35599359,
-   "end": 35599786
+   "start": 35599333,
+   "end": 35599760
   }, {
    "filename": "/data/tracks/tutorial/track.xml",
-   "start": 35599786,
-   "end": 35600207
+   "start": 35599760,
+   "end": 35600181
   }, {
    "filename": "/data/tracks/battleisland/track.xml",
-   "start": 35600207,
-   "end": 35600626
+   "start": 35600181,
+   "end": 35600600
   }, {
    "filename": "/data/tracks/introcutscene2/track.xml",
-   "start": 35600626,
-   "end": 35601045
+   "start": 35600600,
+   "end": 35601019
   }, {
    "filename": "/data/tracks/snowtuxpeak/track.xml",
-   "start": 35601045,
-   "end": 35601463
+   "start": 35601019,
+   "end": 35601437
   }, {
    "filename": "/data/tracks/xr591/marsrobot1.jpg",
-   "start": 35601463,
-   "end": 35601878
+   "start": 35601437,
+   "end": 35601852
   }, {
    "filename": "/data/tracks/introcutscene/fence_pagoda.png",
-   "start": 35601878,
-   "end": 35602290
+   "start": 35601852,
+   "end": 35602264
   }, {
    "filename": "/data/tracks/zengarden/fence_pagoda.png",
-   "start": 35602290,
-   "end": 35602702
+   "start": 35602264,
+   "end": 35602676
   }, {
    "filename": "/data/tracks/sandtrack/materials.xml",
-   "start": 35602702,
-   "end": 35603109
+   "start": 35602676,
+   "end": 35603083
   }, {
    "filename": "/data/tracks/farm/track.xml",
-   "start": 35603109,
-   "end": 35603515
+   "start": 35603083,
+   "end": 35603489
   }, {
    "filename": "/data/tracks/lighthouse/track.xml",
-   "start": 35603515,
-   "end": 35603919
+   "start": 35603489,
+   "end": 35603893
   }, {
    "filename": "/data/tracks/sandtrack/track.xml",
-   "start": 35603919,
-   "end": 35604323
+   "start": 35603893,
+   "end": 35604297
   }, {
    "filename": "/data/tracks/xr591/track.xml",
-   "start": 35604323,
-   "end": 35604727
+   "start": 35604297,
+   "end": 35604701
   }, {
    "filename": "/data/tracks/mines/track.xml",
-   "start": 35604727,
-   "end": 35605130
+   "start": 35604701,
+   "end": 35605104
   }, {
    "filename": "/data/tracks/startrack/track.xml",
-   "start": 35605130,
-   "end": 35605532
+   "start": 35605104,
+   "end": 35605506
   }, {
    "filename": "/data/karts/sara/materials.xml",
-   "start": 35605532,
-   "end": 35605931
+   "start": 35605506,
+   "end": 35605905
   }, {
    "filename": "/data/tracks/mansion/track.xml",
-   "start": 35605931,
-   "end": 35606330
+   "start": 35605905,
+   "end": 35606304
   }, {
    "filename": "/data/tracks/olivermath/track.xml",
-   "start": 35606330,
-   "end": 35606728
+   "start": 35606304,
+   "end": 35606702
   }, {
    "filename": "/data/tracks/stadium/track.xml",
-   "start": 35606728,
-   "end": 35607125
+   "start": 35606702,
+   "end": 35607099
   }, {
    "filename": "/data/tracks/hacienda/track.xml",
-   "start": 35607125,
-   "end": 35607517
+   "start": 35607099,
+   "end": 35607491
   }, {
    "filename": "/data/tracks/introcutscene2/license.txt",
-   "start": 35607517,
-   "end": 35607908
+   "start": 35607491,
+   "end": 35607882
   }, {
    "filename": "/data/tracks/islandtrack/track.xml",
-   "start": 35607908,
-   "end": 35608297
+   "start": 35607882,
+   "end": 35608271
   }, {
    "filename": "/data/tracks/zengarden/track.xml",
-   "start": 35608297,
-   "end": 35608685
+   "start": 35608271,
+   "end": 35608659
   }, {
    "filename": "/data/tracks/city/track.xml",
-   "start": 35608685,
-   "end": 35609071
+   "start": 35608659,
+   "end": 35609045
   }, {
    "filename": "/data/grandprix/3_tothemoonandback.grandprix",
-   "start": 35609071,
-   "end": 35609455
+   "start": 35609045,
+   "end": 35609429
   }, {
    "filename": "/data/tracks/fortmagma/track.xml",
-   "start": 35609455,
-   "end": 35609837
+   "start": 35609429,
+   "end": 35609811
   }, {
    "filename": "/data/tracks/mines/License.txt",
-   "start": 35609837,
-   "end": 35610218
+   "start": 35609811,
+   "end": 35610192
   }, {
    "filename": "/data/karts/nolok/nolok_window.png",
-   "start": 35610218,
-   "end": 35610597
+   "start": 35610192,
+   "end": 35610571
   }, {
    "filename": "/data/tracks/endcutscene/track.xml",
-   "start": 35610597,
-   "end": 35610976
+   "start": 35610571,
+   "end": 35610950
   }, {
    "filename": "/data/tracks/introcutscene/track.xml",
-   "start": 35610976,
-   "end": 35611355
+   "start": 35610950,
+   "end": 35611329
   }, {
    "filename": "/data/tracks/islandtrack/License.txt",
-   "start": 35611355,
-   "end": 35611734
+   "start": 35611329,
+   "end": 35611708
   }, {
    "filename": "/data/tracks/snowmountain/track.xml",
-   "start": 35611734,
-   "end": 35612111
+   "start": 35611708,
+   "end": 35612085
   }, {
    "filename": "/data/tracks/fortmagma/windows.b3d",
-   "start": 35612111,
-   "end": 35612487
+   "start": 35612085,
+   "end": 35612461
   }, {
    "filename": "/data/tracks/greenvalley/grass_tall.b3d",
-   "start": 35612487,
-   "end": 35612862
+   "start": 35612461,
+   "end": 35612836
   }, {
    "filename": "/data/tracks/endcutscene/TuxShadow.b3d",
-   "start": 35612862,
-   "end": 35613236
+   "start": 35612836,
+   "end": 35613210
   }, {
    "filename": "/data/tracks/minigolf/track.xml",
-   "start": 35613236,
-   "end": 35613610
+   "start": 35613210,
+   "end": 35613584
   }, {
    "filename": "/data/tracks/zengarden/sakuraLow_LOD500.b3d",
-   "start": 35613610,
-   "end": 35613984
+   "start": 35613584,
+   "end": 35613958
   }, {
    "filename": "/data/grandprix/2_offthebeatentrack.grandprix",
-   "start": 35613984,
-   "end": 35614357
+   "start": 35613958,
+   "end": 35614331
   }, {
    "filename": "/data/tracks/fortmagma/Plane.034.b3d",
-   "start": 35614357,
-   "end": 35614730
+   "start": 35614331,
+   "end": 35614704
   }, {
    "filename": "/data/tracks/fortmagma/Plane.035.b3d",
-   "start": 35614730,
-   "end": 35615103
+   "start": 35614704,
+   "end": 35615077
   }, {
    "filename": "/data/tracks/fortmagma/Plane.036.b3d",
-   "start": 35615103,
-   "end": 35615476
+   "start": 35615077,
+   "end": 35615450
   }, {
    "filename": "/data/tracks/fortmagma/Plane.037.b3d",
-   "start": 35615476,
-   "end": 35615849
+   "start": 35615450,
+   "end": 35615823
   }, {
    "filename": "/data/tracks/fortmagma/Plane.062.b3d",
-   "start": 35615849,
-   "end": 35616222
+   "start": 35615823,
+   "end": 35616196
   }, {
    "filename": "/data/tracks/startrack/screen_halo.b3d",
-   "start": 35616222,
-   "end": 35616593
+   "start": 35616196,
+   "end": 35616567
   }, {
    "filename": "/data/tracks/scotland/track.xml",
-   "start": 35616593,
-   "end": 35616963
+   "start": 35616567,
+   "end": 35616937
   }, {
    "filename": "/data/grandprix/1_penguinplayground.grandprix",
-   "start": 35616963,
-   "end": 35617332
+   "start": 35616937,
+   "end": 35617306
   }, {
    "filename": "/data/tracks/introcutscene/NolokShadow.b3d",
-   "start": 35617332,
-   "end": 35617701
+   "start": 35617306,
+   "end": 35617675
   }, {
    "filename": "/data/tracks/zengarden/pineLow_LOD500.b3d",
-   "start": 35617701,
-   "end": 35618070
+   "start": 35617675,
+   "end": 35618044
   }, {
    "filename": "/data/grandprix/4_atworldsend.grandprix",
-   "start": 35618070,
-   "end": 35618438
+   "start": 35618044,
+   "end": 35618412
   }, {
    "filename": "/data/tracks/subsea/track.xml",
-   "start": 35618438,
-   "end": 35618805
+   "start": 35618412,
+   "end": 35618779
   }, {
    "filename": "/data/tracks/cave/materials.xml",
-   "start": 35618805,
-   "end": 35619170
+   "start": 35618779,
+   "end": 35619144
   }, {
    "filename": "/data/tracks/hacienda/Plane.021.b3d",
-   "start": 35619170,
-   "end": 35619535
+   "start": 35619144,
+   "end": 35619509
   }, {
    "filename": "/data/tracks/hacienda/Plane.023.b3d",
-   "start": 35619535,
-   "end": 35619900
+   "start": 35619509,
+   "end": 35619874
   }, {
    "filename": "/data/tracks/hacienda/Plane.024.b3d",
-   "start": 35619900,
-   "end": 35620265
+   "start": 35619874,
+   "end": 35620239
   }, {
    "filename": "/data/tracks/hacienda/Plane.025.b3d",
-   "start": 35620265,
-   "end": 35620630
+   "start": 35620239,
+   "end": 35620604
   }, {
    "filename": "/data/tracks/hacienda/Plane.026.b3d",
-   "start": 35620630,
-   "end": 35620995
+   "start": 35620604,
+   "end": 35620969
   }, {
    "filename": "/data/tracks/tutorial/Plane.021.b3d",
-   "start": 35620995,
-   "end": 35621360
+   "start": 35620969,
+   "end": 35621334
   }, {
    "filename": "/data/tracks/tutorial/Plane.023.b3d",
-   "start": 35621360,
-   "end": 35621725
+   "start": 35621334,
+   "end": 35621699
   }, {
    "filename": "/data/tracks/tutorial/Plane.024.b3d",
-   "start": 35621725,
-   "end": 35622090
+   "start": 35621699,
+   "end": 35622064
   }, {
    "filename": "/data/tracks/tutorial/Plane.025.b3d",
-   "start": 35622090,
-   "end": 35622455
+   "start": 35622064,
+   "end": 35622429
   }, {
    "filename": "/data/tracks/tutorial/Plane.026.b3d",
-   "start": 35622455,
-   "end": 35622820
+   "start": 35622429,
+   "end": 35622794
   }, {
    "filename": "/data/tracks/farm/mill.001.b3d",
-   "start": 35622820,
-   "end": 35623184
+   "start": 35622794,
+   "end": 35623158
   }, {
    "filename": "/data/tracks/hacienda/mill.001.b3d",
-   "start": 35623184,
-   "end": 35623548
+   "start": 35623158,
+   "end": 35623522
   }, {
    "filename": "/data/tracks/hacienda/mill.002.b3d",
-   "start": 35623548,
-   "end": 35623912
+   "start": 35623522,
+   "end": 35623886
   }, {
    "filename": "/data/tracks/tutorial/mill.001.b3d",
-   "start": 35623912,
-   "end": 35624276
+   "start": 35623886,
+   "end": 35624250
   }, {
    "filename": "/data/tracks/tutorial/mill.002.b3d",
-   "start": 35624276,
-   "end": 35624640
+   "start": 35624250,
+   "end": 35624614
   }, {
    "filename": "/data/tracks/hacienda/mill.b3d",
-   "start": 35624640,
-   "end": 35625e3
+   "start": 35624614,
+   "end": 35624974
   }, {
    "filename": "/data/tracks/tutorial/mill.b3d",
-   "start": 35625e3,
-   "end": 35625360
+   "start": 35624974,
+   "end": 35625334
   }, {
    "filename": "/data/tracks/greenvalley/track.xml",
-   "start": 35625360,
-   "end": 35625719
+   "start": 35625334,
+   "end": 35625693
   }, {
    "filename": "/data/tracks/olivermath/Line.png",
-   "start": 35625719,
-   "end": 35626075
+   "start": 35625693,
+   "end": 35626049
   }, {
    "filename": "/data/tracks/cave/track.xml",
-   "start": 35626075,
-   "end": 35626430
+   "start": 35626049,
+   "end": 35626404
   }, {
    "filename": "/data/models/Makefile.am",
-   "start": 35626430,
-   "end": 35626778
+   "start": 35626404,
+   "end": 35626752
   }, {
    "filename": "/data/grandprix/basic_drive.tutorial",
-   "start": 35626778,
-   "end": 35627125
+   "start": 35626752,
+   "end": 35627099
   }, {
    "filename": "/data/tracks/olivermath/materials.xml",
-   "start": 35627125,
-   "end": 35627469
+   "start": 35627099,
+   "end": 35627443
   }, {
    "filename": "/data/shaders/check.sh",
-   "start": 35627469,
-   "end": 35627809
+   "start": 35627443,
+   "end": 35627783
   }, {
    "filename": "/data/karts/adiumy/License.txt",
-   "start": 35627809,
-   "end": 35628139
+   "start": 35627783,
+   "end": 35628113
   }, {
    "filename": "/data/music/dance_cleopatra.music",
-   "start": 35628139,
-   "end": 35628465
+   "start": 35628113,
+   "end": 35628439
   }, {
    "filename": "/data/tracks/xr591/laser_bridge_red.png",
-   "start": 35628465,
-   "end": 35628783
+   "start": 35628439,
+   "end": 35628757
   }, {
    "filename": "/data/music/demonhill.music",
-   "start": 35628783,
-   "end": 35629098
+   "start": 35628757,
+   "end": 35629072
   }, {
    "filename": "/data/gui/tutorial_message_dialog.stkgui",
-   "start": 35629098,
-   "end": 35629412
+   "start": 35629072,
+   "end": 35629386
   }, {
    "filename": "/data/tracks/olivermath/shine.png",
-   "start": 35629412,
-   "end": 35629724
+   "start": 35629386,
+   "end": 35629698
   }, {
    "filename": "/data/tracks/farm/graph.xml",
-   "start": 35629724,
-   "end": 35630034
+   "start": 35629698,
+   "end": 35630008
   }, {
    "filename": "/data/tracks/hacienda/graph.xml",
-   "start": 35630034,
-   "end": 35630344
+   "start": 35630008,
+   "end": 35630318
   }, {
    "filename": "/data/tracks/islandtrack/graph.xml",
-   "start": 35630344,
-   "end": 35630654
+   "start": 35630318,
+   "end": 35630628
   }, {
    "filename": "/data/tracks/lighthouse/graph.xml",
-   "start": 35630654,
-   "end": 35630964
+   "start": 35630628,
+   "end": 35630938
   }, {
    "filename": "/data/tracks/mines/graph.xml",
-   "start": 35630964,
-   "end": 35631274
+   "start": 35630938,
+   "end": 35631248
   }, {
    "filename": "/data/tracks/scotland/graph.xml",
-   "start": 35631274,
-   "end": 35631584
+   "start": 35631248,
+   "end": 35631558
   }, {
    "filename": "/data/tracks/snowmountain/graph.xml",
-   "start": 35631584,
-   "end": 35631894
+   "start": 35631558,
+   "end": 35631868
   }, {
    "filename": "/data/tracks/tutorial/graph.xml",
-   "start": 35631894,
-   "end": 35632204
+   "start": 35631868,
+   "end": 35632178
   }, {
    "filename": "/data/tracks/greenvalley/sheep_black.jpg",
-   "start": 35632204,
-   "end": 35632512
+   "start": 35632178,
+   "end": 35632486
   }, {
    "filename": "/data/tracks/greenvalley/sheep_white.jpg",
-   "start": 35632512,
-   "end": 35632820
+   "start": 35632486,
+   "end": 35632794
   }, {
    "filename": "/data/tracks/mansion/graph.xml",
-   "start": 35632820,
-   "end": 35633128
+   "start": 35632794,
+   "end": 35633102
   }, {
    "filename": "/data/tracks/snowtuxpeak/graph.xml",
-   "start": 35633128,
-   "end": 35633436
+   "start": 35633102,
+   "end": 35633410
   }, {
    "filename": "/data/tracks/zengarden/graph.xml",
-   "start": 35633436,
-   "end": 35633744
+   "start": 35633410,
+   "end": 35633718
   }, {
    "filename": "/data/textures/deprecated/trackborder.png",
-   "start": 35633744,
-   "end": 35634048
+   "start": 35633718,
+   "end": 35634022
   }, {
    "filename": "/data/tracks/xr591/laser_bridge_green.png",
-   "start": 35634048,
-   "end": 35634350
+   "start": 35634022,
+   "end": 35634324
   }, {
    "filename": "/data/tracks/soccer_field/license.txt",
-   "start": 35634350,
-   "end": 35634651
+   "start": 35634324,
+   "end": 35634625
   }, {
    "filename": "/data/gui/skins/ocean/License.txt",
-   "start": 35634651,
-   "end": 35634939
+   "start": 35634625,
+   "end": 35634913
   }, {
    "filename": "/data/gui/skins/peach/License.txt",
-   "start": 35634939,
-   "end": 35635227
+   "start": 35634913,
+   "end": 35635201
   }, {
    "filename": "/data/tracks/soccer_field/materials.xml",
-   "start": 35635227,
-   "end": 35635503
+   "start": 35635201,
+   "end": 35635477
   }, {
    "filename": "/data/grandprix/Makefile.am",
-   "start": 35635503,
-   "end": 35635772
+   "start": 35635477,
+   "end": 35635746
   }, {
    "filename": "/data/karts/puffy/water-P.png",
-   "start": 35635772,
-   "end": 35636041
+   "start": 35635746,
+   "end": 35636015
   }, {
    "filename": "/data/karts/puffy/window.png",
-   "start": 35636041,
-   "end": 35636310
+   "start": 35636015,
+   "end": 35636284
   }, {
    "filename": "/data/models/zipper.png",
-   "start": 35636310,
-   "end": 35636574
+   "start": 35636284,
+   "end": 35636548
   }, {
    "filename": "/data/tracks/greenvalley/invisible.png",
-   "start": 35636574,
-   "end": 35636824
+   "start": 35636548,
+   "end": 35636798
   }, {
    "filename": "/data/sfx/Makefile.am",
-   "start": 35636824,
-   "end": 35637069
+   "start": 35636798,
+   "end": 35637043
   }, {
    "filename": "/data/textures/Makefile.am",
-   "start": 35637069,
-   "end": 35637310
+   "start": 35637043,
+   "end": 35637284
   }, {
    "filename": "/data/gui/feature_unlocked.stkgui",
-   "start": 35637310,
-   "end": 35637547
+   "start": 35637284,
+   "end": 35637521
   }, {
    "filename": "/data/textures/chess.png",
-   "start": 35637547,
-   "end": 35637782
+   "start": 35637521,
+   "end": 35637756
   }, {
    "filename": "/data/karts/adiumy/window.png",
-   "start": 35637782,
-   "end": 35638012
+   "start": 35637756,
+   "end": 35637986
   }, {
    "filename": "/data/karts/sara/window.png",
-   "start": 35638012,
-   "end": 35638242
+   "start": 35637986,
+   "end": 35638216
   }, {
    "filename": "/data/tracks/snowtuxpeak/License.txt",
-   "start": 35638242,
-   "end": 35638469
+   "start": 35638216,
+   "end": 35638443
   }, {
    "filename": "/data/gui/grand_prix_lose.stkgui",
-   "start": 35638469,
-   "end": 35638693
+   "start": 35638443,
+   "end": 35638667
   }, {
    "filename": "/data/gui/grand_prix_win.stkgui",
-   "start": 35638693,
-   "end": 35638917
+   "start": 35638667,
+   "end": 35638891
   }, {
    "filename": "/data/music/Makefile.am",
-   "start": 35638917,
-   "end": 35639139
+   "start": 35638891,
+   "end": 35639113
   }, {
    "filename": "/data/tracks/startrack/reset.png",
-   "start": 35639139,
-   "end": 35639361
+   "start": 35639113,
+   "end": 35639335
   }, {
    "filename": "/data/tracks/battleisland/License.txt",
-   "start": 35639361,
-   "end": 35639575
+   "start": 35639335,
+   "end": 35639549
   }, {
    "filename": "/data/karts/suzanne/License.txt",
-   "start": 35639575,
-   "end": 35639777
+   "start": 35639549,
+   "end": 35639751
   }, {
    "filename": "/data/karts/konqi/materials.xml",
-   "start": 35639777,
-   "end": 35639974
+   "start": 35639751,
+   "end": 35639948
   }, {
    "filename": "/data/tracks/overworld/ufo_window.png",
-   "start": 35639974,
-   "end": 35640168
+   "start": 35639948,
+   "end": 35640142
   }, {
    "filename": "/data/shaders/Makefile.am",
-   "start": 35640168,
-   "end": 35640360
+   "start": 35640142,
+   "end": 35640334
   }, {
    "filename": "/data/tracks/mines/clip.png",
-   "start": 35640360,
-   "end": 35640551
+   "start": 35640334,
+   "end": 35640525
   }, {
    "filename": "/data/fonts/Makefile.am",
-   "start": 35640551,
-   "end": 35640739
+   "start": 35640525,
+   "end": 35640713
   }, {
    "filename": "/data/tracks/introcutscene2/intro2.music",
-   "start": 35640739,
-   "end": 35640927
+   "start": 35640713,
+   "end": 35640901
   }, {
    "filename": "/data/po/Makefile.am",
-   "start": 35640927,
-   "end": 35641112
+   "start": 35640901,
+   "end": 35641086
   }, {
    "filename": "/data/karts/puffy/materials.xml",
-   "start": 35641112,
-   "end": 35641294
+   "start": 35641086,
+   "end": 35641268
   }, {
    "filename": "/data/tracks/overworld/bubble_solid_texture.png",
-   "start": 35641294,
-   "end": 35641468
+   "start": 35641268,
+   "end": 35641442
   }, {
    "filename": "/data/music/SkyVibe-HighFrequency.music",
-   "start": 35641468,
-   "end": 35641641
+   "start": 35641442,
+   "end": 35641615
   }, {
    "filename": "/data/music/TheDeadRocks-GreenSecretFromAmazonia.music",
-   "start": 35641641,
-   "end": 35641810
+   "start": 35641615,
+   "end": 35641784
   }, {
    "filename": "/data/tracks/mines/West.music",
-   "start": 35641810,
-   "end": 35641978
+   "start": 35641784,
+   "end": 35641952
   }, {
    "filename": "/data/tracks/stadium/License.txt",
-   "start": 35641978,
-   "end": 35642145
+   "start": 35641952,
+   "end": 35642119
   }, {
    "filename": "/data/tracks/lighthouse/easter_eggs.xml",
-   "start": 35642145,
-   "end": 35642310
+   "start": 35642119,
+   "end": 35642284
   }, {
    "filename": "/data/tracks/startrack/easter_eggs.xml",
-   "start": 35642310,
-   "end": 35642475
+   "start": 35642284,
+   "end": 35642449
   }, {
    "filename": "/data/tracks/subsea/easter_eggs.xml",
-   "start": 35642475,
-   "end": 35642640
+   "start": 35642449,
+   "end": 35642614
   }, {
    "filename": "/data/tracks/xr591/easter_eggs.xml",
-   "start": 35642640,
-   "end": 35642805
+   "start": 35642614,
+   "end": 35642779
   }, {
    "filename": "/data/tracks/startrack/xeon.music",
-   "start": 35642805,
-   "end": 35642968
+   "start": 35642779,
+   "end": 35642942
   }, {
    "filename": "/data/tracks/soccer_field/soccer_ball.png",
-   "start": 35642968,
-   "end": 35643129
+   "start": 35642942,
+   "end": 35643103
   }, {
    "filename": "/data/tracks/jungle/amazon_jungle.music",
-   "start": 35643129,
-   "end": 35643286
+   "start": 35643103,
+   "end": 35643260
   }, {
    "filename": "/data/karts/adiumy/materials.xml",
-   "start": 35643286,
-   "end": 35643437
+   "start": 35643260,
+   "end": 35643411
   }, {
    "filename": "/data/music/win_theme.music",
-   "start": 35643437,
-   "end": 35643585
+   "start": 35643411,
+   "end": 35643559
   }, {
    "filename": "/data/challenges/Makefile.am",
-   "start": 35643585,
-   "end": 35643731
+   "start": 35643559,
+   "end": 35643705
   }, {
    "filename": "/data/music/overworld.music",
-   "start": 35643731,
-   "end": 35643876
+   "start": 35643705,
+   "end": 35643850
   }, {
    "filename": "/data/tracks/cave/License.txt",
-   "start": 35643876,
-   "end": 35644021
+   "start": 35643850,
+   "end": 35643995
   }, {
    "filename": "/data/music/hacienda.music",
-   "start": 35644021,
-   "end": 35644165
+   "start": 35643995,
+   "end": 35644139
   }, {
    "filename": "/data/models/candy_stripe.png",
-   "start": 35644165,
-   "end": 35644308
+   "start": 35644139,
+   "end": 35644282
   }, {
    "filename": "/data/music/subsea.music",
-   "start": 35644308,
-   "end": 35644451
+   "start": 35644282,
+   "end": 35644425
   }, {
    "filename": "/data/music/TheDeadRocks-EasyJob.music",
-   "start": 35644451,
-   "end": 35644585
+   "start": 35644425,
+   "end": 35644559
   }, {
    "filename": "/data/tracks/city/License.txt",
-   "start": 35644585,
-   "end": 35644718
+   "start": 35644559,
+   "end": 35644692
   }, {
    "filename": "/data/tracks/fortmagma/pix.png",
-   "start": 35644718,
-   "end": 35644851
+   "start": 35644692,
+   "end": 35644825
   }, {
    "filename": "/data/tracks/tutorial/pix.png",
-   "start": 35644851,
-   "end": 35644984
+   "start": 35644825,
+   "end": 35644958
   }, {
    "filename": "/data/tracks/tutorial/pix_2.png",
-   "start": 35644984,
-   "end": 35645117
+   "start": 35644958,
+   "end": 35645091
   }, {
    "filename": "/data/music/Penguin_Party.music",
-   "start": 35645117,
-   "end": 35645249
+   "start": 35645091,
+   "end": 35645223
   }, {
    "filename": "/data/karts/nolok/materials.xml",
-   "start": 35645249,
-   "end": 35645380
+   "start": 35645223,
+   "end": 35645354
   }, {
    "filename": "/data/music/main_theme.music",
-   "start": 35645380,
-   "end": 35645511
+   "start": 35645354,
+   "end": 35645485
   }, {
    "filename": "/data/karts/sara/pix.png",
-   "start": 35645511,
-   "end": 35645641
+   "start": 35645485,
+   "end": 35645615
   }, {
    "filename": "/data/music/Boom_boom_boom.music",
-   "start": 35645641,
-   "end": 35645771
+   "start": 35645615,
+   "end": 35645745
   }, {
    "filename": "/data/tracks/hacienda/pix.png",
-   "start": 35645771,
-   "end": 35645901
+   "start": 35645745,
+   "end": 35645875
   }, {
    "filename": "/data/tracks/hacienda/pix_2.png",
-   "start": 35645901,
-   "end": 35646031
+   "start": 35645875,
+   "end": 35646005
   }, {
    "filename": "/data/tracks/mansion/pix.png",
-   "start": 35646031,
-   "end": 35646161
+   "start": 35646005,
+   "end": 35646135
   }, {
    "filename": "/data/tracks/zengarden/pix.png",
-   "start": 35646161,
-   "end": 35646291
+   "start": 35646135,
+   "end": 35646265
   }, {
    "filename": "/data/tracks/zengarden/pix_nr.png",
-   "start": 35646291,
-   "end": 35646421
+   "start": 35646265,
+   "end": 35646395
   }, {
    "filename": "/data/music/kart_grand_prix.music",
-   "start": 35646421,
-   "end": 35646550
+   "start": 35646395,
+   "end": 35646524
   }, {
    "filename": "/data/music/lava.music",
-   "start": 35646550,
-   "end": 35646679
+   "start": 35646524,
+   "end": 35646653
   }, {
    "filename": "/data/textures/transparence.png",
-   "start": 35646679,
-   "end": 35646807
+   "start": 35646653,
+   "end": 35646781
   }, {
    "filename": "/data/textures/transparence2.png",
-   "start": 35646807,
-   "end": 35646935
+   "start": 35646781,
+   "end": 35646909
   }, {
    "filename": "/data/tracks/xr591/transparence.png",
-   "start": 35646935,
-   "end": 35647063
+   "start": 35646909,
+   "end": 35647037
   }, {
    "filename": "/data/music/race_summary.music",
-   "start": 35647063,
-   "end": 35647190
+   "start": 35647037,
+   "end": 35647164
   }, {
    "filename": "/data/music/OnTheRiver.music",
-   "start": 35647190,
-   "end": 35647314
+   "start": 35647164,
+   "end": 35647288
   }, {
    "filename": "/data/gfx/Makefile.am",
-   "start": 35647314,
-   "end": 35647436
+   "start": 35647288,
+   "end": 35647410
   }, {
    "filename": "/data/music/lose_theme.music",
-   "start": 35647436,
-   "end": 35647557
+   "start": 35647410,
+   "end": 35647531
   }, {
    "filename": "/data/music/garden.music",
-   "start": 35647557,
-   "end": 35647677
+   "start": 35647531,
+   "end": 35647651
   }, {
    "filename": "/data/music/Snowy.music",
-   "start": 35647677,
-   "end": 35647795
+   "start": 35647651,
+   "end": 35647769
   }, {
    "filename": "/data/textures/deprecated/fuzzy.png",
-   "start": 35647795,
-   "end": 35647912
+   "start": 35647769,
+   "end": 35647886
   }, {
    "filename": "/data/music/valley.music",
-   "start": 35647912,
-   "end": 35648025
+   "start": 35647886,
+   "end": 35647999
   }, {
    "filename": "/data/music/Origin.music",
-   "start": 35648025,
-   "end": 35648137
+   "start": 35647999,
+   "end": 35648111
   }, {
    "filename": "/data/tracks/olivermath/License.txt",
-   "start": 35648137,
-   "end": 35648249
+   "start": 35648111,
+   "end": 35648223
   }, {
    "filename": "/data/tracks/stadium/materials.xml",
-   "start": 35648249,
-   "end": 35648359
+   "start": 35648223,
+   "end": 35648333
   }, {
    "filename": "/data/karts/beastie/materials.xml",
-   "start": 35648359,
-   "end": 35648462
+   "start": 35648333,
+   "end": 35648436
   }, {
    "filename": "/data/tracks/mansion/Circle.007.b3d",
-   "start": 35648462,
-   "end": 35648565
+   "start": 35648436,
+   "end": 35648539
   }, {
    "filename": "/data/tracks/mansion/Circle.008.b3d",
-   "start": 35648565,
-   "end": 35648668
+   "start": 35648539,
+   "end": 35648642
   }, {
    "filename": "/data/karts/pidgin/materials.xml",
-   "start": 35648668,
-   "end": 35648770
+   "start": 35648642,
+   "end": 35648744
   }, {
    "filename": "/data/karts/emule/materials.xml",
-   "start": 35648770,
-   "end": 35648869
+   "start": 35648744,
+   "end": 35648843
   }, {
    "filename": "/data/karts/xfcemouse/materials.xml",
-   "start": 35648869,
-   "end": 35648968
+   "start": 35648843,
+   "end": 35648942
   }, {
    "filename": "/data/karts/gnu/materials.xml",
-   "start": 35648968,
-   "end": 35649064
+   "start": 35648942,
+   "end": 35649038
   }, {
    "filename": "/data/karts/beagle/materials.xml",
-   "start": 35649064,
-   "end": 35649159
+   "start": 35649038,
+   "end": 35649133
   }, {
    "filename": "/data/tracks/greenvalley/.directory",
-   "start": 35649159,
-   "end": 35649228
+   "start": 35649133,
+   "end": 35649202
   }, {
    "filename": "/data/tracks/minigolf/license.txt",
-   "start": 35649228,
-   "end": 35649267
+   "start": 35649202,
+   "end": 35649241
   } ],
-  "remote_package_size": 35649267,
-  "package_uuid": "86cc3227-0739-43fb-8920-a7f4800eb0a8"
+  "remote_package_size": 35649241,
+  "package_uuid": "87deea56-dcd4-46c5-9d9b-4d3ded359f02"
  });
 })();
 
@@ -11976,10 +11976,10 @@ function createWasm() {
  function receiveInstance(instance, module) {
   var exports = instance.exports;
   Module["asm"] = exports;
-  wasmMemory = Module["asm"]["yk"];
+  wasmMemory = Module["asm"]["Ck"];
   updateGlobalBufferAndViews(wasmMemory.buffer);
-  wasmTable = Module["asm"]["Bk"];
-  addOnInit(Module["asm"]["zk"]);
+  wasmTable = Module["asm"]["Fk"];
+  addOnInit(Module["asm"]["Dk"]);
   removeRunDependency("wasm-instantiate");
  }
  addRunDependency("wasm-instantiate");
@@ -12030,11 +12030,11 @@ var tempDouble;
 var tempI64;
 
 var ASM_CONSTS = {
- 404948: function() {
+ 405948: function() {
   var status = document.getElementById("status");
   if (status) status.textContent = "SuperTuxKart failed to start due to an unknown error.";
  },
- 405090: function($0) {
+ 406090: function($0) {
   var status = document.getElementById("status");
   if (status) status.textContent = "SuperTuxKart failed to start: " + UTF8ToString($0);
  }
@@ -18411,6 +18411,18 @@ function ___syscall_recvmsg(fd, message, flags) {
  }
 }
 
+function ___syscall_rename(old_path, new_path) {
+ try {
+  old_path = SYSCALLS.getStr(old_path);
+  new_path = SYSCALLS.getStr(new_path);
+  FS.rename(old_path, new_path);
+  return 0;
+ } catch (e) {
+  if (typeof FS == "undefined" || !(e instanceof FS.ErrnoError)) throw e;
+  return -e.errno;
+ }
+}
+
 function ___syscall_rmdir(path) {
  try {
   path = SYSCALLS.getStr(path);
@@ -18485,6 +18497,10 @@ function ___syscall_unlink(path) {
   if (typeof FS == "undefined" || !(e instanceof FS.ErrnoError)) throw e;
   return -e.errno;
  }
+}
+
+function __emscripten_fetch_free(id) {
+ delete Fetch.xhrs[id - 1];
 }
 
 function __emscripten_throw_longjmp() {
@@ -21244,20 +21260,20 @@ var GLEmulation = {
     source = source.replace(/ftransform\(\)/g, "(u_projection * u_modelView * a_position)");
     if (old != source) need_pm = need_mm = need_pv = 1;
     old = source;
-    source = source.replace(/gl_ProjectionMatrix/g, "u_projection");
+    source = source.replace(/\bgl_ModelViewProjectionMatrix\b/g, "(u_projection * u_modelView)");
+    if (old != source) need_pm = need_mm = 1;
+    old = source;
+    source = source.replace(/\bgl_ProjectionMatrix\b/g, "u_projection");
     if (old != source) need_pm = 1;
     old = source;
-    source = source.replace(/gl_ModelViewMatrixTranspose\[2\]/g, "vec4(u_modelView[0][2], u_modelView[1][2], u_modelView[2][2], u_modelView[3][2])");
+    source = source.replace(/\bgl_ModelViewMatrixTranspose\[2\]/g, "vec4(u_modelView[0][2], u_modelView[1][2], u_modelView[2][2], u_modelView[3][2])");
     if (old != source) need_mm = 1;
     old = source;
-    source = source.replace(/gl_ModelViewMatrix/g, "u_modelView");
+    source = source.replace(/\bgl_ModelViewMatrix\b/g, "u_modelView");
     if (old != source) need_mm = 1;
     old = source;
-    source = source.replace(/gl_Vertex/g, "a_position");
+    source = source.replace(/\bgl_Vertex\b/g, "a_position");
     if (old != source) need_pv = 1;
-    old = source;
-    source = source.replace(/gl_ModelViewProjectionMatrix/g, "(u_projection * u_modelView)");
-    if (old != source) need_pm = need_mm = 1;
     if (need_pv && !has_pv) source = "attribute vec4 a_position; \n" + source;
     if (need_mm && !has_mm) source = "uniform mat4 u_modelView; \n" + source;
     if (need_pm && !has_pm) source = "uniform mat4 u_projection; \n" + source;
@@ -21265,7 +21281,7 @@ var GLEmulation = {
     for (var i = 0; i < GLImmediate.MAX_TEXTURES; i++) {
      old = source;
      var need_vtc = source.search("v_texCoord" + i) == -1;
-     source = source.replace(new RegExp("gl_TexCoord\\[" + i + "\\]", "g"), "v_texCoord" + i).replace(new RegExp("gl_MultiTexCoord" + i, "g"), "a_texCoord" + i);
+     source = source.replace(new RegExp("\\bgl_TexCoord\\[" + i + "\\]", "g"), "v_texCoord" + i).replace(new RegExp("\\bgl_MultiTexCoord" + i + "\\b", "g"), "a_texCoord" + i);
      if (source != old) {
       source = "attribute vec4 a_texCoord" + i + "; \n" + source;
       if (need_vtc) {
@@ -21279,16 +21295,28 @@ var GLEmulation = {
      }
     }
     if (source.includes("gl_FrontColor") || source.includes("gl_BackColor")) {
-     source = "varying vec4 v_color; \n" + source.replace(/gl_FrontColor|gl_BackColor/g, "v_color");
+     source = "varying vec4 v_color; \n" + source.replace(/\bgl_FrontColor\b|\bgl_BackColor\b/g, "v_color");
     }
     if (source.includes("gl_Color")) {
-     source = "attribute vec4 a_color; \n" + source.replace(/gl_Color/g, "a_color");
+     source = "attribute vec4 a_color; \n" + source.replace(/\bgl_Color\b/g, "a_color");
     }
     if (source.includes("gl_NormalMatrix")) {
-     source = "uniform mat3 u_normalMatrix; \n" + source.replace(/gl_NormalMatrix/g, "u_normalMatrix");
+     source = "uniform mat3 u_normalMatrix; \n" + source.replace(/\bgl_NormalMatrix\b/g, "u_normalMatrix");
     }
     if (source.includes("gl_Normal")) {
-     source = "attribute vec3 a_normal; \n" + source.replace(/gl_Normal/g, "a_normal");
+     source = "attribute vec3 a_normal; \n" + source.replace(/\bgl_Normal\b/g, "a_normal");
+    }
+    source = source.replace(/\bgl_LightSource\s*\[\s*([^\]]+)\s*\]\s*\.\s*(ambient|diffuse|specular|position)\b/g, function(match, lightId, field) {
+     var fieldName = field.charAt(0).toUpperCase() + field.slice(1);
+     return "u_light" + fieldName + "[" + lightId.trim() + "]";
+    });
+    source = source.replace(/\bgl_LightSource\s*\[\s*[^\]]+\s*\]\s*\.\s*constantAttenuation\b/g, "1.0");
+    source = source.replace(/\bgl_LightSource\s*\[\s*[^\]]+\s*\]\s*\.\s*(linear|quadratic)Attenuation\b/g, "0.0");
+    for (var lightField of ["Ambient", "Diffuse", "Specular", "Position"]) {
+     var lightUniform = "u_light" + lightField;
+     if (source.includes(lightUniform + "[") && !new RegExp("uniform\\s+vec4\\s+" + lightUniform + "\\s*\\[").test(source)) {
+      source = "uniform vec4 " + lightUniform + "[8]; \n" + source;
+     }
     }
     if (source.includes("gl_FogFragCoord")) {
      source = "varying float v_fogFragCoord;   \n" + source.replace(/gl_FogFragCoord/g, "v_fogFragCoord");
@@ -21302,7 +21330,7 @@ var GLEmulation = {
      }
     }
     if (source.includes("gl_Color")) {
-     source = "varying vec4 v_color; \n" + source.replace(/gl_Color/g, "v_color");
+     source = "varying vec4 v_color; \n" + source.replace(/\bgl_Color\b/g, "v_color");
     }
     if (source.includes("gl_Fog.color")) {
      source = "uniform vec4 u_fogColor;   \n" + source.replace(/gl_Fog.color/g, "u_fogColor");
@@ -21325,6 +21353,9 @@ var GLEmulation = {
   });
   _glCompileShader = _emscripten_glCompileShader = (shader => {
    GLctx.compileShader(GL.shaders[shader]);
+   if (!GLctx.getShaderParameter(GL.shaders[shader], GLctx.COMPILE_STATUS)) {
+    err("GLSL shader compilation failed:\\n" + GLctx.getShaderInfoLog(GL.shaders[shader]) + "\\n" + GLctx.getShaderSource(GL.shaders[shader]));
+   }
   });
   GL.programShaders = {};
   var glAttachShader = _glAttachShader;
@@ -22729,6 +22760,16 @@ var GLImmediate = {
      this.lightSpecularLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightSpecular" + lightId);
      this.lightPositionLocation[lightId] = GLctx.getUniformLocation(this.program, "u_lightPosition" + lightId);
     }
+    this.lightAmbientArrayLocation = GLctx.getUniformLocation(this.program, "u_lightAmbient[0]");
+    this.lightDiffuseArrayLocation = GLctx.getUniformLocation(this.program, "u_lightDiffuse[0]");
+    this.lightSpecularArrayLocation = GLctx.getUniformLocation(this.program, "u_lightSpecular[0]");
+    this.lightPositionArrayLocation = GLctx.getUniformLocation(this.program, "u_lightPosition[0]");
+    this.lightAmbientArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightDiffuseArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightSpecularArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.lightPositionArray = new Float32Array(GLEmulation.MAX_LIGHTS * 4);
+    this.hasLighting = this.hasLighting || !!this.lightAmbientArrayLocation || !!this.lightDiffuseArrayLocation ||
+      !!this.lightSpecularArrayLocation || !!this.lightPositionArrayLocation;
     this.hasAlphaTest = GLEmulation.alphaTestEnabled;
     this.alphaTestRefLocation = GLctx.getUniformLocation(this.program, "u_alphaTestRef");
    };
@@ -22757,12 +22798,13 @@ var GLImmediate = {
     if (this.modelViewLocation && this.modelViewMatrixVersion != GLImmediate.matrixVersion[0]) {
      this.modelViewMatrixVersion = GLImmediate.matrixVersion[0];
      GLctx.uniformMatrix4fv(this.modelViewLocation, false, GLImmediate.matrix[0]);
-     if (this.normalMatrixLocation) {
-      var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
-      GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
-      GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
-      GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
-     }
+    }
+    if (this.normalMatrixLocation && this.normalMatrixVersion != GLImmediate.matrixVersion[0]) {
+     this.normalMatrixVersion = GLImmediate.matrixVersion[0];
+     var tmpMVinv = GLImmediate.matrixLib.mat4.create(GLImmediate.matrix[0]);
+     GLImmediate.matrixLib.mat4.inverse(tmpMVinv);
+     GLImmediate.matrixLib.mat4.transpose(tmpMVinv);
+     GLctx.uniformMatrix3fv(this.normalMatrixLocation, false, GLImmediate.matrixLib.mat4.toMat3(tmpMVinv));
     }
     if (this.projectionLocation && this.projectionMatrixVersion != GLImmediate.matrixVersion[1]) {
      this.projectionMatrixVersion = GLImmediate.matrixVersion[1];
@@ -22827,7 +22869,15 @@ var GLImmediate = {
       if (this.lightDiffuseLocation[lightId]) GLctx.uniform4fv(this.lightDiffuseLocation[lightId], GLEmulation.lightDiffuse[lightId]);
       if (this.lightSpecularLocation[lightId]) GLctx.uniform4fv(this.lightSpecularLocation[lightId], GLEmulation.lightSpecular[lightId]);
       if (this.lightPositionLocation[lightId]) GLctx.uniform4fv(this.lightPositionLocation[lightId], GLEmulation.lightPosition[lightId]);
+      this.lightAmbientArray.set(GLEmulation.lightAmbient[lightId], lightId * 4);
+      this.lightDiffuseArray.set(GLEmulation.lightDiffuse[lightId], lightId * 4);
+      this.lightSpecularArray.set(GLEmulation.lightSpecular[lightId], lightId * 4);
+      this.lightPositionArray.set(GLEmulation.lightPosition[lightId], lightId * 4);
      }
+     if (this.lightAmbientArrayLocation) GLctx.uniform4fv(this.lightAmbientArrayLocation, this.lightAmbientArray);
+     if (this.lightDiffuseArrayLocation) GLctx.uniform4fv(this.lightDiffuseArrayLocation, this.lightDiffuseArray);
+     if (this.lightSpecularArrayLocation) GLctx.uniform4fv(this.lightSpecularArrayLocation, this.lightSpecularArray);
+     if (this.lightPositionArrayLocation) GLctx.uniform4fv(this.lightPositionArrayLocation, this.lightPositionArray);
     }
     if (this.hasAlphaTest) {
      if (this.alphaTestRefLocation) GLctx.uniform1f(this.alphaTestRefLocation, GLEmulation.alphaTestRef);
@@ -26931,6 +26981,10 @@ function _emscripten_glWaitSync(sync, flags, timeoutLo, timeoutHi) {
  GLctx.waitSync(GL.syncs[sync], flags, convertI32PairToI53(timeoutLo, timeoutHi));
 }
 
+function _emscripten_is_main_browser_thread() {
+ return !ENVIRONMENT_IS_WORKER;
+}
+
 function _emscripten_memcpy_big(dest, src, num) {
  HEAPU8.copyWithin(dest, src, src + num);
 }
@@ -26968,6 +27022,348 @@ function _emscripten_set_main_loop_arg(func, arg, fps, simulateInfiniteLoop) {
   getWasmTableEntry(func)(arg);
  };
  setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg);
+}
+
+var Fetch = {
+ xhrs: [],
+ setu64: function(addr, val) {
+  HEAPU32[addr >> 2] = val;
+  HEAPU32[addr + 4 >> 2] = val / 4294967296 | 0;
+ },
+ openDatabase: function(dbname, dbversion, onsuccess, onerror) {
+  try {
+   var openRequest = indexedDB.open(dbname, dbversion);
+  } catch (e) {
+   return onerror(e);
+  }
+  openRequest.onupgradeneeded = (event => {
+   var db = event.target.result;
+   if (db.objectStoreNames.contains("FILES")) {
+    db.deleteObjectStore("FILES");
+   }
+   db.createObjectStore("FILES");
+  });
+  openRequest.onsuccess = (event => onsuccess(event.target.result));
+  openRequest.onerror = (error => onerror(error));
+ },
+ staticInit: function() {
+  var isMainThread = true;
+  var onsuccess = db => {
+   Fetch.dbInstance = db;
+   if (isMainThread) {
+    removeRunDependency("library_fetch_init");
+   }
+  };
+  var onerror = () => {
+   Fetch.dbInstance = false;
+   if (isMainThread) {
+    removeRunDependency("library_fetch_init");
+   }
+  };
+  Fetch.openDatabase("emscripten_filesystem", 1, onsuccess, onerror);
+  if (typeof ENVIRONMENT_IS_FETCH_WORKER == "undefined" || !ENVIRONMENT_IS_FETCH_WORKER) addRunDependency("library_fetch_init");
+ }
+};
+
+function fetchXHR(fetch, onsuccess, onerror, onprogress, onreadystatechange) {
+ var url = HEAPU32[fetch + 8 >> 2];
+ if (!url) {
+  onerror(fetch, 0, "no url specified!");
+  return;
+ }
+ var url_ = UTF8ToString(url);
+ var fetch_attr = fetch + 112;
+ var requestMethod = UTF8ToString(fetch_attr);
+ if (!requestMethod) requestMethod = "GET";
+ var userData = HEAPU32[fetch + 4 >> 2];
+ var fetchAttributes = HEAPU32[fetch_attr + 52 >> 2];
+ var timeoutMsecs = HEAPU32[fetch_attr + 56 >> 2];
+ var withCredentials = !!HEAPU32[fetch_attr + 60 >> 2];
+ var destinationPath = HEAPU32[fetch_attr + 64 >> 2];
+ var userName = HEAPU32[fetch_attr + 68 >> 2];
+ var password = HEAPU32[fetch_attr + 72 >> 2];
+ var requestHeaders = HEAPU32[fetch_attr + 76 >> 2];
+ var overriddenMimeType = HEAPU32[fetch_attr + 80 >> 2];
+ var dataPtr = HEAPU32[fetch_attr + 84 >> 2];
+ var dataLength = HEAPU32[fetch_attr + 88 >> 2];
+ var fetchAttrLoadToMemory = !!(fetchAttributes & 1);
+ var fetchAttrStreamData = !!(fetchAttributes & 2);
+ var fetchAttrSynchronous = !!(fetchAttributes & 64);
+ var userNameStr = userName ? UTF8ToString(userName) : undefined;
+ var passwordStr = password ? UTF8ToString(password) : undefined;
+ var xhr = new XMLHttpRequest();
+ xhr.withCredentials = withCredentials;
+ xhr.open(requestMethod, url_, !fetchAttrSynchronous, userNameStr, passwordStr);
+ if (!fetchAttrSynchronous) xhr.timeout = timeoutMsecs;
+ xhr.url_ = url_;
+ xhr.responseType = "arraybuffer";
+ if (overriddenMimeType) {
+  var overriddenMimeTypeStr = UTF8ToString(overriddenMimeType);
+  xhr.overrideMimeType(overriddenMimeTypeStr);
+ }
+ if (requestHeaders) {
+  for (;;) {
+   var key = HEAPU32[requestHeaders >> 2];
+   if (!key) break;
+   var value = HEAPU32[requestHeaders + 4 >> 2];
+   if (!value) break;
+   requestHeaders += 8;
+   var keyStr = UTF8ToString(key);
+   var valueStr = UTF8ToString(value);
+   xhr.setRequestHeader(keyStr, valueStr);
+  }
+ }
+ Fetch.xhrs.push(xhr);
+ var id = Fetch.xhrs.length;
+ HEAPU32[fetch + 0 >> 2] = id;
+ var data = dataPtr && dataLength ? HEAPU8.slice(dataPtr, dataPtr + dataLength) : null;
+ function saveResponse(condition) {
+  var ptr = 0;
+  var ptrLen = 0;
+  if (condition) {
+   ptrLen = xhr.response ? xhr.response.byteLength : 0;
+   ptr = _malloc(ptrLen);
+   HEAPU8.set(new Uint8Array(xhr.response), ptr);
+  }
+  HEAPU32[fetch + 12 >> 2] = ptr;
+  Fetch.setu64(fetch + 16, ptrLen);
+ }
+ xhr.onload = (e => {
+  saveResponse(fetchAttrLoadToMemory && !fetchAttrStreamData);
+  var len = xhr.response ? xhr.response.byteLength : 0;
+  Fetch.setu64(fetch + 24, 0);
+  if (len) {
+   Fetch.setu64(fetch + 32, len);
+  }
+  HEAPU16[fetch + 40 >> 1] = xhr.readyState;
+  HEAPU16[fetch + 42 >> 1] = xhr.status;
+  if (xhr.statusText) stringToUTF8(xhr.statusText, fetch + 44, 64);
+  if (xhr.status >= 200 && xhr.status < 300) {
+   if (onsuccess) onsuccess(fetch, xhr, e);
+  } else {
+   if (onerror) onerror(fetch, xhr, e);
+  }
+ });
+ xhr.onerror = (e => {
+  saveResponse(fetchAttrLoadToMemory);
+  var status = xhr.status;
+  Fetch.setu64(fetch + 24, 0);
+  Fetch.setu64(fetch + 32, xhr.response ? xhr.response.byteLength : 0);
+  HEAPU16[fetch + 40 >> 1] = xhr.readyState;
+  HEAPU16[fetch + 42 >> 1] = status;
+  if (onerror) onerror(fetch, xhr, e);
+ });
+ xhr.ontimeout = (e => {
+  if (onerror) onerror(fetch, xhr, e);
+ });
+ xhr.onprogress = (e => {
+  var ptrLen = fetchAttrLoadToMemory && fetchAttrStreamData && xhr.response ? xhr.response.byteLength : 0;
+  var ptr = 0;
+  if (fetchAttrLoadToMemory && fetchAttrStreamData) {
+   ptr = _malloc(ptrLen);
+   HEAPU8.set(new Uint8Array(xhr.response), ptr);
+  }
+  HEAPU32[fetch + 12 >> 2] = ptr;
+  Fetch.setu64(fetch + 16, ptrLen);
+  Fetch.setu64(fetch + 24, e.loaded - ptrLen);
+  Fetch.setu64(fetch + 32, e.total);
+  HEAPU16[fetch + 40 >> 1] = xhr.readyState;
+  if (xhr.readyState >= 3 && xhr.status === 0 && e.loaded > 0) xhr.status = 200;
+  HEAPU16[fetch + 42 >> 1] = xhr.status;
+  if (xhr.statusText) stringToUTF8(xhr.statusText, fetch + 44, 64);
+  if (onprogress) onprogress(fetch, xhr, e);
+  if (ptr) {
+   _free(ptr);
+  }
+ });
+ xhr.onreadystatechange = (e => {
+  HEAPU16[fetch + 40 >> 1] = xhr.readyState;
+  if (xhr.readyState >= 2) {
+   HEAPU16[fetch + 42 >> 1] = xhr.status;
+  }
+  if (onreadystatechange) onreadystatechange(fetch, xhr, e);
+ });
+ try {
+  xhr.send(data);
+ } catch (e) {
+  if (onerror) onerror(fetch, xhr, e);
+ }
+}
+
+function fetchCacheData(db, fetch, data, onsuccess, onerror) {
+ if (!db) {
+  onerror(fetch, 0, "IndexedDB not available!");
+  return;
+ }
+ var fetch_attr = fetch + 112;
+ var destinationPath = HEAPU32[fetch_attr + 64 >> 2];
+ if (!destinationPath) destinationPath = HEAPU32[fetch + 8 >> 2];
+ var destinationPathStr = UTF8ToString(destinationPath);
+ try {
+  var transaction = db.transaction([ "FILES" ], "readwrite");
+  var packages = transaction.objectStore("FILES");
+  var putRequest = packages.put(data, destinationPathStr);
+  putRequest.onsuccess = (event => {
+   HEAPU16[fetch + 40 >> 1] = 4;
+   HEAPU16[fetch + 42 >> 1] = 200;
+   stringToUTF8("OK", fetch + 44, 64);
+   onsuccess(fetch, 0, destinationPathStr);
+  });
+  putRequest.onerror = (error => {
+   HEAPU16[fetch + 40 >> 1] = 4;
+   HEAPU16[fetch + 42 >> 1] = 413;
+   stringToUTF8("Payload Too Large", fetch + 44, 64);
+   onerror(fetch, 0, error);
+  });
+ } catch (e) {
+  onerror(fetch, 0, e);
+ }
+}
+
+function fetchLoadCachedData(db, fetch, onsuccess, onerror) {
+ if (!db) {
+  onerror(fetch, 0, "IndexedDB not available!");
+  return;
+ }
+ var fetch_attr = fetch + 112;
+ var path = HEAPU32[fetch_attr + 64 >> 2];
+ if (!path) path = HEAPU32[fetch + 8 >> 2];
+ var pathStr = UTF8ToString(path);
+ try {
+  var transaction = db.transaction([ "FILES" ], "readonly");
+  var packages = transaction.objectStore("FILES");
+  var getRequest = packages.get(pathStr);
+  getRequest.onsuccess = (event => {
+   if (event.target.result) {
+    var value = event.target.result;
+    var len = value.byteLength || value.length;
+    var ptr = _malloc(len);
+    HEAPU8.set(new Uint8Array(value), ptr);
+    HEAPU32[fetch + 12 >> 2] = ptr;
+    Fetch.setu64(fetch + 16, len);
+    Fetch.setu64(fetch + 24, 0);
+    Fetch.setu64(fetch + 32, len);
+    HEAPU16[fetch + 40 >> 1] = 4;
+    HEAPU16[fetch + 42 >> 1] = 200;
+    stringToUTF8("OK", fetch + 44, 64);
+    onsuccess(fetch, 0, value);
+   } else {
+    HEAPU16[fetch + 40 >> 1] = 4;
+    HEAPU16[fetch + 42 >> 1] = 404;
+    stringToUTF8("Not Found", fetch + 44, 64);
+    onerror(fetch, 0, "no data");
+   }
+  });
+  getRequest.onerror = (error => {
+   HEAPU16[fetch + 40 >> 1] = 4;
+   HEAPU16[fetch + 42 >> 1] = 404;
+   stringToUTF8("Not Found", fetch + 44, 64);
+   onerror(fetch, 0, error);
+  });
+ } catch (e) {
+  onerror(fetch, 0, e);
+ }
+}
+
+function fetchDeleteCachedData(db, fetch, onsuccess, onerror) {
+ if (!db) {
+  onerror(fetch, 0, "IndexedDB not available!");
+  return;
+ }
+ var fetch_attr = fetch + 112;
+ var path = HEAPU32[fetch_attr + 64 >> 2];
+ if (!path) path = HEAPU32[fetch + 8 >> 2];
+ var pathStr = UTF8ToString(path);
+ try {
+  var transaction = db.transaction([ "FILES" ], "readwrite");
+  var packages = transaction.objectStore("FILES");
+  var request = packages.delete(pathStr);
+  request.onsuccess = (event => {
+   var value = event.target.result;
+   HEAPU32[fetch + 12 >> 2] = 0;
+   Fetch.setu64(fetch + 16, 0);
+   Fetch.setu64(fetch + 24, 0);
+   Fetch.setu64(fetch + 32, 0);
+   HEAPU16[fetch + 40 >> 1] = 4;
+   HEAPU16[fetch + 42 >> 1] = 200;
+   stringToUTF8("OK", fetch + 44, 64);
+   onsuccess(fetch, 0, value);
+  });
+  request.onerror = (error => {
+   HEAPU16[fetch + 40 >> 1] = 4;
+   HEAPU16[fetch + 42 >> 1] = 404;
+   stringToUTF8("Not Found", fetch + 44, 64);
+   onerror(fetch, 0, error);
+  });
+ } catch (e) {
+  onerror(fetch, 0, e);
+ }
+}
+
+function _emscripten_start_fetch(fetch, successcb, errorcb, progresscb, readystatechangecb) {
+ var fetch_attr = fetch + 112;
+ var requestMethod = UTF8ToString(fetch_attr);
+ var onsuccess = HEAPU32[fetch_attr + 36 >> 2];
+ var onerror = HEAPU32[fetch_attr + 40 >> 2];
+ var onprogress = HEAPU32[fetch_attr + 44 >> 2];
+ var onreadystatechange = HEAPU32[fetch_attr + 48 >> 2];
+ var fetchAttributes = HEAPU32[fetch_attr + 52 >> 2];
+ var fetchAttrPersistFile = !!(fetchAttributes & 4);
+ var fetchAttrNoDownload = !!(fetchAttributes & 32);
+ var fetchAttrReplace = !!(fetchAttributes & 16);
+ var fetchAttrSynchronous = !!(fetchAttributes & 64);
+ var reportSuccess = (fetch, xhr, e) => {
+  callUserCallback(() => {
+   if (onsuccess) getWasmTableEntry(onsuccess)(fetch); else if (successcb) successcb(fetch);
+  }, fetchAttrSynchronous);
+ };
+ var reportProgress = (fetch, xhr, e) => {
+  callUserCallback(() => {
+   if (onprogress) getWasmTableEntry(onprogress)(fetch); else if (progresscb) progresscb(fetch);
+  }, fetchAttrSynchronous);
+ };
+ var reportError = (fetch, xhr, e) => {
+  callUserCallback(() => {
+   if (onerror) getWasmTableEntry(onerror)(fetch); else if (errorcb) errorcb(fetch);
+  }, fetchAttrSynchronous);
+ };
+ var reportReadyStateChange = (fetch, xhr, e) => {
+  callUserCallback(() => {
+   if (onreadystatechange) getWasmTableEntry(onreadystatechange)(fetch); else if (readystatechangecb) readystatechangecb(fetch);
+  }, fetchAttrSynchronous);
+ };
+ var performUncachedXhr = (fetch, xhr, e) => {
+  fetchXHR(fetch, reportSuccess, reportError, reportProgress, reportReadyStateChange);
+ };
+ var cacheResultAndReportSuccess = (fetch, xhr, e) => {
+  var storeSuccess = (fetch, xhr, e) => {
+   callUserCallback(() => {
+    if (onsuccess) getWasmTableEntry(onsuccess)(fetch); else if (successcb) successcb(fetch);
+   }, fetchAttrSynchronous);
+  };
+  var storeError = (fetch, xhr, e) => {
+   callUserCallback(() => {
+    if (onsuccess) getWasmTableEntry(onsuccess)(fetch); else if (successcb) successcb(fetch);
+   }, fetchAttrSynchronous);
+  };
+  fetchCacheData(Fetch.dbInstance, fetch, xhr.response, storeSuccess, storeError);
+ };
+ var performCachedXhr = (fetch, xhr, e) => {
+  fetchXHR(fetch, cacheResultAndReportSuccess, reportError, reportProgress, reportReadyStateChange);
+ };
+ if (requestMethod === "EM_IDB_STORE") {
+  var ptr = HEAPU32[fetch_attr + 84 >> 2];
+  fetchCacheData(Fetch.dbInstance, fetch, HEAPU8.slice(ptr, ptr + HEAPU32[fetch_attr + 88 >> 2]), reportSuccess, reportError);
+ } else if (requestMethod === "EM_IDB_DELETE") {
+  fetchDeleteCachedData(Fetch.dbInstance, fetch, reportSuccess, reportError);
+ } else if (!fetchAttrReplace) {
+  fetchLoadCachedData(Fetch.dbInstance, fetch, reportSuccess, fetchAttrNoDownload ? reportError : fetchAttrPersistFile ? performCachedXhr : performUncachedXhr);
+ } else if (!fetchAttrNoDownload) {
+  fetchXHR(fetch, fetchAttrPersistFile ? cacheResultAndReportSuccess : reportSuccess, reportError, reportProgress, reportReadyStateChange);
+ } else {
+  return 0;
+ }
+ return fetch;
 }
 
 var ENV = {};
@@ -28113,6 +28509,8 @@ GLEmulation.init();
 
 for (var i = 0; i < 32; ++i) tempFixedLengthArray.push(new Array(i));
 
+Fetch.staticInit();
+
 function intArrayFromString(stringy, dontAddNull, length) {
  var len = length > 0 ? length : lengthBytesUTF8(stringy) + 1;
  var u8array = new Array(len);
@@ -28122,39 +28520,39 @@ function intArrayFromString(stringy, dontAddNull, length) {
 }
 
 var asmLibraryArg = {
- "xk": _SDL_CreateRGBSurfaceFrom,
+ "Bk": _SDL_CreateRGBSurfaceFrom,
  "cb": _SDL_Delay,
- "wk": _SDL_EnableKeyRepeat,
- "vk": _SDL_EnableUNICODE,
- "uk": _SDL_Flip,
- "tk": _SDL_FreeSurface,
+ "Ak": _SDL_EnableKeyRepeat,
+ "zk": _SDL_EnableUNICODE,
+ "yk": _SDL_Flip,
+ "xk": _SDL_FreeSurface,
  "R": _SDL_GL_SetAttribute,
- "sk": _SDL_GL_SwapBuffers,
- "rk": _SDL_GetError,
- "qk": _SDL_GetVideoInfo,
- "pk": _SDL_Init,
- "ok": _SDL_JoystickClose,
- "nk": _SDL_JoystickGetAxis,
- "mk": _SDL_JoystickGetButton,
- "lk": _SDL_JoystickGetHat,
- "kk": _SDL_JoystickName,
+ "wk": _SDL_GL_SwapBuffers,
+ "vk": _SDL_GetError,
+ "uk": _SDL_GetVideoInfo,
+ "tk": _SDL_Init,
+ "sk": _SDL_JoystickClose,
+ "rk": _SDL_JoystickGetAxis,
+ "qk": _SDL_JoystickGetButton,
+ "pk": _SDL_JoystickGetHat,
+ "ok": _SDL_JoystickName,
  "Wb": _SDL_JoystickNumAxes,
  "Vb": _SDL_JoystickNumButtons,
  "Ub": _SDL_JoystickNumHats,
- "jk": _SDL_JoystickOpen,
- "ik": _SDL_JoystickUpdate,
- "hk": _SDL_ListModes,
- "gk": _SDL_NumJoysticks,
- "fk": _SDL_PollEvent,
- "ek": _SDL_Quit,
- "dk": _SDL_SetAlpha,
- "ck": _SDL_SetColorKey,
+ "nk": _SDL_JoystickOpen,
+ "mk": _SDL_JoystickUpdate,
+ "lk": _SDL_ListModes,
+ "kk": _SDL_NumJoysticks,
+ "jk": _SDL_PollEvent,
+ "ik": _SDL_Quit,
+ "hk": _SDL_SetAlpha,
+ "gk": _SDL_SetColorKey,
  "na": _SDL_SetVideoMode,
- "bk": _SDL_ShowCursor,
+ "fk": _SDL_ShowCursor,
  "Tb": _SDL_UpperBlit,
- "ak": _SDL_WM_IconifyWindow,
- "$j": _SDL_WM_SetCaption,
- "_j": _SDL_WarpMouse,
+ "ek": _SDL_WM_IconifyWindow,
+ "dk": _SDL_WM_SetCaption,
+ "ck": _SDL_WarpMouse,
  "x": ___cxa_allocate_exception,
  "w": ___cxa_begin_catch,
  "Sb": ___cxa_call_unexpected,
@@ -28165,30 +28563,32 @@ var asmLibraryArg = {
  "z": ___cxa_free_exception,
  "Rb": ___cxa_rethrow,
  "Q": ___cxa_throw,
- "Zj": ___cxa_uncaught_exceptions,
+ "bk": ___cxa_uncaught_exceptions,
  "g": ___resumeException,
- "Yj": ___syscall__newselect,
- "Xj": ___syscall_bind,
- "Wj": ___syscall_chdir,
- "Vj": ___syscall_faccessat,
+ "ak": ___syscall__newselect,
+ "$j": ___syscall_bind,
+ "_j": ___syscall_chdir,
+ "Zj": ___syscall_faccessat,
  "Qb": ___syscall_fcntl64,
- "Uj": ___syscall_getcwd,
- "Tj": ___syscall_getdents64,
+ "Yj": ___syscall_getcwd,
+ "Xj": ___syscall_getdents64,
  "Pb": ___syscall_ioctl,
- "Sj": ___syscall_mkdir,
+ "Wj": ___syscall_mkdir,
  "Ob": ___syscall_open,
- "Rj": ___syscall_readlink,
- "Qj": ___syscall_recvmsg,
- "Pj": ___syscall_rmdir,
- "Oj": ___syscall_sendmsg,
- "Nj": ___syscall_socket,
- "Mj": ___syscall_stat64,
- "Lj": ___syscall_unlink,
- "Hj": __emscripten_throw_longjmp,
- "Gj": __gmtime_js,
- "Fj": __localtime_js,
- "Ej": __mktime_js,
- "Dj": __tzset_js,
+ "Vj": ___syscall_readlink,
+ "Uj": ___syscall_recvmsg,
+ "Tj": ___syscall_rename,
+ "Sj": ___syscall_rmdir,
+ "Rj": ___syscall_sendmsg,
+ "Qj": ___syscall_socket,
+ "Pj": ___syscall_stat64,
+ "Oj": ___syscall_unlink,
+ "Kj": __emscripten_fetch_free,
+ "Jj": __emscripten_throw_longjmp,
+ "Ij": __gmtime_js,
+ "Hj": __localtime_js,
+ "Gj": __mktime_js,
+ "Fj": __tzset_js,
  "p": _abort,
  "Mb": _alBufferData,
  "Lb": _alDeleteBuffers,
@@ -28197,388 +28597,390 @@ var asmLibraryArg = {
  "Ib": _alGenSources,
  "aa": _alGetError,
  "Ia": _alGetSourcei,
- "Cj": _alIsBuffer,
- "Bj": _alListener3f,
- "Aj": _alListenerfv,
+ "Ej": _alIsBuffer,
+ "Dj": _alListener3f,
+ "Cj": _alListenerfv,
  "ma": _alSource3f,
- "zj": _alSourcePause,
+ "Bj": _alSourcePause,
  "Ha": _alSourcePlay,
  "Hb": _alSourceQueueBuffers,
  "Gb": _alSourceStop,
  "Fb": _alSourceUnqueueBuffers,
  "S": _alSourcef,
  "va": _alSourcei,
- "yj": _alcCloseDevice,
- "xj": _alcCreateContext,
- "wj": _alcDestroyContext,
- "vj": _alcGetContextsDevice,
- "uj": _alcGetCurrentContext,
- "tj": _alcMakeContextCurrent,
- "sj": _alcOpenDevice,
- "rj": _difftime,
+ "Aj": _alcCloseDevice,
+ "zj": _alcCreateContext,
+ "yj": _alcDestroyContext,
+ "xj": _alcGetContextsDevice,
+ "wj": _alcGetCurrentContext,
+ "vj": _alcMakeContextCurrent,
+ "uj": _alcOpenDevice,
+ "tj": _difftime,
  "Eb": _emscripten_asm_const_int,
- "qj": _emscripten_cancel_main_loop,
- "pj": _emscripten_get_heap_max,
+ "sj": _emscripten_cancel_main_loop,
+ "rj": _emscripten_get_heap_max,
  "Db": _emscripten_get_now,
- "oj": _emscripten_glActiveTexture,
- "nj": _emscripten_glAlphaFunc,
- "mj": _emscripten_glAttachShader,
- "lj": _emscripten_glBegin,
- "kj": _emscripten_glBeginQuery,
- "jj": _emscripten_glBeginQueryEXT,
- "ij": _emscripten_glBeginTransformFeedback,
- "hj": _emscripten_glBindAttribLocation,
- "gj": _emscripten_glBindBuffer,
- "fj": _emscripten_glBindBufferBase,
- "ej": _emscripten_glBindBufferRange,
- "dj": _emscripten_glBindFramebuffer,
- "cj": _emscripten_glBindProgram,
- "bj": _emscripten_glBindRenderbuffer,
- "aj": _emscripten_glBindSampler,
- "$i": _emscripten_glBindTexture,
- "_i": _emscripten_glBindTransformFeedback,
- "Zi": _emscripten_glBindVertexArray,
- "Yi": _emscripten_glBindVertexArrayOES,
- "Xi": _emscripten_glBlendColor,
- "Wi": _emscripten_glBlendEquation,
- "Vi": _emscripten_glBlendEquationSeparate,
- "Ui": _emscripten_glBlendFunc,
- "Ti": _emscripten_glBlendFuncSeparate,
- "Si": _emscripten_glBlitFramebuffer,
- "Ri": _emscripten_glBufferData,
- "Qi": _emscripten_glBufferSubData,
- "Pi": _emscripten_glCheckFramebufferStatus,
- "Oi": _emscripten_glClear,
- "Ni": _emscripten_glClearBufferfi,
- "Mi": _emscripten_glClearBufferfv,
- "Li": _emscripten_glClearBufferiv,
- "Ki": _emscripten_glClearBufferuiv,
- "Ji": _emscripten_glClearColor,
- "Ii": _emscripten_glClearDepthf,
- "Hi": _emscripten_glClearStencil,
- "Gi": _emscripten_glClientActiveTexture,
- "Fi": _emscripten_glClientWaitSync,
- "Ei": _emscripten_glClipPlane,
- "Di": _emscripten_glColor3d,
- "Ci": _emscripten_glColor3f,
- "Bi": _emscripten_glColor3fv,
- "Ai": _emscripten_glColor3ub,
- "zi": _emscripten_glColor3ubv,
- "yi": _emscripten_glColor3ui,
- "xi": _emscripten_glColor3uiv,
- "wi": _emscripten_glColor3us,
- "vi": _emscripten_glColor3usv,
- "ui": _emscripten_glColor4d,
- "ti": _emscripten_glColor4f,
- "si": _emscripten_glColor4fv,
- "ri": _emscripten_glColor4ub,
- "qi": _emscripten_glColor4ubv,
- "pi": _emscripten_glColor4ui,
- "oi": _emscripten_glColor4us,
- "ni": _emscripten_glColorMask,
- "mi": _emscripten_glColorPointer,
- "li": _emscripten_glCompileShader,
- "ki": _emscripten_glCompressedTexImage2D,
- "ji": _emscripten_glCompressedTexImage3D,
- "ii": _emscripten_glCompressedTexSubImage2D,
- "hi": _emscripten_glCompressedTexSubImage3D,
- "gi": _emscripten_glCopyBufferSubData,
- "fi": _emscripten_glCopyTexImage2D,
- "ei": _emscripten_glCopyTexSubImage2D,
- "di": _emscripten_glCopyTexSubImage3D,
- "ci": _emscripten_glCreateProgram,
- "bi": _emscripten_glCreateShader,
- "ai": _emscripten_glCullFace,
- "$h": _emscripten_glDeleteBuffers,
- "_h": _emscripten_glDeleteFramebuffers,
- "Zh": _emscripten_glDeleteObject,
- "Yh": _emscripten_glDeleteProgram,
- "Xh": _emscripten_glDeleteQueries,
- "Wh": _emscripten_glDeleteQueriesEXT,
- "Vh": _emscripten_glDeleteRenderbuffers,
- "Uh": _emscripten_glDeleteSamplers,
- "Th": _emscripten_glDeleteShader,
- "Sh": _emscripten_glDeleteSync,
- "Rh": _emscripten_glDeleteTextures,
- "Qh": _emscripten_glDeleteTransformFeedbacks,
- "Ph": _emscripten_glDeleteVertexArrays,
- "Oh": _emscripten_glDeleteVertexArraysOES,
- "Nh": _emscripten_glDepthFunc,
- "Mh": _emscripten_glDepthMask,
- "Lh": _emscripten_glDepthRangef,
- "Kh": _emscripten_glDetachShader,
- "Jh": _emscripten_glDisable,
- "Ih": _emscripten_glDisableClientState,
- "Hh": _emscripten_glDisableVertexAttribArray,
- "Gh": _emscripten_glDrawArrays,
- "Fh": _emscripten_glDrawArraysInstanced,
- "Eh": _emscripten_glDrawArraysInstancedANGLE,
- "Dh": _emscripten_glDrawArraysInstancedARB,
- "Ch": _emscripten_glDrawArraysInstancedEXT,
- "Bh": _emscripten_glDrawArraysInstancedNV,
- "Ah": _emscripten_glDrawBuffer,
- "zh": _emscripten_glDrawBuffers,
- "yh": _emscripten_glDrawBuffersEXT,
- "xh": _emscripten_glDrawBuffersWEBGL,
- "wh": _emscripten_glDrawElements,
- "vh": _emscripten_glDrawElementsInstanced,
- "uh": _emscripten_glDrawElementsInstancedANGLE,
- "th": _emscripten_glDrawElementsInstancedARB,
- "sh": _emscripten_glDrawElementsInstancedEXT,
- "rh": _emscripten_glDrawElementsInstancedNV,
- "qh": _emscripten_glDrawRangeElements,
- "ph": _emscripten_glEnable,
- "oh": _emscripten_glEnableClientState,
- "nh": _emscripten_glEnableVertexAttribArray,
- "mh": _emscripten_glEnd,
- "lh": _emscripten_glEndQuery,
- "kh": _emscripten_glEndQueryEXT,
- "jh": _emscripten_glEndTransformFeedback,
- "ih": _emscripten_glFenceSync,
- "hh": _emscripten_glFinish,
- "gh": _emscripten_glFlush,
- "fh": _emscripten_glFramebufferRenderbuffer,
- "eh": _emscripten_glFramebufferTexture2D,
- "dh": _emscripten_glFramebufferTextureLayer,
- "ch": _emscripten_glFrontFace,
- "bh": _emscripten_glFrustum,
- "ah": _emscripten_glGenBuffers,
- "$g": _emscripten_glGenFramebuffers,
- "_g": _emscripten_glGenQueries,
- "Zg": _emscripten_glGenQueriesEXT,
- "Yg": _emscripten_glGenRenderbuffers,
- "Xg": _emscripten_glGenSamplers,
- "Wg": _emscripten_glGenTextures,
- "Vg": _emscripten_glGenTransformFeedbacks,
- "Ug": _emscripten_glGenVertexArrays,
- "Tg": _emscripten_glGenVertexArraysOES,
- "Sg": _emscripten_glGenerateMipmap,
- "Rg": _emscripten_glGetActiveAttrib,
- "Qg": _emscripten_glGetActiveUniform,
- "Pg": _emscripten_glGetActiveUniformBlockName,
- "Og": _emscripten_glGetActiveUniformBlockiv,
- "Ng": _emscripten_glGetActiveUniformsiv,
- "Mg": _emscripten_glGetAttachedShaders,
- "Lg": _emscripten_glGetAttribLocation,
- "Kg": _emscripten_glGetBooleanv,
- "Jg": _emscripten_glGetBufferParameteri64v,
- "Ig": _emscripten_glGetBufferParameteriv,
- "Hg": _emscripten_glGetError,
- "Gg": _emscripten_glGetFloatv,
- "Fg": _emscripten_glGetFragDataLocation,
- "Eg": _emscripten_glGetFramebufferAttachmentParameteriv,
- "Dg": _emscripten_glGetInfoLog,
- "Cg": _emscripten_glGetInteger64i_v,
- "Bg": _emscripten_glGetInteger64v,
- "Ag": _emscripten_glGetIntegeri_v,
- "zg": _emscripten_glGetIntegerv,
- "yg": _emscripten_glGetInternalformativ,
- "xg": _emscripten_glGetObjectParameteriv,
- "wg": _emscripten_glGetPointerv,
- "vg": _emscripten_glGetProgramBinary,
- "ug": _emscripten_glGetProgramInfoLog,
- "tg": _emscripten_glGetProgramiv,
- "sg": _emscripten_glGetQueryObjecti64vEXT,
- "rg": _emscripten_glGetQueryObjectivEXT,
- "qg": _emscripten_glGetQueryObjectui64vEXT,
- "pg": _emscripten_glGetQueryObjectuiv,
- "og": _emscripten_glGetQueryObjectuivEXT,
- "ng": _emscripten_glGetQueryiv,
- "mg": _emscripten_glGetQueryivEXT,
- "lg": _emscripten_glGetRenderbufferParameteriv,
- "kg": _emscripten_glGetSamplerParameterfv,
- "jg": _emscripten_glGetSamplerParameteriv,
- "ig": _emscripten_glGetShaderInfoLog,
- "hg": _emscripten_glGetShaderPrecisionFormat,
- "gg": _emscripten_glGetShaderSource,
- "fg": _emscripten_glGetShaderiv,
- "eg": _emscripten_glGetString,
- "dg": _emscripten_glGetStringi,
- "cg": _emscripten_glGetSynciv,
- "bg": _emscripten_glGetTexEnvfv,
- "ag": _emscripten_glGetTexEnviv,
- "$f": _emscripten_glGetTexLevelParameteriv,
- "_f": _emscripten_glGetTexParameterfv,
- "Zf": _emscripten_glGetTexParameteriv,
- "Yf": _emscripten_glGetTransformFeedbackVarying,
- "Xf": _emscripten_glGetUniformBlockIndex,
- "Wf": _emscripten_glGetUniformIndices,
- "Vf": _emscripten_glGetUniformLocation,
- "Uf": _emscripten_glGetUniformfv,
- "Tf": _emscripten_glGetUniformiv,
- "Sf": _emscripten_glGetUniformuiv,
- "Rf": _emscripten_glGetVertexAttribIiv,
- "Qf": _emscripten_glGetVertexAttribIuiv,
- "Pf": _emscripten_glGetVertexAttribPointerv,
- "Of": _emscripten_glGetVertexAttribfv,
- "Nf": _emscripten_glGetVertexAttribiv,
- "Mf": _emscripten_glHint,
- "Lf": _emscripten_glInvalidateFramebuffer,
- "Kf": _emscripten_glInvalidateSubFramebuffer,
- "Jf": _emscripten_glIsBuffer,
- "If": _emscripten_glIsEnabled,
- "Hf": _emscripten_glIsFramebuffer,
- "Gf": _emscripten_glIsProgram,
- "Ff": _emscripten_glIsQuery,
- "Ef": _emscripten_glIsQueryEXT,
- "Df": _emscripten_glIsRenderbuffer,
- "Cf": _emscripten_glIsSampler,
- "Bf": _emscripten_glIsShader,
- "Af": _emscripten_glIsSync,
- "zf": _emscripten_glIsTexture,
- "yf": _emscripten_glIsTransformFeedback,
- "xf": _emscripten_glIsVertexArray,
- "wf": _emscripten_glIsVertexArrayOES,
- "vf": _emscripten_glLightModelf,
- "uf": _emscripten_glLightModelfv,
- "tf": _emscripten_glLightfv,
- "sf": _emscripten_glLineWidth,
- "rf": _emscripten_glLinkProgram,
- "qf": _emscripten_glLoadIdentity,
- "pf": _emscripten_glLoadMatrixd,
- "of": _emscripten_glLoadMatrixf,
- "nf": _emscripten_glLoadTransposeMatrixd,
- "mf": _emscripten_glLoadTransposeMatrixf,
- "lf": _emscripten_glMaterialfv,
- "kf": _emscripten_glMatrixMode,
- "jf": _emscripten_glMultMatrixd,
- "hf": _emscripten_glMultMatrixf,
- "gf": _emscripten_glMultTransposeMatrixd,
- "ff": _emscripten_glMultTransposeMatrixf,
- "ef": _emscripten_glNormal3f,
- "df": _emscripten_glNormalPointer,
- "cf": _emscripten_glOrtho,
- "bf": _emscripten_glPauseTransformFeedback,
- "af": _emscripten_glPixelStorei,
- "$e": _emscripten_glPolygonMode,
- "_e": _emscripten_glPolygonOffset,
- "Ze": _emscripten_glPopMatrix,
- "Ye": _emscripten_glProgramBinary,
- "Xe": _emscripten_glProgramParameteri,
- "We": _emscripten_glPushMatrix,
- "Ve": _emscripten_glQueryCounterEXT,
- "Ue": _emscripten_glReadBuffer,
- "Te": _emscripten_glReadPixels,
- "Se": _emscripten_glReleaseShaderCompiler,
- "Re": _emscripten_glRenderbufferStorage,
- "Qe": _emscripten_glRenderbufferStorageMultisample,
- "Pe": _emscripten_glResumeTransformFeedback,
- "Oe": _emscripten_glRotated,
- "Ne": _emscripten_glRotatef,
- "Me": _emscripten_glSampleCoverage,
- "Le": _emscripten_glSamplerParameterf,
- "Ke": _emscripten_glSamplerParameterfv,
- "Je": _emscripten_glSamplerParameteri,
- "Ie": _emscripten_glSamplerParameteriv,
- "He": _emscripten_glScaled,
- "Ge": _emscripten_glScalef,
- "Fe": _emscripten_glScissor,
- "Ee": _emscripten_glShadeModel,
- "De": _emscripten_glShaderBinary,
- "Ce": _emscripten_glShaderSource,
- "Be": _emscripten_glStencilFunc,
- "Ae": _emscripten_glStencilFuncSeparate,
- "ze": _emscripten_glStencilMask,
- "ye": _emscripten_glStencilMaskSeparate,
- "xe": _emscripten_glStencilOp,
- "we": _emscripten_glStencilOpSeparate,
- "ve": _emscripten_glTexCoord2f,
- "ue": _emscripten_glTexCoord2fv,
- "te": _emscripten_glTexCoord2i,
- "se": _emscripten_glTexCoord3f,
- "re": _emscripten_glTexCoord4f,
- "qe": _emscripten_glTexCoordPointer,
- "pe": _emscripten_glTexGenfv,
- "oe": _emscripten_glTexGeni,
- "ne": _emscripten_glTexImage1D,
- "me": _emscripten_glTexImage2D,
- "le": _emscripten_glTexImage3D,
- "ke": _emscripten_glTexParameterf,
- "je": _emscripten_glTexParameterfv,
- "ie": _emscripten_glTexParameteri,
- "he": _emscripten_glTexParameteriv,
- "ge": _emscripten_glTexStorage2D,
- "fe": _emscripten_glTexStorage3D,
- "ee": _emscripten_glTexSubImage2D,
- "de": _emscripten_glTexSubImage3D,
- "ce": _emscripten_glTransformFeedbackVaryings,
- "be": _emscripten_glTranslated,
- "ae": _emscripten_glTranslatef,
- "$d": _emscripten_glUniform1f,
- "_d": _emscripten_glUniform1fv,
- "Zd": _emscripten_glUniform1i,
- "Yd": _emscripten_glUniform1iv,
- "Xd": _emscripten_glUniform1ui,
- "Wd": _emscripten_glUniform1uiv,
- "Vd": _emscripten_glUniform2f,
- "Ud": _emscripten_glUniform2fv,
- "Td": _emscripten_glUniform2i,
- "Sd": _emscripten_glUniform2iv,
- "Rd": _emscripten_glUniform2ui,
- "Qd": _emscripten_glUniform2uiv,
- "Pd": _emscripten_glUniform3f,
- "Od": _emscripten_glUniform3fv,
- "Nd": _emscripten_glUniform3i,
- "Md": _emscripten_glUniform3iv,
- "Ld": _emscripten_glUniform3ui,
- "Kd": _emscripten_glUniform3uiv,
- "Jd": _emscripten_glUniform4f,
- "Id": _emscripten_glUniform4fv,
- "Hd": _emscripten_glUniform4i,
- "Gd": _emscripten_glUniform4iv,
- "Fd": _emscripten_glUniform4ui,
- "Ed": _emscripten_glUniform4uiv,
- "Dd": _emscripten_glUniformBlockBinding,
- "Cd": _emscripten_glUniformMatrix2fv,
- "Bd": _emscripten_glUniformMatrix2x3fv,
- "Ad": _emscripten_glUniformMatrix2x4fv,
- "zd": _emscripten_glUniformMatrix3fv,
- "yd": _emscripten_glUniformMatrix3x2fv,
- "xd": _emscripten_glUniformMatrix3x4fv,
- "wd": _emscripten_glUniformMatrix4fv,
- "vd": _emscripten_glUniformMatrix4x2fv,
- "ud": _emscripten_glUniformMatrix4x3fv,
- "td": _emscripten_glUseProgram,
- "sd": _emscripten_glValidateProgram,
- "rd": _emscripten_glVertex2f,
- "qd": _emscripten_glVertex2fv,
- "pd": _emscripten_glVertex2i,
- "od": _emscripten_glVertex3f,
- "nd": _emscripten_glVertex3fv,
- "md": _emscripten_glVertex3i,
- "ld": _emscripten_glVertex4f,
- "kd": _emscripten_glVertex4fv,
- "jd": _emscripten_glVertex4i,
- "id": _emscripten_glVertexAttrib1f,
- "hd": _emscripten_glVertexAttrib1fv,
- "gd": _emscripten_glVertexAttrib2f,
- "fd": _emscripten_glVertexAttrib2fv,
- "ed": _emscripten_glVertexAttrib3f,
- "dd": _emscripten_glVertexAttrib3fv,
- "cd": _emscripten_glVertexAttrib4f,
- "bd": _emscripten_glVertexAttrib4fv,
- "ad": _emscripten_glVertexAttribDivisor,
- "$c": _emscripten_glVertexAttribDivisorANGLE,
- "_c": _emscripten_glVertexAttribDivisorARB,
- "Zc": _emscripten_glVertexAttribDivisorEXT,
- "Yc": _emscripten_glVertexAttribDivisorNV,
- "Xc": _emscripten_glVertexAttribI4i,
- "Wc": _emscripten_glVertexAttribI4iv,
- "Vc": _emscripten_glVertexAttribI4ui,
- "Uc": _emscripten_glVertexAttribI4uiv,
- "Tc": _emscripten_glVertexAttribIPointer,
- "Sc": _emscripten_glVertexAttribPointer,
- "Rc": _emscripten_glVertexPointer,
- "Qc": _emscripten_glViewport,
- "Pc": _emscripten_glWaitSync,
- "Oc": _emscripten_memcpy_big,
- "Nc": _emscripten_resize_heap,
- "Mc": _emscripten_set_main_loop_arg,
- "Kj": _environ_get,
- "Jj": _environ_sizes_get,
+ "qj": _emscripten_glActiveTexture,
+ "pj": _emscripten_glAlphaFunc,
+ "oj": _emscripten_glAttachShader,
+ "nj": _emscripten_glBegin,
+ "mj": _emscripten_glBeginQuery,
+ "lj": _emscripten_glBeginQueryEXT,
+ "kj": _emscripten_glBeginTransformFeedback,
+ "jj": _emscripten_glBindAttribLocation,
+ "ij": _emscripten_glBindBuffer,
+ "hj": _emscripten_glBindBufferBase,
+ "gj": _emscripten_glBindBufferRange,
+ "fj": _emscripten_glBindFramebuffer,
+ "ej": _emscripten_glBindProgram,
+ "dj": _emscripten_glBindRenderbuffer,
+ "cj": _emscripten_glBindSampler,
+ "bj": _emscripten_glBindTexture,
+ "aj": _emscripten_glBindTransformFeedback,
+ "$i": _emscripten_glBindVertexArray,
+ "_i": _emscripten_glBindVertexArrayOES,
+ "Zi": _emscripten_glBlendColor,
+ "Yi": _emscripten_glBlendEquation,
+ "Xi": _emscripten_glBlendEquationSeparate,
+ "Wi": _emscripten_glBlendFunc,
+ "Vi": _emscripten_glBlendFuncSeparate,
+ "Ui": _emscripten_glBlitFramebuffer,
+ "Ti": _emscripten_glBufferData,
+ "Si": _emscripten_glBufferSubData,
+ "Ri": _emscripten_glCheckFramebufferStatus,
+ "Qi": _emscripten_glClear,
+ "Pi": _emscripten_glClearBufferfi,
+ "Oi": _emscripten_glClearBufferfv,
+ "Ni": _emscripten_glClearBufferiv,
+ "Mi": _emscripten_glClearBufferuiv,
+ "Li": _emscripten_glClearColor,
+ "Ki": _emscripten_glClearDepthf,
+ "Ji": _emscripten_glClearStencil,
+ "Ii": _emscripten_glClientActiveTexture,
+ "Hi": _emscripten_glClientWaitSync,
+ "Gi": _emscripten_glClipPlane,
+ "Fi": _emscripten_glColor3d,
+ "Ei": _emscripten_glColor3f,
+ "Di": _emscripten_glColor3fv,
+ "Ci": _emscripten_glColor3ub,
+ "Bi": _emscripten_glColor3ubv,
+ "Ai": _emscripten_glColor3ui,
+ "zi": _emscripten_glColor3uiv,
+ "yi": _emscripten_glColor3us,
+ "xi": _emscripten_glColor3usv,
+ "wi": _emscripten_glColor4d,
+ "vi": _emscripten_glColor4f,
+ "ui": _emscripten_glColor4fv,
+ "ti": _emscripten_glColor4ub,
+ "si": _emscripten_glColor4ubv,
+ "ri": _emscripten_glColor4ui,
+ "qi": _emscripten_glColor4us,
+ "pi": _emscripten_glColorMask,
+ "oi": _emscripten_glColorPointer,
+ "ni": _emscripten_glCompileShader,
+ "mi": _emscripten_glCompressedTexImage2D,
+ "li": _emscripten_glCompressedTexImage3D,
+ "ki": _emscripten_glCompressedTexSubImage2D,
+ "ji": _emscripten_glCompressedTexSubImage3D,
+ "ii": _emscripten_glCopyBufferSubData,
+ "hi": _emscripten_glCopyTexImage2D,
+ "gi": _emscripten_glCopyTexSubImage2D,
+ "fi": _emscripten_glCopyTexSubImage3D,
+ "ei": _emscripten_glCreateProgram,
+ "di": _emscripten_glCreateShader,
+ "ci": _emscripten_glCullFace,
+ "bi": _emscripten_glDeleteBuffers,
+ "ai": _emscripten_glDeleteFramebuffers,
+ "$h": _emscripten_glDeleteObject,
+ "_h": _emscripten_glDeleteProgram,
+ "Zh": _emscripten_glDeleteQueries,
+ "Yh": _emscripten_glDeleteQueriesEXT,
+ "Xh": _emscripten_glDeleteRenderbuffers,
+ "Wh": _emscripten_glDeleteSamplers,
+ "Vh": _emscripten_glDeleteShader,
+ "Uh": _emscripten_glDeleteSync,
+ "Th": _emscripten_glDeleteTextures,
+ "Sh": _emscripten_glDeleteTransformFeedbacks,
+ "Rh": _emscripten_glDeleteVertexArrays,
+ "Qh": _emscripten_glDeleteVertexArraysOES,
+ "Ph": _emscripten_glDepthFunc,
+ "Oh": _emscripten_glDepthMask,
+ "Nh": _emscripten_glDepthRangef,
+ "Mh": _emscripten_glDetachShader,
+ "Lh": _emscripten_glDisable,
+ "Kh": _emscripten_glDisableClientState,
+ "Jh": _emscripten_glDisableVertexAttribArray,
+ "Ih": _emscripten_glDrawArrays,
+ "Hh": _emscripten_glDrawArraysInstanced,
+ "Gh": _emscripten_glDrawArraysInstancedANGLE,
+ "Fh": _emscripten_glDrawArraysInstancedARB,
+ "Eh": _emscripten_glDrawArraysInstancedEXT,
+ "Dh": _emscripten_glDrawArraysInstancedNV,
+ "Ch": _emscripten_glDrawBuffer,
+ "Bh": _emscripten_glDrawBuffers,
+ "Ah": _emscripten_glDrawBuffersEXT,
+ "zh": _emscripten_glDrawBuffersWEBGL,
+ "yh": _emscripten_glDrawElements,
+ "xh": _emscripten_glDrawElementsInstanced,
+ "wh": _emscripten_glDrawElementsInstancedANGLE,
+ "vh": _emscripten_glDrawElementsInstancedARB,
+ "uh": _emscripten_glDrawElementsInstancedEXT,
+ "th": _emscripten_glDrawElementsInstancedNV,
+ "sh": _emscripten_glDrawRangeElements,
+ "rh": _emscripten_glEnable,
+ "qh": _emscripten_glEnableClientState,
+ "ph": _emscripten_glEnableVertexAttribArray,
+ "oh": _emscripten_glEnd,
+ "nh": _emscripten_glEndQuery,
+ "mh": _emscripten_glEndQueryEXT,
+ "lh": _emscripten_glEndTransformFeedback,
+ "kh": _emscripten_glFenceSync,
+ "jh": _emscripten_glFinish,
+ "ih": _emscripten_glFlush,
+ "hh": _emscripten_glFramebufferRenderbuffer,
+ "gh": _emscripten_glFramebufferTexture2D,
+ "fh": _emscripten_glFramebufferTextureLayer,
+ "eh": _emscripten_glFrontFace,
+ "dh": _emscripten_glFrustum,
+ "ch": _emscripten_glGenBuffers,
+ "bh": _emscripten_glGenFramebuffers,
+ "ah": _emscripten_glGenQueries,
+ "$g": _emscripten_glGenQueriesEXT,
+ "_g": _emscripten_glGenRenderbuffers,
+ "Zg": _emscripten_glGenSamplers,
+ "Yg": _emscripten_glGenTextures,
+ "Xg": _emscripten_glGenTransformFeedbacks,
+ "Wg": _emscripten_glGenVertexArrays,
+ "Vg": _emscripten_glGenVertexArraysOES,
+ "Ug": _emscripten_glGenerateMipmap,
+ "Tg": _emscripten_glGetActiveAttrib,
+ "Sg": _emscripten_glGetActiveUniform,
+ "Rg": _emscripten_glGetActiveUniformBlockName,
+ "Qg": _emscripten_glGetActiveUniformBlockiv,
+ "Pg": _emscripten_glGetActiveUniformsiv,
+ "Og": _emscripten_glGetAttachedShaders,
+ "Ng": _emscripten_glGetAttribLocation,
+ "Mg": _emscripten_glGetBooleanv,
+ "Lg": _emscripten_glGetBufferParameteri64v,
+ "Kg": _emscripten_glGetBufferParameteriv,
+ "Jg": _emscripten_glGetError,
+ "Ig": _emscripten_glGetFloatv,
+ "Hg": _emscripten_glGetFragDataLocation,
+ "Gg": _emscripten_glGetFramebufferAttachmentParameteriv,
+ "Fg": _emscripten_glGetInfoLog,
+ "Eg": _emscripten_glGetInteger64i_v,
+ "Dg": _emscripten_glGetInteger64v,
+ "Cg": _emscripten_glGetIntegeri_v,
+ "Bg": _emscripten_glGetIntegerv,
+ "Ag": _emscripten_glGetInternalformativ,
+ "zg": _emscripten_glGetObjectParameteriv,
+ "yg": _emscripten_glGetPointerv,
+ "xg": _emscripten_glGetProgramBinary,
+ "wg": _emscripten_glGetProgramInfoLog,
+ "vg": _emscripten_glGetProgramiv,
+ "ug": _emscripten_glGetQueryObjecti64vEXT,
+ "tg": _emscripten_glGetQueryObjectivEXT,
+ "sg": _emscripten_glGetQueryObjectui64vEXT,
+ "rg": _emscripten_glGetQueryObjectuiv,
+ "qg": _emscripten_glGetQueryObjectuivEXT,
+ "pg": _emscripten_glGetQueryiv,
+ "og": _emscripten_glGetQueryivEXT,
+ "ng": _emscripten_glGetRenderbufferParameteriv,
+ "mg": _emscripten_glGetSamplerParameterfv,
+ "lg": _emscripten_glGetSamplerParameteriv,
+ "kg": _emscripten_glGetShaderInfoLog,
+ "jg": _emscripten_glGetShaderPrecisionFormat,
+ "ig": _emscripten_glGetShaderSource,
+ "hg": _emscripten_glGetShaderiv,
+ "gg": _emscripten_glGetString,
+ "fg": _emscripten_glGetStringi,
+ "eg": _emscripten_glGetSynciv,
+ "dg": _emscripten_glGetTexEnvfv,
+ "cg": _emscripten_glGetTexEnviv,
+ "bg": _emscripten_glGetTexLevelParameteriv,
+ "ag": _emscripten_glGetTexParameterfv,
+ "$f": _emscripten_glGetTexParameteriv,
+ "_f": _emscripten_glGetTransformFeedbackVarying,
+ "Zf": _emscripten_glGetUniformBlockIndex,
+ "Yf": _emscripten_glGetUniformIndices,
+ "Xf": _emscripten_glGetUniformLocation,
+ "Wf": _emscripten_glGetUniformfv,
+ "Vf": _emscripten_glGetUniformiv,
+ "Uf": _emscripten_glGetUniformuiv,
+ "Tf": _emscripten_glGetVertexAttribIiv,
+ "Sf": _emscripten_glGetVertexAttribIuiv,
+ "Rf": _emscripten_glGetVertexAttribPointerv,
+ "Qf": _emscripten_glGetVertexAttribfv,
+ "Pf": _emscripten_glGetVertexAttribiv,
+ "Of": _emscripten_glHint,
+ "Nf": _emscripten_glInvalidateFramebuffer,
+ "Mf": _emscripten_glInvalidateSubFramebuffer,
+ "Lf": _emscripten_glIsBuffer,
+ "Kf": _emscripten_glIsEnabled,
+ "Jf": _emscripten_glIsFramebuffer,
+ "If": _emscripten_glIsProgram,
+ "Hf": _emscripten_glIsQuery,
+ "Gf": _emscripten_glIsQueryEXT,
+ "Ff": _emscripten_glIsRenderbuffer,
+ "Ef": _emscripten_glIsSampler,
+ "Df": _emscripten_glIsShader,
+ "Cf": _emscripten_glIsSync,
+ "Bf": _emscripten_glIsTexture,
+ "Af": _emscripten_glIsTransformFeedback,
+ "zf": _emscripten_glIsVertexArray,
+ "yf": _emscripten_glIsVertexArrayOES,
+ "xf": _emscripten_glLightModelf,
+ "wf": _emscripten_glLightModelfv,
+ "vf": _emscripten_glLightfv,
+ "uf": _emscripten_glLineWidth,
+ "tf": _emscripten_glLinkProgram,
+ "sf": _emscripten_glLoadIdentity,
+ "rf": _emscripten_glLoadMatrixd,
+ "qf": _emscripten_glLoadMatrixf,
+ "pf": _emscripten_glLoadTransposeMatrixd,
+ "of": _emscripten_glLoadTransposeMatrixf,
+ "nf": _emscripten_glMaterialfv,
+ "mf": _emscripten_glMatrixMode,
+ "lf": _emscripten_glMultMatrixd,
+ "kf": _emscripten_glMultMatrixf,
+ "jf": _emscripten_glMultTransposeMatrixd,
+ "hf": _emscripten_glMultTransposeMatrixf,
+ "gf": _emscripten_glNormal3f,
+ "ff": _emscripten_glNormalPointer,
+ "ef": _emscripten_glOrtho,
+ "df": _emscripten_glPauseTransformFeedback,
+ "cf": _emscripten_glPixelStorei,
+ "bf": _emscripten_glPolygonMode,
+ "af": _emscripten_glPolygonOffset,
+ "$e": _emscripten_glPopMatrix,
+ "_e": _emscripten_glProgramBinary,
+ "Ze": _emscripten_glProgramParameteri,
+ "Ye": _emscripten_glPushMatrix,
+ "Xe": _emscripten_glQueryCounterEXT,
+ "We": _emscripten_glReadBuffer,
+ "Ve": _emscripten_glReadPixels,
+ "Ue": _emscripten_glReleaseShaderCompiler,
+ "Te": _emscripten_glRenderbufferStorage,
+ "Se": _emscripten_glRenderbufferStorageMultisample,
+ "Re": _emscripten_glResumeTransformFeedback,
+ "Qe": _emscripten_glRotated,
+ "Pe": _emscripten_glRotatef,
+ "Oe": _emscripten_glSampleCoverage,
+ "Ne": _emscripten_glSamplerParameterf,
+ "Me": _emscripten_glSamplerParameterfv,
+ "Le": _emscripten_glSamplerParameteri,
+ "Ke": _emscripten_glSamplerParameteriv,
+ "Je": _emscripten_glScaled,
+ "Ie": _emscripten_glScalef,
+ "He": _emscripten_glScissor,
+ "Ge": _emscripten_glShadeModel,
+ "Fe": _emscripten_glShaderBinary,
+ "Ee": _emscripten_glShaderSource,
+ "De": _emscripten_glStencilFunc,
+ "Ce": _emscripten_glStencilFuncSeparate,
+ "Be": _emscripten_glStencilMask,
+ "Ae": _emscripten_glStencilMaskSeparate,
+ "ze": _emscripten_glStencilOp,
+ "ye": _emscripten_glStencilOpSeparate,
+ "xe": _emscripten_glTexCoord2f,
+ "we": _emscripten_glTexCoord2fv,
+ "ve": _emscripten_glTexCoord2i,
+ "ue": _emscripten_glTexCoord3f,
+ "te": _emscripten_glTexCoord4f,
+ "se": _emscripten_glTexCoordPointer,
+ "re": _emscripten_glTexGenfv,
+ "qe": _emscripten_glTexGeni,
+ "pe": _emscripten_glTexImage1D,
+ "oe": _emscripten_glTexImage2D,
+ "ne": _emscripten_glTexImage3D,
+ "me": _emscripten_glTexParameterf,
+ "le": _emscripten_glTexParameterfv,
+ "ke": _emscripten_glTexParameteri,
+ "je": _emscripten_glTexParameteriv,
+ "ie": _emscripten_glTexStorage2D,
+ "he": _emscripten_glTexStorage3D,
+ "ge": _emscripten_glTexSubImage2D,
+ "fe": _emscripten_glTexSubImage3D,
+ "ee": _emscripten_glTransformFeedbackVaryings,
+ "de": _emscripten_glTranslated,
+ "ce": _emscripten_glTranslatef,
+ "be": _emscripten_glUniform1f,
+ "ae": _emscripten_glUniform1fv,
+ "$d": _emscripten_glUniform1i,
+ "_d": _emscripten_glUniform1iv,
+ "Zd": _emscripten_glUniform1ui,
+ "Yd": _emscripten_glUniform1uiv,
+ "Xd": _emscripten_glUniform2f,
+ "Wd": _emscripten_glUniform2fv,
+ "Vd": _emscripten_glUniform2i,
+ "Ud": _emscripten_glUniform2iv,
+ "Td": _emscripten_glUniform2ui,
+ "Sd": _emscripten_glUniform2uiv,
+ "Rd": _emscripten_glUniform3f,
+ "Qd": _emscripten_glUniform3fv,
+ "Pd": _emscripten_glUniform3i,
+ "Od": _emscripten_glUniform3iv,
+ "Nd": _emscripten_glUniform3ui,
+ "Md": _emscripten_glUniform3uiv,
+ "Ld": _emscripten_glUniform4f,
+ "Kd": _emscripten_glUniform4fv,
+ "Jd": _emscripten_glUniform4i,
+ "Id": _emscripten_glUniform4iv,
+ "Hd": _emscripten_glUniform4ui,
+ "Gd": _emscripten_glUniform4uiv,
+ "Fd": _emscripten_glUniformBlockBinding,
+ "Ed": _emscripten_glUniformMatrix2fv,
+ "Dd": _emscripten_glUniformMatrix2x3fv,
+ "Cd": _emscripten_glUniformMatrix2x4fv,
+ "Bd": _emscripten_glUniformMatrix3fv,
+ "Ad": _emscripten_glUniformMatrix3x2fv,
+ "zd": _emscripten_glUniformMatrix3x4fv,
+ "yd": _emscripten_glUniformMatrix4fv,
+ "xd": _emscripten_glUniformMatrix4x2fv,
+ "wd": _emscripten_glUniformMatrix4x3fv,
+ "vd": _emscripten_glUseProgram,
+ "ud": _emscripten_glValidateProgram,
+ "td": _emscripten_glVertex2f,
+ "sd": _emscripten_glVertex2fv,
+ "rd": _emscripten_glVertex2i,
+ "qd": _emscripten_glVertex3f,
+ "pd": _emscripten_glVertex3fv,
+ "od": _emscripten_glVertex3i,
+ "nd": _emscripten_glVertex4f,
+ "md": _emscripten_glVertex4fv,
+ "ld": _emscripten_glVertex4i,
+ "kd": _emscripten_glVertexAttrib1f,
+ "jd": _emscripten_glVertexAttrib1fv,
+ "id": _emscripten_glVertexAttrib2f,
+ "hd": _emscripten_glVertexAttrib2fv,
+ "gd": _emscripten_glVertexAttrib3f,
+ "fd": _emscripten_glVertexAttrib3fv,
+ "ed": _emscripten_glVertexAttrib4f,
+ "dd": _emscripten_glVertexAttrib4fv,
+ "cd": _emscripten_glVertexAttribDivisor,
+ "bd": _emscripten_glVertexAttribDivisorANGLE,
+ "ad": _emscripten_glVertexAttribDivisorARB,
+ "$c": _emscripten_glVertexAttribDivisorEXT,
+ "_c": _emscripten_glVertexAttribDivisorNV,
+ "Zc": _emscripten_glVertexAttribI4i,
+ "Yc": _emscripten_glVertexAttribI4iv,
+ "Xc": _emscripten_glVertexAttribI4ui,
+ "Wc": _emscripten_glVertexAttribI4uiv,
+ "Vc": _emscripten_glVertexAttribIPointer,
+ "Uc": _emscripten_glVertexAttribPointer,
+ "Tc": _emscripten_glVertexPointer,
+ "Sc": _emscripten_glViewport,
+ "Rc": _emscripten_glWaitSync,
+ "Qc": _emscripten_is_main_browser_thread,
+ "Pc": _emscripten_memcpy_big,
+ "Oc": _emscripten_resize_heap,
+ "Nc": _emscripten_set_main_loop_arg,
+ "Mc": _emscripten_start_fetch,
+ "Nj": _environ_get,
+ "Mj": _environ_sizes_get,
  "N": _exit,
  "Sa": _fd_close,
- "Ij": _fd_read,
+ "Lj": _fd_read,
  "ac": _fd_seek,
  "Nb": _fd_write,
  "a": _getTempRet0,
@@ -28744,75 +29146,75 @@ var asmLibraryArg = {
 var asm = createWasm();
 
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = function() {
- return (___wasm_call_ctors = Module["___wasm_call_ctors"] = Module["asm"]["zk"]).apply(null, arguments);
+ return (___wasm_call_ctors = Module["___wasm_call_ctors"] = Module["asm"]["Dk"]).apply(null, arguments);
 };
 
 var _memcpy = Module["_memcpy"] = function() {
- return (_memcpy = Module["_memcpy"] = Module["asm"]["Ak"]).apply(null, arguments);
+ return (_memcpy = Module["_memcpy"] = Module["asm"]["Ek"]).apply(null, arguments);
 };
 
 var _malloc = Module["_malloc"] = function() {
- return (_malloc = Module["_malloc"] = Module["asm"]["Ck"]).apply(null, arguments);
+ return (_malloc = Module["_malloc"] = Module["asm"]["Gk"]).apply(null, arguments);
 };
 
 var _free = Module["_free"] = function() {
- return (_free = Module["_free"] = Module["asm"]["Dk"]).apply(null, arguments);
+ return (_free = Module["_free"] = Module["asm"]["Hk"]).apply(null, arguments);
 };
 
 var _stkSaveConfig = Module["_stkSaveConfig"] = function() {
- return (_stkSaveConfig = Module["_stkSaveConfig"] = Module["asm"]["Ek"]).apply(null, arguments);
+ return (_stkSaveConfig = Module["_stkSaveConfig"] = Module["asm"]["Ik"]).apply(null, arguments);
 };
 
 var _main = Module["_main"] = function() {
- return (_main = Module["_main"] = Module["asm"]["Fk"]).apply(null, arguments);
+ return (_main = Module["_main"] = Module["asm"]["Jk"]).apply(null, arguments);
 };
 
 var _htons = Module["_htons"] = function() {
- return (_htons = Module["_htons"] = Module["asm"]["Gk"]).apply(null, arguments);
+ return (_htons = Module["_htons"] = Module["asm"]["Kk"]).apply(null, arguments);
 };
 
 var _ntohs = Module["_ntohs"] = function() {
- return (_ntohs = Module["_ntohs"] = Module["asm"]["Hk"]).apply(null, arguments);
+ return (_ntohs = Module["_ntohs"] = Module["asm"]["Lk"]).apply(null, arguments);
 };
 
 var ___errno_location = Module["___errno_location"] = function() {
- return (___errno_location = Module["___errno_location"] = Module["asm"]["Ik"]).apply(null, arguments);
+ return (___errno_location = Module["___errno_location"] = Module["asm"]["Mk"]).apply(null, arguments);
 };
 
 var _setThrew = Module["_setThrew"] = function() {
- return (_setThrew = Module["_setThrew"] = Module["asm"]["Jk"]).apply(null, arguments);
+ return (_setThrew = Module["_setThrew"] = Module["asm"]["Nk"]).apply(null, arguments);
 };
 
 var stackSave = Module["stackSave"] = function() {
- return (stackSave = Module["stackSave"] = Module["asm"]["Kk"]).apply(null, arguments);
+ return (stackSave = Module["stackSave"] = Module["asm"]["Ok"]).apply(null, arguments);
 };
 
 var stackRestore = Module["stackRestore"] = function() {
- return (stackRestore = Module["stackRestore"] = Module["asm"]["Lk"]).apply(null, arguments);
+ return (stackRestore = Module["stackRestore"] = Module["asm"]["Pk"]).apply(null, arguments);
 };
 
 var stackAlloc = Module["stackAlloc"] = function() {
- return (stackAlloc = Module["stackAlloc"] = Module["asm"]["Mk"]).apply(null, arguments);
+ return (stackAlloc = Module["stackAlloc"] = Module["asm"]["Qk"]).apply(null, arguments);
 };
 
 var ___cxa_can_catch = Module["___cxa_can_catch"] = function() {
- return (___cxa_can_catch = Module["___cxa_can_catch"] = Module["asm"]["Nk"]).apply(null, arguments);
+ return (___cxa_can_catch = Module["___cxa_can_catch"] = Module["asm"]["Rk"]).apply(null, arguments);
 };
 
 var ___cxa_is_pointer_type = Module["___cxa_is_pointer_type"] = function() {
- return (___cxa_is_pointer_type = Module["___cxa_is_pointer_type"] = Module["asm"]["Ok"]).apply(null, arguments);
+ return (___cxa_is_pointer_type = Module["___cxa_is_pointer_type"] = Module["asm"]["Sk"]).apply(null, arguments);
 };
 
 var dynCall_iij = Module["dynCall_iij"] = function() {
- return (dynCall_iij = Module["dynCall_iij"] = Module["asm"]["Pk"]).apply(null, arguments);
+ return (dynCall_iij = Module["dynCall_iij"] = Module["asm"]["Tk"]).apply(null, arguments);
 };
 
 var dynCall_iiiiij = Module["dynCall_iiiiij"] = function() {
- return (dynCall_iiiiij = Module["dynCall_iiiiij"] = Module["asm"]["Qk"]).apply(null, arguments);
+ return (dynCall_iiiiij = Module["dynCall_iiiiij"] = Module["asm"]["Uk"]).apply(null, arguments);
 };
 
 var dynCall_jiiii = Module["dynCall_jiiii"] = function() {
- return (dynCall_jiiii = Module["dynCall_jiiii"] = Module["asm"]["Rk"]).apply(null, arguments);
+ return (dynCall_jiiii = Module["dynCall_jiiii"] = Module["asm"]["Vk"]).apply(null, arguments);
 };
 
 function invoke_ii(index, a1) {

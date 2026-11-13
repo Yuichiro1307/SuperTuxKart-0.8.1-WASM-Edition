@@ -136,8 +136,8 @@ lib/irrlicht/clean: lib/irrlicht/CMakeFiles/stkirrlicht.dir/clean
 # Target rules for target CMakeFiles/supertuxkart.dir
 
 # All Build rule for target.
-CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletcollision.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletmath.dir/all
+CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletcollision.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletdynamics.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/enet/CMakeFiles/enet.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/irrlicht/CMakeFiles/stkirrlicht.dir/all

@@ -798,6 +798,382 @@ CMakeFiles/supertuxkart.dir/src/addons/addons_manager.cpp.o: /workspaces/SuperTu
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/translation.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/vec3.hpp
 
+CMakeFiles/supertuxkart.dir/src/addons/emscripten_network_http.cpp.o: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp \
+  /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
+  /home/codespace/.cache/emscripten/sysroot/include/assert.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/errno.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/fcntl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/bits/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/adjacent_find.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/all_of.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/any_of.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/binary_search.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/clamp.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/comp.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/comp_ref_type.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/copy_backward.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/copy_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/copy_n.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/count.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/count_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/equal.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/equal_range.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/fill.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/fill_n.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find_end.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find_first_of.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find_if_not.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/for_each.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/for_each_n.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/generate.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/generate_n.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/half_positive.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/includes.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/inplace_merge.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_heap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_heap_until.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_partitioned.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_permutation.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_sorted.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_sorted_until.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/iter_swap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/lexicographical_compare.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/lower_bound.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/make_heap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/max.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/max_element.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/merge.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/min.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/min_element.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/minmax.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/minmax_element.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/mismatch.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/move.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/move_backward.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/next_permutation.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/none_of.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/nth_element.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partial_sort.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partial_sort_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partition.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partition_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partition_point.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/pop_heap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/prev_permutation.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/push_heap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_copy_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_copy_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_if.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/reverse.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/reverse_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/rotate.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/rotate_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sample.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/search.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/search_n.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/set_difference.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/set_intersection.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/set_symmetric_difference.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/set_union.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/shift_left.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/shift_right.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/shuffle.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sift_down.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sort.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sort_heap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/stable_partition.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/stable_sort.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/swap_ranges.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/transform.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/unique.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/unique_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/unwrap_iter.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/upper_bound.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__availability \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bit_reference \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bsd_locale_fallbacks.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config_site \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__debug \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__errc \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__function_like.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/binary_function.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/binary_negate.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/bind.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/bind_front.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/binder1st.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/binder2nd.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/default_searcher.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/function.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/hash.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/identity.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/invoke.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/is_transparent.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/mem_fn.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/mem_fun_ref.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/not_fn.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/operations.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/perfect_forward.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/pointer_to_binary_function.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/pointer_to_unary_function.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/ranges_operations.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/reference_wrapper.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/unary_function.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/unary_negate.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/unwrap_ref.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/weak_result_type.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional_base \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/access.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/advance.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/back_insert_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/common_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/concepts.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/counted_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/data.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/default_sentinel.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/distance.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/empty.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/erase_if_container.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/front_insert_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/incrementable_traits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/insert_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/istream_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/istreambuf_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iter_move.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iter_swap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iterator_traits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/move_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/next.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/ostream_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/ostreambuf_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/prev.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/projected.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/readable_traits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/reverse_access.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/reverse_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/size.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/wrap_iter.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__locale \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/addressof.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocation_guard.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator_arg_t.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator_traits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/auto_ptr.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/compressed_pair.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/construct_at.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/pointer_safety.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/pointer_traits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/raw_storage_iterator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/shared_ptr.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/temporary_buffer.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/uninitialized_algorithms.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/unique_ptr.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/uses_allocator.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__mutex_base \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__node_handle \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__nullptr \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__random/uniform_int_distribution.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/access.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/enable_borrowed_range.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/enable_view.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__split_buffer \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__string \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__threading_support \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__tree \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__tuple \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__undef_macros \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/__decay_copy.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/as_const.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/cmp.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/declval.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/exchange.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/forward.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/in_place.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/integer_sequence.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/move.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/pair.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/piecewise_construct.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/rel_ops.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/swap.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/to_underlying.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__variant/monostate.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/algorithm \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/atomic \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/bitset \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cctype \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cerrno \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/chrono \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/climits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/compare \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/concepts \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstdarg \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstddef \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstdint \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstdio \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstdlib \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cstring \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ctime \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cwchar \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cwctype \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/deque \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/errno.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/exception \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/filesystem \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/fstream \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/functional \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/initializer_list \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/iomanip \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ios \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/iosfwd \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/istream \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/iterator \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/limits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/locale \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/locale.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/map \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/memory \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/mutex \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/new \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/optional \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ostream \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ratio \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/set \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/sstream \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stack \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stddef.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdexcept \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/streambuf \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/string \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/string_view \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/system_error \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/tuple \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/type_traits \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/typeinfo \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/utility \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/variant \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/vector \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/version \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/wchar.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/wctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/ctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdarg.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/time.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/wchar.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/wctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/compat/xlocale.h \
+  /home/codespace/.cache/emscripten/sysroot/include/ctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/console.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_js.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/eventloop.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/fetch.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5_webgl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h \
+  /home/codespace/.cache/emscripten/sysroot/include/errno.h \
+  /home/codespace/.cache/emscripten/sysroot/include/fcntl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/features.h \
+  /home/codespace/.cache/emscripten/sysroot/include/float.h \
+  /home/codespace/.cache/emscripten/sysroot/include/limits.h \
+  /home/codespace/.cache/emscripten/sysroot/include/locale.h \
+  /home/codespace/.cache/emscripten/sysroot/include/math.h \
+  /home/codespace/.cache/emscripten/sysroot/include/memory.h \
+  /home/codespace/.cache/emscripten/sysroot/include/pthread.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sched.h \
+  /home/codespace/.cache/emscripten/sysroot/include/semaphore.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdint.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdio.h \
+  /home/codespace/.cache/emscripten/sysroot/include/stdlib.h \
+  /home/codespace/.cache/emscripten/sysroot/include/string.h \
+  /home/codespace/.cache/emscripten/sysroot/include/strings.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/select.h \
+  /home/codespace/.cache/emscripten/sysroot/include/sys/time.h \
+  /home/codespace/.cache/emscripten/sysroot/include/time.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wasi/api.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wchar.h \
+  /home/codespace/.cache/emscripten/sysroot/include/wctype.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/float.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/limits.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btMatrix3x3.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btMinMax.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btQuadWord.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btQuaternion.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btScalar.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btVector3.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IFileArchive.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IFileList.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IFileSystem.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IReadFile.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IReferenceCounted.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IXMLReader.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IrrCompileConfig.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/SColor.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/coreutil.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/dimension2d.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrAllocator.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrMath.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrString.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrTypes.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrXML.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/path.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/position2d.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/rect.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/vector2d.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/vector3d.h \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/addon.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/addons_manager.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/request.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/stk_config.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/config/user_config.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/graphics/camera.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/io/file_manager.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/io/xml_node.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/io/xml_writer.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/aligned_array.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/constants.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/leak_check.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/log.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/no_copy.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/ptr_vector.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/string_utils.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/synchronised.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/time.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/vec3.hpp
+
 CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.cpp \
   /home/codespace/.cache/emscripten/sysroot/include/alloca.h \
   /home/codespace/.cache/emscripten/sysroot/include/assert.h \
@@ -900,6 +1276,7 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTux
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/unwrap_iter.h \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/upper_bound.h \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__availability \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bit_reference \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__bits \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__config_site \
@@ -982,6 +1359,7 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTux
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/access.h \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/enable_borrowed_range.h \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/enable_view.h \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__split_buffer \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__string \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__threading_support \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__tuple \
@@ -1041,6 +1419,7 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTux
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/typeinfo \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/utility \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/variant \
+  /home/codespace/.cache/emscripten/sysroot/include/c++/v1/vector \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/version \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/wchar.h \
   /home/codespace/.cache/emscripten/sysroot/include/c++/v1/wctype.h \
@@ -1052,6 +1431,18 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTux
   /home/codespace/.cache/emscripten/sysroot/include/compat/wchar.h \
   /home/codespace/.cache/emscripten/sysroot/include/compat/wctype.h \
   /home/codespace/.cache/emscripten/sysroot/include/ctype.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/console.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_js.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/eventloop.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/fetch.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/html5_webgl.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h \
+  /home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h \
   /home/codespace/.cache/emscripten/sysroot/include/errno.h \
   /home/codespace/.cache/emscripten/sysroot/include/fcntl.h \
   /home/codespace/.cache/emscripten/sysroot/include/features.h \
@@ -1074,6 +1465,7 @@ CMakeFiles/supertuxkart.dir/src/addons/inetwork_http.cpp.o: /workspaces/SuperTux
   /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/dummy_network_http.hpp \
+  /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/network_http.hpp \
   /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/request.hpp \
@@ -106397,11 +106789,13 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_goal.hpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btStridingMeshInterface.h:
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_cannon.hpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/track_manager.hpp:
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_cannon.cpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/dialogs/race_paused_dialog.hpp:
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_structure.hpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_sphere.hpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConcaveShape.h:
 
@@ -106517,6 +106911,22 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ISceneNodeAnimatorFactory.h:
 
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrTypes.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btAlignedObjectArray.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IDynamicMeshBuffer.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/btBulletCollisionCommon.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/semaphore.h:
+
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/cwchar:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/aligned_array.hpp:
@@ -106607,8 +107017,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/widgets/rating_bar_widget.cpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/items/flyable.cpp:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IShaderConstantSetCallBack.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/race_setup_screen.hpp:
@@ -106618,6 +107026,10 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/ios:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/karts/abstract_kart_animation.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_line.hpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IGUISkin.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ITerrainSceneNode.h:
 
@@ -106646,6 +107058,10 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/EMaterialFlags.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/chrono:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/compressed_pair.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/EDebugSceneTypes.h:
 
@@ -106753,8 +107169,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/race_start_message.hpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btEmptyShape.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/sys/time.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionConfiguration.h:
@@ -106775,17 +107189,7 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/stdint.h:
 
-/home/codespace/.cache/emscripten/sysroot/include/semaphore.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/emscripten.h:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/SExposedVideoData.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btCylinderShape.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/widgets/spinner_widget.hpp:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/max.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/limits.h:
 
@@ -106871,10 +107275,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/compat/stdlib.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConeShape.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/streambuf:
-
 /home/codespace/.cache/emscripten/sysroot/include/locale.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdlib.h:
@@ -106915,10 +107315,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/race_result_message.cpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btMultiSphereShape.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_copy.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/unique_copy.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/graph_node.hpp:
@@ -106937,9 +107333,17 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tinygettext/tinygettext.cpp:
 
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.cpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/ranges_operations.h:
+
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ICursorControl.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/karts/kart_with_stats.hpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional_base:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btVector3.h:
 
@@ -106966,6 +107370,10 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/data.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/challenges/game_slot.hpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/race/race_manager.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/dialogs/add_device_dialog.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/event_handler.hpp:
 
@@ -107033,6 +107441,14 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/audio/sfx_base.hpp:
 
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/line2d.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/fast_atof.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/challenges/unlock_manager.cpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/search.h:
+
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sort.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IImageLoader.h:
@@ -107051,9 +107467,9 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/sort_heap.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btSphereShape.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_if.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/emscripten_network_http.hpp:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_copy_if.h:
 
@@ -107061,15 +107477,15 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/find_if.h:
 
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_copy_if.h:
+
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/rotate.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/race_gui_overworld.hpp:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btStaticPlaneShape.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__availability:
 
@@ -107098,10 +107514,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btCapsuleShape.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/modes/linear_world.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btOptimizedBvh.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partition_copy.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/challenges/challenge_data.hpp:
 
@@ -107209,11 +107621,25 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/fill_n.h:
 
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/track_object.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/ambient_light_sphere.hpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/mutex:
+
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/stdint.h:
 
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btStridingMeshInterface.h:
+
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/swap_ranges.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/widgets/spinner_widget.hpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/max.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btCylinderShape.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btTriangleMeshShape.h:
 
@@ -107261,9 +107687,15 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/insert_iterator.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_sphere.hpp:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/addons/inetwork_http.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/track_manager.hpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/math.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/items/attachment_manager.hpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/dialogs/race_paused_dialog.hpp:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/comp_ref_type.h:
 
@@ -107341,31 +107773,11 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/function.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/irrTypes.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/fast_atof.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/challenges/unlock_manager.cpp:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/search.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/line2d.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_copy_if.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/wget.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/raw_storage_iterator.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/rotate_copy.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__ranges/enable_view.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConvexShape.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/physics/btKart.hpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IGUIElementFactory.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/remote_kart_info.hpp:
 
@@ -107401,15 +107813,9 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IParticleCylinderEmitter.h:
 
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional/ranges_operations.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/bits/alltypes.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/deque:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/compressed_pair.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_macros.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/path.h:
 
@@ -107443,10 +107849,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/graphics/CBatchingMesh.cpp:
 
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__functional_base:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/version.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/minmax_element.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/remove_copy.h:
@@ -107470,6 +107872,8 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/common_iterator.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btTetrahedronShape.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/html5.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ISceneNodeAnimator.h:
 
@@ -107500,6 +107904,12 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/mismatch.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/istreambuf_iterator.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/bezier_curve.cpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/ogg/ogg.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iter_swap.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/is_permutation.h:
 
@@ -107579,10 +107989,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator_arg_t.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/physics/btKartRaycast.hpp:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/construct_at.h:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/utils/ptr_vector.hpp:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/pointer_traits.h:
@@ -107624,6 +108030,14 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/emscripten.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/dimension2d.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/replace_copy.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btMultiSphereShape.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/construct_at.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/physics/btKartRaycast.hpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcher.h:
 
@@ -107668,8 +108082,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/network_manager.hpp:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__utility/rel_ops.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConvexInternalShape.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/default_sentinel.h:
 
@@ -107725,11 +108137,31 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/limits.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/items/attachment_manager.hpp:
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/streambuf:
 
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/math.h:
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConeShape.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btAlignedObjectArray.h:
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConvexInternalShape.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btConvexShape.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/physics/btKart.hpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IGUIElementFactory.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btEmptyShape.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/partition_copy.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btOptimizedBvh.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/items/flyable.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btSphereShape.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__memory/allocator.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletCollision/CollisionShapes/btStaticPlaneShape.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/main_menu_screen.cpp:
 
@@ -107760,10 +108192,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/graphics/particle_emitter.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IDynamicMeshBuffer.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_types.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.h:
 
@@ -107823,10 +108251,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/LinearMath/btStackAlloc.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/btBulletCollisionCommon.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/emscripten/em_asm.h:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IMeshSceneNode.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/SceneParameters.h:
@@ -107882,6 +108306,8 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__node_handle:
 
 /home/codespace/.cache/emscripten/sysroot/include/vorbis/codec.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/html5_webgl.h:
 
 /usr/lib/llvm-15/lib/clang/15.0.7/include/inttypes.h:
 
@@ -107947,9 +108373,9 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/graphics/hit_effect.hpp:
 
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/comp.h:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h:
+
+/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/comp.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/items/powerup_manager.hpp:
 
@@ -108006,12 +108432,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/options_screen_input2.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IParticleAnimatedMeshSceneNodeEmitter.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/track_object.cpp:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/mutex:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/ambient_light_sphere.hpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IParticleBoxEmitter.h:
 
@@ -108145,9 +108565,9 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IQ3LevelMesh.h:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IParticleEmitter.h:
-
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__algorithm/reverse_copy.h:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IParticleEmitter.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IRandomizer.h:
 
@@ -108208,6 +108628,8 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/main_loop.hpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/karts/skidding_properties.cpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/eventloop.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/modes/profile_world.hpp:
 
@@ -108275,11 +108697,7 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/widget.cpp:
 
-/home/codespace/.cache/emscripten/sysroot/include/ogg/ogg.h:
-
-/home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/iter_swap.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/bezier_curve.cpp:
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/fetch.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/guiengine/widgets/CGUIEditBox.h:
 
@@ -108318,6 +108736,8 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/modes/soccer_world.hpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/input/input_device.cpp:
+
+/home/codespace/.cache/emscripten/sysroot/include/emscripten/console.h:
 
 /home/codespace/.cache/emscripten/sysroot/include/c++/v1/__iterator/projected.h:
 
@@ -108479,10 +108899,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/modes/world_status.cpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IGUISkin.h:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_line.hpp:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/kart_control_message.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tinygettext/iconv.cpp:
@@ -108495,9 +108911,9 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/network_kart.cpp:
 
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ISceneManager.h:
-
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/race/history.cpp:
+
+/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/ISceneManager.h:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/network/character_selected_message.hpp:
 
@@ -108526,10 +108942,6 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/race/highscore_manager.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/race/highscores.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/race/race_manager.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/states_screens/dialogs/add_device_dialog.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/lib/irrlicht/include/IMetaTriangleSelector.h:
 
@@ -108634,9 +109046,3 @@ CMakeFiles/supertuxkart.dir/src/wasm_gl_compat.cpp.o: /workspaces/SuperTuxKart-0
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tinygettext/stk_file_system.cpp:
 
 /workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/ambient_light_sphere.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_structure.hpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_cannon.cpp:
-
-/workspaces/SuperTuxKart-0.8.1-WASM-Edition/SuperTuxKart-0.8.1/src/tracks/check_cannon.hpp:

@@ -1,6 +1,6 @@
 
 ## This project is currently under development and may contain bugs or issues. If you have any solutions, please feel free to share them—for example, by submitting a pull request.
-The original directory for SuperTuxKart is [here:](https://supertuxkart.net).
+The original directory for SuperTuxKart is [here](https://supertuxkart.net).
 # SuperTuxKart 0.8.1 WebAssembly Edition
 
 The game is built with Emscripten. The browser build disables CURL and WiiUse,
@@ -56,9 +56,16 @@ python3 -m http.server 8000 --directory Web
 ```
 
 Open <http://localhost:8000/supertuxkart.html>. The browser loads all bundled
-game assets before starting; no game-server or add-on connection is used.
+game assets before starting; normal gameplay does not require an internet
+connection.
 Connected browser gamepads are passed to SDL at startup. Audio may require a
 click or key press first, depending on the browser's autoplay policy.
+
+When internet access is enabled in the game settings, the add-ons screen lists
+`.zip` files found in the `Kart/`, `cource/`, and `Arena/` directories of the
+Addon-Server repository. Selecting an add-on fetches its ZIP and saves it in
+the browser's persistent user filesystem. The current directories contain no
+ZIP files, so the online list will remain empty until packages are added.
 
 The browser build starts with a 256 MiB WebAssembly memory and grows it as
 needed. Rendering is capped at 60 FPS (35 FPS in throttled menus) to avoid

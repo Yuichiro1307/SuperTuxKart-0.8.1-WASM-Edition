@@ -1,5 +1,7 @@
 The official SuperTuxKart website can be found [here](https://supertuxkart.net).
+
 For information on how to use add-ons in SuperTuxKart-WASM, please refer to [this page](https://github.com/Yuichiro1307/Addon-Server).
+
 # SuperTuxKart 0.8.1 WebAssembly Version
 
 This game is built using Emscripten. In this browser-based build, CURL and WiiUse are disabled. The game utilizes an Irrlicht device with an SDL backend, while core game functionality—including audio and gamepad support—remains fully enabled. The entire `data/` directory has been split into asset bundles totaling less than 90 MB; all of these bundles are loaded before the game begins. This approach ensures that all generated files remain within GitHub’s 100 MB file size limit without requiring the removal of any game assets. Save data is stored in IndexedDB via Emscripten’s IDBFS.

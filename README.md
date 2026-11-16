@@ -53,3 +53,5 @@ In each build, a unique query string is appended to the URLs for the JavaScript,
 ## Standalone Offline Page
 
 Running `./offline-make.sh` after a build is complete generates `Web/Offline.html`. This file contains the WebAssembly module, all game assets, and the favicon—all embedded within a single, large HTML file—eliminating the need for separate game files or additional network requests.
+
+In this WASM version, all challenge conditions—except for those in the "Fort Magma" stage—have been disabled for testing/debugging purposes. Please be aware that this will be addressed in the U2 update.

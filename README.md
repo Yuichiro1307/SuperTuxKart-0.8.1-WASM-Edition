@@ -1,8 +1,3 @@
-The official SuperTuxKart website can be found [here](https://supertuxkart.net).
-
-For information on how to use add-ons in SuperTuxKart-WASM, please refer to [this page](https://github.com/Yuichiro1307/Addon-Server).
-
-
 # SuperTuxKart 0.8.1 WebAssembly Version
 
 This game is built using Emscripten. In this browser-based build, CURL and WiiUse are disabled. The game utilizes an Irrlicht device with an SDL backend, while core game functionality—including audio and gamepad support—remains fully enabled. The entire `data/` directory has been split into asset bundles totaling less than 90 MB; all of these bundles are loaded before the game begins. This approach ensures that all generated files remain within GitHub’s 100 MB file size limit without requiring the removal of any game assets. Save data is stored in IndexedDB via Emscripten’s IDBFS.
@@ -53,5 +48,9 @@ In each build, a unique query string is appended to the URLs for the JavaScript,
 ## Standalone Offline Page
 
 Running `./offline-make.sh` after a build is complete generates `Web/Offline.html`. This file contains the WebAssembly module, all game assets, and the favicon—all embedded within a single, large HTML file—eliminating the need for separate game files or additional network requests.
+
+The official SuperTuxKart website can be found [here](https://supertuxkart.net).
+
+For information on how to use add-ons in SuperTuxKart-WASM, please refer to [this page](https://github.com/Yuichiro1307/Addon-Server).
 
 In this WASM version, all challenge conditions—except for those in the "Fort Magma" stage—have been disabled for testing/debugging purposes. Please be aware that this will be addressed in the U2 update.

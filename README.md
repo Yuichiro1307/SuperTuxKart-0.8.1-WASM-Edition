@@ -49,6 +49,8 @@ In each build, a unique query string is appended to the URLs for the JavaScript,
 
 Running `./offline-make.sh` after a build is complete generates `Web/Offline.html`. This file contains the WebAssembly module, all game assets, and the favicon—all embedded within a single, large HTML file—eliminating the need for separate game files or additional network requests.
 
+## others
+
 The official SuperTuxKart website can be found [here](https://supertuxkart.net).
 
 For information on how to use add-ons in SuperTuxKart-WASM, please refer to [this page](https://github.com/Yuichiro1307/Addon-Server).
